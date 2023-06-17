@@ -127,12 +127,14 @@ window.Stimulus = Application.start()
 import controllers from "./controllers/**/*.{js,js.rb}"
 Object.entries(controllers).forEach(([filename, controller]) => {
   if (filename.includes("_controller.") || filename.includes("-controller.")) {
-    const identifier = filename.replace("./controllers/", "")
+    console.log(filename)
+    const identifier = filename
+      .replace("./controllers", "")
+      .replace("controllers/", "")
       .replace(/[_-]controller..*$/, "")
       .replace("_", "-")
       .replace("/", "--")
 
-    console.log(filename)
     Stimulus.register(identifier, controller.default)
   }
 })

@@ -6,7 +6,6 @@ export default class ThemeSwitcher extends Controller {
     super(...args)
 
     this.handleSelect = (e) => {
-      e.preventDefault()
       window.applyTheme(e.detail.item.value)
     }
 
