@@ -1,0 +1,28 @@
+{
+  "name": "konnors-blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "esbuild": "npm run shoelace && node esbuild.config.js --minify",
+    "esbuild-dev": "node esbuild.config.js --watch",
+    "shoelace": "cp -R ./node_modules/@shoelace-style/shoelace/dist/assets ./src/shoelace-assets"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.4",
+    "glob": "^10.2.7",
+    "postcss": "^8.4.24",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^15.1.0",
+    "postcss-load-config": "^4.0.1",
+    "postcss-preset-env": "^8.5.0",
+    "read-cache": "^1.0.0"
+  },
+  "dependencies": {
+    "@github/clipboard-copy-element": "^1.2.1",
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo": "^7.3.0",
+    "@konnorr/bridgetown-quick-search": "^3.2.2",
+    "@shoelace-style/shoelace": "^2.4.0",
+    "bridgetown-quick-search": "^2.0.0"
+  }
+}
