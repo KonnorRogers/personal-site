@@ -749,7 +749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bridgetown-quick-search@npm:^2.0.0":
+"bridgetown-quick-search@npm:2.0.0":
   version: 2.0.0
   resolution: "bridgetown-quick-search@npm:2.0.0"
   dependencies:
@@ -1076,7 +1076,7 @@ __metadata:
     "@hotwired/turbo": ^7.3.0
     "@konnorr/bridgetown-quick-search": ^3.2.2
     "@shoelace-style/shoelace": ^2.4.0
-    bridgetown-quick-search: ^2.0.0
+    bridgetown-quick-search: 2.0.0
     esbuild: ^0.18.4
     glob: ^10.2.7
     postcss: ^8.4.24
