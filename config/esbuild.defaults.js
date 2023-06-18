@@ -8,6 +8,7 @@
 //
 // Shipped with Bridgetown v1.2.0
 
+const esbuild = require("esbuild")
 const path = require("path")
 const fsLib = require("fs")
 const fs = fsLib.promises
@@ -274,7 +275,7 @@ module.exports = async (outputFolder, esbuildOptions) => {
   const watch = process.argv.includes("--watch")
 
   // esbuild, take it away!
-  const context = await require("esbuild").context({
+  const config = {
     bundle: true,
     loader: {
       ".jpg": "file",
@@ -297,11 +298,12 @@ module.exports = async (outputFolder, esbuildOptions) => {
     publicPath: "/_bridgetown/static",
     metafile: true,
     ...esbuildOptions,
-  }).catch(() => process.exit(1))
+  }
 
   if (watch) {
+    const context = await esbuild.context(config).catch(() => process.exit(1))
     await context.watch().catch(() => process.exit(1))
   } else {
-    await context.rebuild().catch(() => process.exit(1))
+    await esbuild.build(config).catch(() => process.exit(1))
   }
 }

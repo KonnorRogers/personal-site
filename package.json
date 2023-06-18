@@ -5,7 +5,8 @@
   "scripts": {
     "esbuild": "npm run shoelace && node esbuild.config.js --minify",
     "esbuild-dev": "npm run shoelace && node esbuild.config.js --watch",
-    "shoelace": "mkdir -p src/shoelace-assets && cp -r node_modules/@shoelace-style/shoelace/dist/assets src/shoelace-assets"
+    "shoelace": "mkdir -p src/shoelace-assets && cp -r node_modules/@shoelace-style/shoelace/dist/assets src/shoelace-assets",
+    "deploy": "NODE_ENV='production' yarn esbuild && NODE_ENV='production' BRIDGETOWN_ENV='production' bin/bridgetown build"
   },
   "devDependencies": {
     "esbuild": "^0.18.4",
