@@ -1,0 +1,35 @@
+<sl-dropdown style="margin-inline-start: 1rem;" data-controller="theme-switcher" aria-label="Change site theme">
+  <sl-button slot="trigger" caret>
+    <sl-icon id="light-theme__icon" name="sun"></sl-icon>
+    <sl-icon hidden id="dark-theme__icon" name="moon-stars"></sl-icon>
+    <sl-icon hidden id="auto-theme__icon" name="display"></sl-icon>
+  </sl-button>
+  <sl-menu>
+    <sl-menu-label>
+      Toggle <kbd>\</kbd>
+    </sl-menu-label>
+
+    <sl-divider></sl-divider>
+
+    <sl-menu-item type="checkbox" id="light-theme__menu-item" checked value="light">
+      <span class="theme-item">
+        <sl-icon name="sun"></sl-icon>
+        <span>Light</span>
+      </span>
+    </sl-menu-item>
+
+    <sl-menu-item type="checkbox" id="dark-theme__menu-item" value="dark">
+      <span class="theme-item">
+        <sl-icon name="moon-stars"></sl-icon>
+        <span>Dark</span>
+      </span>
+    </sl-menu-item>
+
+    <sl-menu-item type="checkbox" id="auto-theme__menu-item" value="system">
+      <span class="theme-item">
+        <sl-icon name="display"></sl-icon>
+        <span>System</span>
+      </span>
+    </sl-menu-item>
+  </sl-menu>
+</sl-dropdown>

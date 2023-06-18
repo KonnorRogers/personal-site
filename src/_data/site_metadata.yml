@@ -4,9 +4,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Rhino Editor
-logo: "Rhino Editor"
-slogan: An ActionText compatible rich text editor.
+title: Konnor's Site
+logo: "Konnor's Site"
+slogan: All things Konnor
 email: konnor5456@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Rhino editor is a durable and flexible editor designed to provide an easy to use out of the box
@@ -14,3 +14,36 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_url: https://github.com/konnorrogers/rhino-editor
 default_branch: main
 doc_location: docs/src
+nav_links:
+  - href: "/"
+    text: "Home"
+  - href: "/about"
+    text: "About"
+  - href: "/info"
+    text: "Info"
+  - href: "/blog"
+    text: "Blog"
+  - href: "/projects"
+    text: "Projects"
+
+contact_info:
+  - title: Email
+    icon: "envelope-at"
+    text: konnor7414@gmail.com
+    href: "mailto:konnor7414@gmail.com"
+    external: true
+  - title: Blog
+    icon: "book"
+    text: "https://konnorroger.com/blog"
+    href: "/blog"
+    external: false
+  - title: GitHub
+    icon: "github"
+    text: "https://github.com/konnorrogers"
+    href: "https://github.com/konnorrogers"
+    external: true
+  - title: Twitter
+    icon: "twitter"
+    text: "https://twitter.com/RogersKonnor"
+    href: "https://twitter.com/RogersKonnor"
+    external: true

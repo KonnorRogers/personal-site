@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-<%= render "side_nav" %>
-
-
 
 <main class="documentation-content">
   <% title_id = resource.data.title.downcase.split(" ").join("-").gsub(/[\?!]/, "") %>
@@ -14,6 +11,8 @@ layout: default
   </h1>
 
   <%= yield %>
+
+  <%= render "pagination" %>
 </main>
 
 <%= render "table_of_contents" %>

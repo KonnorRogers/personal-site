@@ -7,7 +7,6 @@ body {
 
   --top-nav-max-width: 1650px;
   --body-max-width: 1800px;
-  --footer-height: 135px;
   --side-nav-width: 300px;
   --main-width: clamp(75ch, 70vw, 100ch);
   --main-padding-x: 1rem;
@@ -88,7 +87,11 @@ kbd {
   max-width: var(--main-width);
 }
 
-.doc main {
+.home .footer {
+  width: 100vw;
+}
+
+:is(.doc, .index, .page) main {
 	background-color: var(--body-color);
 }
 
@@ -206,8 +209,6 @@ kbd {
   font-family: var(--sl-font-sans);
   font-weight: bold;
   min-width: fit-content;
-  justify-content: space-around;
-  width: 100%;
 }
 
 .top-nav__categories > * {
@@ -219,7 +220,11 @@ kbd {
   margin-left: var(--sl-spacing-medium);
 }
 
+.contact__link,
+.main-list__link,
+.side-nav__link,
 .nav-link {
+  font-weight: bold;
   color: var(--sl-color-neutral-700);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -230,23 +235,22 @@ kbd {
   margin: 0;
   padding-inline-start: 0;
   min-width: 250px;
-  max-width: 250px;
+  max-width: 100%;
 }
 
+.contact__title {
+  line-height: 1.3;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.main-list__item,
 .side-nav__item {
   padding: 8px;
   max-width: 100%;
   line-height: 1.3;
-}
-
-.side-nav__link {
-  color: var(--sl-color-neutral-500);
-  text-decoration: none;
-  text-decoration-color: currentColor;
-}
-
-.sl-theme-dark .side-nav__link {
-  color: var(--sl-color-neutral-700);
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 .side-nav__link:is(:hover, :focus) {
@@ -254,28 +258,11 @@ kbd {
   text-decoration: underline;
 }
 
-.side-nav__category-header {
-  display: inline-block;
-  margin: var(--sl-spacing-medium) 0 var(--sl-spacing-small) 0;
-  color: var(--link-color);
-  font-size: var(--sl-font-size-x-large);
-}
-
-.side-nav__category-header:first-of-type {
-  margin-top: 0;
-}
-
-.side-nav__category-header,
-.side-nav__link {
-  font-family: var(--sl-font-sans);
-  border-color: transparent;
-}
-
 .side-nav--desktop {
   display: none;
 }
 
-.side-nav__category-menu {
+.side-nav__menu {
   list-style: none;
   padding: 0;
   padding-top: 1rem;
@@ -288,6 +275,7 @@ kbd {
   border-bottom: 1px solid var(--sl-color-neutral-200);
   padding-bottom: 1rem;
 }
+
 .input {
   font-size: var(--input-font-size);
   font-family: inherit;
@@ -323,14 +311,10 @@ kbd {
 }
 
 .footer {
+  margin-top: 5px;
   padding: var(--sl-spacing-2x-large) var(--sl-spacing-2x-small);
   text-align: center;
-  border-top: 1px solid var(--sl-color-neutral-200);
-}
-
-.reason__grid h3,
-.reason__header {
-  border-bottom: none;
+  background-color: var(--sl-color-neutral-50);
 }
 
 .hero--mobile {
@@ -356,9 +340,7 @@ kbd {
 }
 
 .site-title,
-.slogan,
-.reason__header
-{
+.slogan {
   text-align: center;
 }
 
@@ -367,32 +349,14 @@ kbd {
   margin: 0 auto;
 }
 
-.call-to-action__items {
-  margin-top: 1.75rem;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0;
-}
-
-.reason__grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.reason__grid > * {
-  height: 100%;
-}
-
-:is(.index, .doc) kr-layout {
+:is(.index, .doc, .page) kr-layout {
   background-color: var(--sl-color-neutral-50);
 }
 
 .documentation-content {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 }
 
 /** Pagination */
@@ -423,6 +387,7 @@ sl-button:is(.next-page, .previous-page):is(:hover, :focus) {
 
 .pagination-footer {
   padding: 2rem 1rem 2rem 1rem;
+  margin-top: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   justify-content: space-between;
@@ -584,14 +549,25 @@ kr-layout > [slot='aside'] {
   }
 
 
-  body:is(.index, .doc) kr-layout::part(body) {
+  body:is(.index, .doc, .page) kr-layout::part(body) {
     padding-top: 2rem;
   }
 
-	body:is(.index, .doc) kr-layout::part(main) {
+  .documentation-content {
+    border-radius: 32px;
+  }
+
+	body:is(.index, .doc, .page) kr-layout::part(main) {
+	  background-color: transparent;
+	  margin-inline-end: 16px;
+	  margin-inline-start: 16px;
+
+	}
+
+	body:is(.index, .doc, .page) kr-layout::part(main-content) {
 		box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%);
 		background: var(--body-color);
-		border-radius: 4px;
+		border-radius: 32px;
 	}
 
   /* .hero--mobile, */
@@ -600,7 +576,6 @@ kr-layout > [slot='aside'] {
     display: none;
   }
 
-  .top-nav__go-home,
   .top-nav__command-palette-button {
     display: flex;
   }
@@ -611,7 +586,7 @@ kr-layout > [slot='aside'] {
   }
 
   .top-nav__categories {
-    display: block;
+    display: flex;
   }
 
   .side-nav--desktop {
@@ -621,16 +596,15 @@ kr-layout > [slot='aside'] {
     max-width: 275px;
   }
 
-  .side-nav__category-menu {
-    padding-inline-start: 40px;
-  }
-
   .side-nav__drawer {
     display: none;
   }
 
-  .reason__grid {
-    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (min-width: 400px) {
+  .main-list {
+    grid-auto-flow: column;
   }
 }
 
@@ -743,67 +717,8 @@ bridgetown-ninja-keys.dark {
     }
 }
 
-/* Rhino Editor */
-
-.sl-theme-dark .rhino-editor,
-.sl-theme-dark .trix-content {
-  --rhino-button-color: var(--sl-color-neutral-700);
-  --rhino-button-disabled-text-color: var(--sl-color-neutral-300);
-  --rhino-toolbar-text-color: var(--sl-color-neutral-700);
-  --rhino-button-active-border-color: var(--sl-color-primary-700);
-  --rhino-button-active-background-color: var(--sl-color-primary-200);
-  color: white;
-}
-
-
-.sl-theme-dark .rhino-editor::part(toolbar__button):is(:focus, :hover) {
-  color: black;
-}
-
-.sl-theme-dark .rhino-editor::part(toolbar__button toolbar__button--active):is(:focus, :hover) {
-  color: white;
-}
-
-
-.sl-theme-dark .rhino-editor::part(toolbar__button--active) {
-  color: var(--sl-color-primary-800);
-}
-
-.sl-theme-dark .rhino-editor::part(toolbar__button toolbar__button--disabled):is(:focus, :hover) {
-  color: var(--sl-color-neutral-300);
-}
-
-.sl-theme-dark .rhino-editor::part(link-dialog__container) {
-  background-color: black;
-  border: 1px solid white;
-  box-shadow: none;
-}
-
-.sl-theme-dark .rhino-editor::part(link-dialog__input--invalid) {
-  color: var(--sl-color-red-200);
-}
-
-.sl-theme-dark .rhino-editor::part(tooltip-base) {
-  border: 1px solid white;
-}
-
-.sl-theme-dark .rhino-editor::part(tooltip-arrow) {
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-}
-
-.sl-theme-dark .trix-content .attachment--preview .attachment__caption {
-  color: var(--sl-color-neutral-700);
-}
-
-.sl-theme-dark rhino-attachment-editor::part(delete-button) {
-  color: black;
-}
-
-.sl-theme-dark .trix-content pre {
-  color: black;
-}
-
-.sl-theme-dark .trix-content blockquote {
-  color: var(--sl-color-neutral-700);
+.main-list {
+  list-style: none;
+  display: grid;
+  gap: 8px;
 }

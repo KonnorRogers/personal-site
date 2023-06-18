@@ -155,7 +155,7 @@ class KrLayout extends LitElement {
               <slot name="main-header"></slot>
             </div>
 
-            <slot></slot>
+            <div class="main-content" part="main-content"><slot></slot></div>
 
             <div class="main-footer" part="main-footer">
               <slot name="main-footer"></slot>

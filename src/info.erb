@@ -1,0 +1,30 @@
+---
+layout: page
+title: Info
+---
+
+<% site.metadata.contact_info.each do |item| %>
+  <section style="margin-top: 1.25rem;">
+    <h2 id="<%= item[:title].downcase %>" class="contact__title">
+      <a class="contact__link" href='#<%= item[:title].downcase %>'><%= item[:title] %></a>
+    </h2>
+    <p style="margin-top: 1rem;">
+      <a
+        style="display: flex; gap: 8px; align-items: center; font-size: 1.25rem; cursor: pointer; max-width: max-content;"
+        href='<%= item[:href] %>'
+      >
+        <sl-icon style="font-size: 1.75rem;" name="<%= item[:icon] %>">
+        </sl-icon>
+
+        <%= item[:text] %>
+
+        <% if item[:external] %>
+          <sl-icon name="box-arrow-up-right">
+            <sl-visually-hidden>Opens in new window</sl-visually-hidden>
+          </sl-icon>
+        <% end %>
+      </a>
+    </p>
+  </section>
+<% end %>
+

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Blog
-exclude_from_search: true
 ---
 
 <%= render "blog" %>
