@@ -11,6 +11,12 @@ layout: default
     <%= site.metadata.slogan %>
   </h1>
 
+  <p class="slogan">
+    <%= site.metadata.description %>
+  </p>
+
+  <div style="margin-top: 4rem;"></div>
+
   <ul class="main-list">
     <% site.metadata.nav_links.reject { |i| i[:text] == "Home" }.each do |item| %>
       <li class="main-list__item">

@@ -6,11 +6,10 @@
 
 title: Konnor's Site
 logo: "Konnor's Site"
-slogan: All things Konnor
+slogan: Hi there!
 email: konnor5456@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Rhino editor is a durable and flexible editor designed to provide an easy to use out of the box
-  experience while providing hooks and plugins to allow for easy extension.
+  I'm Konnor! Welcome to my digital garden!
 github_url: https://github.com/konnorrogers/rhino-editor
 default_branch: main
 doc_location: docs/src
