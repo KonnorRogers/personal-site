@@ -1,9 +1,10 @@
 ---
 title: Maintain scroll position in Turbo without data-turbo-permanent
-categories: ["turbo", "rails", "webdev", "javascript"]
+categories: turbo, rails, webdev, javascript
 date: 2023-06-07 20:44:01 UTC
 description: |
-  Alright, this will be short and sweet for future me.  Maintaining scroll position is notoriously...---
+  Alright, this will be short and sweet for future me.  Maintaining scroll position is notoriously...
+---
 
 Alright, this will be short and sweet for future me.
 

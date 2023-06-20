@@ -58,7 +58,7 @@ json.each do |obj|
   content << "---\n\n"
   content << body_markdown
 
-  File.write(filepath, content)
+  File.write(filepath, content, mode: "w")
 
   # One second seems to be the secret sauce to get around rate limiting.
   sleep 1

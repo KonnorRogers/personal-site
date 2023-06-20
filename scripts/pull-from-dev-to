@@ -12,15 +12,16 @@ json = JSON.parse(
 )
 
 # Alternatively we could write to a file to explore the data.
-# filename = "./articles.json"
-# File.write(filename,
-#   JSON.pretty_generate(
-#     JSON.parse(
-#       Net::HTTP.get(URI("https://dev.to/api/articles?username
-# =#{username}"))
-#     )
-#   ).to_s
-# )
+filename = "./articles.json"
+File.write(filename,
+  JSON.pretty_generate(
+    JSON.parse(
+      Net::HTTP.get(URI("https://dev.to/api/articles?username
+=#{username}"))
+    )
+  ).to_s
+)
+
 #
 # Read from the file we generated
 # json = JSON.parse(
@@ -33,13 +34,13 @@ json.each do |obj|
   date = Time.parse(obj["published_at"]).to_s
   file_date = date.split(" ").first
 
-  file_path = "../src/_posts/#{file_date}-#{file_title}.md"
+  file_path = "src/_posts/#{file_date}-#{file_title}.md"
 
   # don't waste an API call!
   # next if File.exist(file_path)
 
   description = obj["description"]
-  categories = obj["tag_list"]
+  categories = obj["tags"]
 
   article_path = obj["path"]
   article_url = URI("https://dev.to/api/articles#{article_path}")
@@ -61,5 +62,4 @@ json.each do |obj|
   content << body_markdown
 
   File.write(file_path, content)
-
 end

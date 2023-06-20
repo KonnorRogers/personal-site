@@ -1,9 +1,10 @@
 ---
 title: ActionText: All the ways to render an ActionText Attachment
-categories: ["actiontext", "rails", "ruby", "webdev"]
+categories: actiontext, rails, ruby, webdev
 date: 2022-10-20 23:11:46 UTC
 description: |
-  There's so many ways to render an ActionText attachment, we can change the...---
+  There's so many ways to render an ActionText attachment, we can change the...
+---
 
 There's so many ways to render an ActionText attachment, we can change the `app/views/active_storage/blobs/_blob.html.erb` as we saw in a previous post. This will apply to all ActiveStorage blobs. However, you may want more fine grained control for things like CustomAttachments. You'll also find some of the ways to change a models ActionText rendering method:
 

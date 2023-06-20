@@ -1,9 +1,10 @@
 ---
 title: Migrating HLS videos to Mp4 format in Rails.
-categories: ["hls", "video", "rails", "activestorage"]
+categories: hls, video, rails, activestorage
 date: 2021-07-02 00:13:36 UTC
 description: |
-  Purpose   Recently, I was tasked with migrating our HLS videos over to mp4 format and store...---
+  Purpose   Recently, I was tasked with migrating our HLS videos over to mp4 format and store...
+---
 
 ## Purpose
 

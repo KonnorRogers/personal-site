@@ -1,9 +1,10 @@
 ---
 title: Fixing FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory in Webpacker
-categories: ["webpacker", "webpack", "rails", "javascript"]
+categories: webpacker, webpack, rails, javascript
 date: 2021-07-02 19:08:53 UTC
 description: |
-  Purpose   The purpose of this is to remind myself what to do next time I encounter this...---
+  Purpose   The purpose of this is to remind myself what to do next time I encounter this...
+---
 
 ## Purpose
 

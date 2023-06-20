@@ -1,9 +1,10 @@
 ---
 title: Case / Switch Statement in Ruby
-categories: ["ruby", "case", "conditional"]
+categories: ruby, case, conditional
 date: 2021-05-25 00:12:18 UTC
 description: |
-  Why is this here?   I always forget how to write case statements and always find myself look...---
+  Why is this here?   I always forget how to write case statements and always find myself look...
+---
 
 ## Why is this here?
 

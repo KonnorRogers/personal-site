@@ -1,9 +1,10 @@
 ---
 title: Pulling down somebody's fork with Git.
-categories: ["git", "bash", "aliases", "functions"]
+categories: git, bash, aliases, functions
 date: 2021-07-03 17:54:40 UTC
 description: |
-  Purpose   To provide an easy to use way to pull down somebodys fork on your project.       ...---
+  Purpose   To provide an easy to use way to pull down somebodys fork on your project.       ...
+---
 
 ## Purpose
 

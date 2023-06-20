@@ -1,9 +1,10 @@
 ---
 title: Writing code block highlighting to a CSS file with Rouge.
-categories: ["rouge", "ruby", "bridgetown", "css"]
+categories: rouge, ruby, bridgetown, css
 date: 2021-07-08 22:41:45 UTC
 description: |
-  Purpose   To remind myself how to do this again in the future.           How to do it?   To...---
+  Purpose   To remind myself how to do this again in the future.           How to do it?   To...
+---
 
 ## Purpose
 

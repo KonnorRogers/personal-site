@@ -1,9 +1,10 @@
 ---
 title: How to keep a persistent class on a LitElement
-categories: ["webcomponents", "lit", "webdev", "javascript"]
+categories: webcomponents, lit, webdev, javascript
 date: 2023-04-08 02:56:40 UTC
 description: |
-  When working with lit, sometimes you want the host element to have a persistent class name. A good...---
+  When working with lit, sometimes you want the host element to have a persistent class name. A good...
+---
 
 When working with lit, sometimes you want the host element to have a persistent class name. A good example is if I were using Shoelace I'd want my elements to look like this:
 

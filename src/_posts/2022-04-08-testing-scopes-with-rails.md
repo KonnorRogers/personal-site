@@ -1,9 +1,10 @@
 ---
 title: Testing scopes with Rails
-categories: ["rails", "ruby"]
+categories: rails, ruby
 date: 2022-04-08 18:36:33 UTC
 description: |
-  The Problem   A common problem I've seen and that took me a long time to understand was how...---
+  The Problem   A common problem I've seen and that took me a long time to understand was how...
+---
 
 ## The Problem
 

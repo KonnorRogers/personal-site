@@ -1,9 +1,10 @@
 ---
 title: Arel Notes
-categories: ["arel", "ruby", "rails", "sql"]
+categories: arel, ruby, rails, sql
 date: 2021-05-15 21:09:08 UTC
 description: |
-  Notes from RailsConf 2014   Link to talk: https://www.youtube.com/watch?v=ShPAxNcLm3o...---
+  Notes from RailsConf 2014   Link to talk: https://www.youtube.com/watch?v=ShPAxNcLm3o...
+---
 
 # Notes from RailsConf 2014 
 

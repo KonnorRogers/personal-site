@@ -1,9 +1,10 @@
 ---
 title: button_to vs link_to and the pitfalls of data-turbo-method
-categories: ["turbo", "hotwire", "rails", "htmx"]
+categories: turbo, hotwire, rails, htmx
 date: 2023-05-30 18:49:01 UTC
 description: |
-  If you're familiar with Turbo, or even HTMX  You'll see this pattern come up frequently.    &lt;a...---
+  If you're familiar with Turbo, or even HTMX  You'll see this pattern come up frequently.    &lt;a...
+---
 
 If you're familiar with Turbo, or even [HTMX](https://htmx.org/)
 

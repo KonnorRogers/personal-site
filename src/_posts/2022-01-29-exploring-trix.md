@@ -1,9 +1,10 @@
 ---
 title: Exploring Trix
-categories: ["javascript", "rails", "webdev", "trix"]
+categories: javascript, rails, webdev, trix
 date: 2022-01-29 06:33:14 UTC
 description: |
-  Why?   Well, the reason is simple. Trix is notoriously hard to extend. It has little...---
+  Why?   Well, the reason is simple. Trix is notoriously hard to extend. It has little...
+---
 
 ## Why?
 

@@ -1,9 +1,10 @@
 ---
 title: Why Jest is not for me
-categories: ["jest", "javascript", "webdev", "react"]
+categories: jest, javascript, webdev, react
 date: 2021-10-27 03:39:40 UTC
 description: |
-  Why make this at all?      I don't enjoy bashing other people's hard work. This isn't meant...---
+  Why make this at all?      I don't enjoy bashing other people's hard work. This isn't meant...
+---
 
 <h2 id="why-make-this-article">
   <a href="#why-make-this-article">

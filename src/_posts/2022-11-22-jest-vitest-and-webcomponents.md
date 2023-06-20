@@ -1,9 +1,10 @@
 ---
 title: Jest, Vitest, and WebComponents
-categories: ["jest", "vitest", "shadowdom", "webcomponents"]
+categories: jest, vitest, shadowdom, webcomponents
 date: 2022-11-22 17:46:45 UTC
 description: |
-  Purpose   Jest and the newer Vitest are inextricably linked with frontend testing tools....---
+  Purpose   Jest and the newer Vitest are inextricably linked with frontend testing tools....
+---
 
 ## Purpose
 

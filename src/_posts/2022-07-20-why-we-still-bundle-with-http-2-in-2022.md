@@ -1,9 +1,10 @@
 ---
 title: Why we still bundle with HTTP/2 in 2022
-categories: ["javascript", "bundlers", "frontend", "webdev"]
+categories: javascript, bundlers, frontend, webdev
 date: 2022-07-20 00:05:28 UTC
 description: |
-  HTTP/2 is out! CDNs are hot!    Perhaps you've heard of HTTP/2 and its Asset Multiplexing and the...---
+  HTTP/2 is out! CDNs are hot!    Perhaps you've heard of HTTP/2 and its Asset Multiplexing and the...
+---
 
 HTTP/2 is out! CDNs are hot!
 

@@ -1,9 +1,10 @@
 ---
 title: Adding additional actions to Trix
-categories: ["trix", "rails", "webdev", "javascript"]
+categories: trix, rails, webdev, javascript
 date: 2022-04-07 14:37:03 UTC
 description: |
-  It's not documented how to add additional "actions" to Trix.  Current actions can be found...---
+  It's not documented how to add additional "actions" to Trix.  Current actions can be found...
+---
 
 It's not documented how to add additional "actions" to Trix.
 

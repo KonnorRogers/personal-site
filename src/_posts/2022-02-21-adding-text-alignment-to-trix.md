@@ -1,9 +1,10 @@
 ---
 title: Adding text alignment to Trix
-categories: ["rails", "javascript", "trix", "webdev"]
+categories: rails, javascript, trix, webdev
 date: 2022-02-21 22:38:07 UTC
 description: |
-  A user had asked in Discord "Is there a way to add text alignment to Trix"  I thought this was a...---
+  A user had asked in Discord "Is there a way to add text alignment to Trix"  I thought this was a...
+---
 
 A user had asked in Discord "Is there a way to add text alignment to Trix"
 

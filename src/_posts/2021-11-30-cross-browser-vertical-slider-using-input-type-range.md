@@ -1,9 +1,10 @@
 ---
 title: Cross-browser Vertical Slider using input type="range"
-categories: []
+categories: 
 date: 2021-11-30 01:18:00 UTC
 description: |
-  Vertical Sliders   Vertical sliders have been around in the form of &lt;input...---
+  Vertical Sliders   Vertical sliders have been around in the form of &lt;input...
+---
 
 ## Vertical Sliders
 

@@ -1,9 +1,10 @@
 ---
 title: Modifying the default toolbar in Trix
-categories: ["javascript", "webdev", "rails", "trix"]
+categories: javascript, webdev, rails, trix
 date: 2022-01-29 06:33:26 UTC
 description: |
-  The first thing you may be tempted to do when exploring with Trix is to change the default toolbar....---
+  The first thing you may be tempted to do when exploring with Trix is to change the default toolbar....
+---
 
 The first thing you may be tempted to do when exploring with Trix is to change the default toolbar. It's not obvious how to do this. 
 

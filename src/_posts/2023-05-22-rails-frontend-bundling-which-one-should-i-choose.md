@@ -1,9 +1,10 @@
 ---
 title: Rails Frontend Bundling - Which one should I choose?
-categories: ["frontend", "rails", "webdev", "ruby"]
+categories: frontend, rails, webdev, ruby
 date: 2023-05-22 16:46:07 UTC
 description: |
-  Propshaft? Or Sprockets?   If you use the following options:...---
+  Propshaft? Or Sprockets?   If you use the following options:...
+---
 
 ## Propshaft? Or Sprockets?
 

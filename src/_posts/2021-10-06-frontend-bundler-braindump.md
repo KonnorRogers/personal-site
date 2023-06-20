@@ -1,9 +1,10 @@
 ---
 title: Frontend Bundler Braindump
-categories: ["javascript", "webdev", "bundlers", "webpack"]
+categories: javascript, webdev, bundlers, webpack
 date: 2021-10-06 17:33:18 UTC
 description: |
-  What is this?      The following is a collection of terminology and definitions of various...---
+  What is this?      The following is a collection of terminology and definitions of various...
+---
 
 <h2 id="what-is-this">
   <a href="#what-is-this">

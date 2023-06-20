@@ -1,9 +1,10 @@
 ---
 title: Revisiting box-sizing best practices
-categories: ["webdev", "css", "webcomponents"]
+categories: webdev, css, webcomponents
 date: 2023-05-22 04:50:13 UTC
 description: |
-  We've all googled "best way to set box-sizing: border-box;" and come across this fun article from CSS...---
+  We've all googled "best way to set box-sizing: border-box;" and come across this fun article from CSS...
+---
 
 We've all googled "best way to set `box-sizing: border-box;`" and come across this fun article from CSS Tricks about setting box sizing.
 
