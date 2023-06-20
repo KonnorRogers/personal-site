@@ -172,50 +172,9 @@ a:focus, a:hover {
   text-decoration-color: var(--link-color-focus);
 }
 
-div[class*="language-"] {
-  margin: var(--sl-spacing-xx-small) 0 var(--sl-spacing-xxx-large) 0 !important;
-}
-
-/* Code block */
-pre {
-  padding: var(--sl-spacing-large);
-  margin: var(--sl-spacing-large) 0;
-  overflow-x: auto;
-}
-
 code > span {
   line-height: var(--sl-line-height-dense);
 }
-
-.highlighter-rouge,
-.highlight {
-  border-radius: var(--sl-border-radius-large);
-  font-size: 1.1em;
-  line-height: 1.4;
-}
-
-.highlight,
-.highlighter-rouge {
-  position: relative;
-}
-
-/* Inline code blocks */
-code.highlight,
-code.highlighter-rouge {
-  display: inline-block;
-  font-size: 0.95em;
-  padding: 0.2em 0.4em;
-  margin: var(--sl-spacing-xx-small) 0;
-  border-radius: 4px;
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  white-space: break-spaces;
-  vertical-align: middle;
-}
-
-/* :where(:not(:defined)) { */
-/*   visibility: hidden; */
-/* } */
 
 /** https://github.com/shoelace-style/shoelace/pull/1317 */
 sl-button::part(base) {

@@ -1,8 +1,67 @@
-.highlight {
-  color: black;
+.syntax-block {
+  position: relative;
+  margin: 1rem;
 }
 
-.highlight { background-color: #f8f8f8; }
+.syntax-block {
+  border: 1px solid var(--divider-color);
+  border-radius: var(--sl-border-radius-large);
+}
+
+.syntax-block pre {
+  margin: 0;
+}
+
+.syntax-block__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+}
+
+.syntax-block .highlight {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.syntax-block__badge {
+  font-size: var(--sl-button-font-size-large);
+  color: var(--sl-color-neutral-700);
+}
+
+pre.highlight {
+  padding: var(--sl-spacing-large);
+  margin: 0;
+  overflow-x: auto;
+}
+
+.highlighter-rouge,
+.highlight {
+  border-radius: var(--sl-border-radius-large);
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+.highlight,
+.highlighter-rouge {
+  position: relative;
+}
+
+/* Inline code blocks */
+code.highlight,
+code.highlighter-rouge {
+  display: inline-block;
+  font-size: 0.95em;
+  padding: 0.2em 0.4em;
+  margin: var(--sl-spacing-xx-small) 0;
+  border-radius: 4px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  white-space: break-spaces;
+  vertical-align: middle;
+}
+
+.highlight { color: black; background-color: #f8f8f8; }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

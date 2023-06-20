@@ -9,8 +9,11 @@ template_engine: erb
 permalink: pretty
 
 collections:
-  documentation:
+  posts:
     output: true
+
+pagination:
+  enabled: true
 
 defaults:
   - scope:
@@ -19,27 +22,9 @@ defaults:
       image: true
 
   - scope:
-      path: "_documentation"
+      path: "_posts"
     values:
-      layout: doc
-      permalink: /:categories/:slug
-      category_order: 0
-      doc_order: 0
+      layout: page
+      paginate:
+        collection: posts
 
-  - scope:
-      path: "_documentation/tutorials"
-    values:
-      category: tutorials
-      category_order: 10
-
-  - scope:
-      path: "_documentation/how_tos"
-    values:
-      category: how_tos
-      category_order: 20
-
-  - scope:
-      path: "_documentation/references"
-    values:
-      category: references
-      category_order: 30
