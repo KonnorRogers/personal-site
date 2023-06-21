@@ -1,6 +1,6 @@
 ---
 title: Querying ActiveStorage Attachments
-categories: activestorage, rails, ruby, sql
+categories: [activestorage, rails, ruby, sql]
 date: 2021-06-25 02:52:18 UTC
 description: |
   You want to find all the ActiveRecord models that either do / do not have a..."

@@ -1,7 +1,18 @@
 <% if paginator %>
+  <% previous_page = paginator.previous_page %>
+  <% previous_page_path = paginator.previous_page_path %>
+  <% next_page = paginator.next_page %>
+  <% next_page_path = paginator.next_page_path %>
+<% else %>
+  <% previous_page = resource.previous_resource %>
+  <% previous_page_path = previous_page&.relative_url %>
+  <% next_page = resource.next_resource %>
+  <% next_page_path = next_page&.relative_url %>
+<% end %>
+
 <div class="pagination-footer">
-  <% if paginator.previous_page %>
-    <sl-button class="previous-page" href="<%= paginator.previous_page_path %>">
+  <% if previous_page %>
+    <sl-button class="previous-page" href="<%= previous_page_path %>">
       <span slot="prefix">
         <sl-icon name="arrow-left" style="font-size: 1.5rem; display: block;"></sl-icon>
       </span>
@@ -10,7 +21,7 @@
         <span style="display: block; color: var(--sl-color-neutral-500); font-size: 0.85rem;">
           Previous Page
         </span>
-        <pagination-title><%= paginator.previous_page.data.title %></pagination-title>
+        <pagination-title><%= previous_page.data.title %></pagination-title>
       </span>
 
     </sl-button>
@@ -18,12 +29,12 @@
     <div></div>
   <% end %>
 
-  <% if paginator.next_page %>
-    <sl-button class="next-page" href="<%= paginator.next_page_path %>">
+  <% if next_page %>
+    <sl-button class="next-page" href="<%= next_page_path %>">
       <span style="text-align: start; display: block;">
         <span style="display: block; color: var(--sl-color-neutral-500); font-size: 0.85rem;">Next Page</span>
         <pagination-title>
-          <%= paginator.next_page.data.title %>
+          <%= next_page.data.title %>
         </pagination-title>
       </span>
 
@@ -36,5 +47,3 @@
     <div></div>
   <% end %>
 </div>
-
-<% end %>

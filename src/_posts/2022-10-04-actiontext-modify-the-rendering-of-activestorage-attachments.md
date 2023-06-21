@@ -1,6 +1,6 @@
 ---
 title: "ActionText: Modify the rendering of ActiveStorage attachments"
-categories: actiontext, rails, ruby, webdev
+categories: [actiontext, rails, ruby, webdev]
 date: 2022-10-04 21:39:36 UTC
 description: |
   If you have not already, make sure to run both the ActiveStorage and ActionText installers...

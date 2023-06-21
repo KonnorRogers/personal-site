@@ -1,6 +1,6 @@
 ---
 title: Migrating HLS videos to Mp4 format in Rails.
-categories: hls, video, rails, activestorage
+categories: [hls, video, rails, activestorage]
 date: 2021-07-02 00:13:36 UTC
 description: |
   Purpose   Recently, I was tasked with migrating our HLS videos over to mp4 format and store...
@@ -43,7 +43,7 @@ Since I know this method is going to do a couple things, lets call it `migrate_t
 ```rb
 class Video < ApplicationRecord
   has_one_attached :mp4_video
-  
+
   def migrate_to_mp4
     system("ffmpeg", "-i", hls_url, "-acodec", "copy", "-bsf:a", "aac_adtstoasc", "-vcodec", "copy", path)
   end
@@ -96,7 +96,7 @@ Heres what our final method looks like:
 
     tempfile = ::Tempfile.new(["video", ".mp4"])
     path = tempfile.path
-    
+
     # We dont actually want the tempfile, just its path.
     tempfile.close
     tempfile.unlink
@@ -166,11 +166,11 @@ bundle exec rails console
 MigrateVideoStorageJob.perform_later
 ```
 
-Now there are some issues with this job. 
+Now there are some issues with this job.
 
-The first issue is that it goes 1 by 1 which means for every video we're going to incur a full DB query. 
+The first issue is that it goes 1 by 1 which means for every video we're going to incur a full DB query.
 
-Its not great, but there was only roughly 100 videos to migrate so I didn't think it was worth batching and worrying about performance. 
+Its not great, but there was only roughly 100 videos to migrate so I didn't think it was worth batching and worrying about performance.
 
 "Real artists ship".
 

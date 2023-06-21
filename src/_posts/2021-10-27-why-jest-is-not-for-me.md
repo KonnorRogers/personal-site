@@ -1,6 +1,6 @@
 ---
 title: Why Jest is not for me
-categories: jest, javascript, webdev, react
+categories: [jest, javascript, webdev, react]
 date: 2021-10-27 03:39:40 UTC
 description: |
   Why make this at all?      I don't enjoy bashing other people's hard work. This isn't meant...
@@ -103,7 +103,7 @@ Jest is very much a batteries included framework. It's designed to work well in 
   </a>
 </h2>
 
-My personal preferences for unit-testing is split between Node based tests and browser based tests. 
+My personal preferences for unit-testing is split between Node based tests and browser based tests.
 
 For Node, I lean towards [UVU](https://github.com/lukeed/uvu) by [@lukeed](https://twitter.com/lukeed05) due to its simplicity. Its lightweight, fast, supports ESM out of the box. It feels like an easier to setup modern Mocha (without the wide array of plugins).
 

@@ -1,6 +1,6 @@
 ---
 title: Escaping the traditional Rails form
-categories: webdev, rails, programming, html
+categories: [webdev, rails, programming, html]
 date: 2022-03-10 17:30:49 UTC
 description: |
   Theres been a pattern I've seen creeping in Rails apps. The pattern is that there are cases where...

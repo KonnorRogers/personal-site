@@ -1,6 +1,6 @@
 ---
 title: "Rebuilding ActiveStorage: First Impressions"
-categories: javascript, rails, activestorage, webdev
+categories: [javascript, rails, activestorage, webdev]
 date: 2021-11-01 03:02:57 UTC
 description: |
   Why? ActiveStorage's JS library is just fine...why rebuild it?  You're not wrong. It...

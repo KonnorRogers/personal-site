@@ -1,6 +1,6 @@
 ---
 title: Creating reusable flashes in Rails using Shoelace
-categories: rails, shoelaces, alerts, flashes
+categories: [rails, shoelaces, alerts, flashes]
 date: 2021-07-06 20:14:04 UTC
 description: |
   Purpose   To document how I made a reusable flash system leveraging Shoelace + Rails       ...

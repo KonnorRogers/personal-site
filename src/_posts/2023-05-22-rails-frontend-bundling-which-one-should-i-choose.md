@@ -1,6 +1,6 @@
 ---
 title: Rails Frontend Bundling - Which one should I choose?
-categories: frontend, rails, webdev, ruby
+categories: [frontend, rails, webdev, ruby]
 date: 2023-05-22 16:46:07 UTC
 description: |
   Propshaft? Or Sprockets?   If you use the following options:...
@@ -8,12 +8,12 @@ description: |
 
 ## Propshaft? Or Sprockets?
 
-If you use the following options: 
+If you use the following options:
 
 - ImportMaps
 - JSBundling-Rails
 
-you'll be using either Sprockets or Propshaft. The default that Rails ships with is Sprockets. 
+you'll be using either Sprockets or Propshaft. The default that Rails ships with is Sprockets.
 
 If you're in a new application, I would try to start with Propshaft if possible. If you're attempting to migrate an existing application, I would probably go with Sprockets for compatibility with gems that may ship their own assets.
 
@@ -28,9 +28,9 @@ We won't get into caching bugs with Sprockets, but I have noticed when things ar
 
 https://github.com/WICG/import-maps
 
-### What are importmaps? 
+### What are importmaps?
 
-At their core, importmaps are essentially aliases. 
+At their core, importmaps are essentially aliases.
 
 ```js
 import "@hotwired/turbo-rails"
@@ -76,7 +76,7 @@ But we'll focus on the ESBuild portion specifically. It's important to note that
 
 ESBuild is a great middle ground between Webpacker / Shakapacker and ImportMaps. ESBuild provides transpilation, tree-shaking, scope-hoisting, non-js imports, bare module imports, and much more.
 
-ESBuild is also written in Go and is crazy fast compared to other bundlers. 
+ESBuild is also written in Go and is crazy fast compared to other bundlers.
 
 ** For the majority of applications ESBuild is probably the best option **
 

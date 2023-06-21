@@ -40,7 +40,7 @@ json.each do |obj|
   # next if File.exist(file_path)
 
   description = obj["description"]
-  categories = obj["tags"]
+  categories = obj["tag_list"]
 
   article_path = obj["path"]
   article_url = URI("https://dev.to/api/articles#{article_path}")

@@ -1,6 +1,6 @@
 ---
 title: Adding text alignment to Trix
-categories: rails, javascript, trix, webdev
+categories: [rails, javascript, trix, webdev]
 date: 2022-02-21 22:38:07 UTC
 description: |
   A user had asked in Discord "Is there a way to add text alignment to Trix"  I thought this was a...
@@ -8,7 +8,7 @@ description: |
 
 A user had asked in Discord "Is there a way to add text alignment to Trix"
 
-I thought this was a pretty basic ask for a Rich Text Editor, but to my surprise, as far as I can tell, Trix has no nice way of handling this. textAttributes support "style" attributes, but those are for inline elements. blockAttributes are intended for wrappers, but dont support "style" attributes. As far as I can tell, only `tagName` is supported. 
+I thought this was a pretty basic ask for a Rich Text Editor, but to my surprise, as far as I can tell, Trix has no nice way of handling this. textAttributes support "style" attributes, but those are for inline elements. blockAttributes are intended for wrappers, but dont support "style" attributes. As far as I can tell, only `tagName` is supported.
 
 - blockAttributes https://github.com/basecamp/trix/blob/main/src/trix/config/block_attributes.coffee
 - textAttributes https://github.com/basecamp/trix/blob/main/src/trix/config/text_attributes.coffee

@@ -3,4 +3,4 @@ layout: page
 title: Projects
 ---
 
-Projects
+<%= render ComingSoon.new %>

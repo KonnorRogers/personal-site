@@ -1,6 +1,6 @@
 ---
 title: Jest, Vitest, and WebComponents
-categories: jest, vitest, shadowdom, webcomponents
+categories: [jest, vitest, shadowdom, webcomponents]
 date: 2022-11-22 17:46:45 UTC
 description: |
   Purpose   Jest and the newer Vitest are inextricably linked with frontend testing tools....
@@ -16,7 +16,7 @@ Jest underwent a major revamp and received support for web components around ver
 
 ## Mocking more of the DOM
 
-This major revamp also included a number of mocks for built-in 
+This major revamp also included a number of mocks for built-in
 browser functions such as MutationObserver, document.createRange, and many others.
 
 However, there are still some notable missing functionalities such as `matchMedia`, `IntersectionObserver`, `ResizeObserver`, and more that I'm sure I haven't bumped into. So if your WebComponents use these, make sure to mock those too!

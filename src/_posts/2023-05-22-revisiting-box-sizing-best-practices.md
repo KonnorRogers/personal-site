@@ -1,6 +1,6 @@
 ---
 title: Revisiting box-sizing best practices
-categories: webdev, css, webcomponents
+categories: [webdev, css, webcomponents]
 date: 2023-05-22 04:50:13 UTC
 description: |
   We've all googled "best way to set box-sizing: border-box;" and come across this fun article from CSS...
@@ -37,8 +37,8 @@ Example:
     connectedCallback () {
       this.attachShadow({ mode: "open" })
 
-      // These slots are automatically 
-      // "box-sizing: content-box;" 
+      // These slots are automatically
+      // "box-sizing: content-box;"
       // so this default slot causes all its children to have
       // the same box-sizing properties...
       this.shadowRoot.innerHTML = `<slot></slot>`

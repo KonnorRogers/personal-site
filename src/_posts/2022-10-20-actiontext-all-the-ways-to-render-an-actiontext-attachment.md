@@ -1,6 +1,6 @@
 ---
 title: "ActionText: All the ways to render an ActionText Attachment"
-categories: actiontext, rails, ruby, webdev
+categories: [actiontext, rails, ruby, webdev]
 date: 2022-10-20 23:11:46 UTC
 description: |
   There's so many ways to render an ActionText attachment, we can change the...

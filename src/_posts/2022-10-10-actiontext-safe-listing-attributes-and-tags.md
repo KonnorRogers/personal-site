@@ -1,6 +1,6 @@
 ---
 title: "ActionText: Safe listing attributes and tags"
-categories: actiontext, rails, ruby, webdev
+categories: [actiontext, rails, ruby, webdev]
 date: 2022-10-10 01:12:52 UTC
 description: |
   To safelist tags and attributes in ActionText we need to inspect the source since I was unable to...

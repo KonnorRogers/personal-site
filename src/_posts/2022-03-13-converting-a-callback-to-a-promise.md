@@ -1,6 +1,6 @@
 ---
 title: Converting a callback to a promise
-categories: javascript, webdev
+categories: [javascript, webdev]
 date: 2022-03-13 01:45:42 UTC
 description: |
   Sometimes you want your synchronous function to run asynchronously. Perhaps you want to run multiple...
@@ -27,16 +27,16 @@ function asPromise (callback, ...args) {
 Now for some examples:
 
 ```js
-function greet (greeting, name) { return "${greeting}, {name}" } 
-await asPromise(greet, "hi", "konnor") 
+function greet (greeting, name) { return "${greeting}, {name}" }
+await asPromise(greet, "hi", "konnor")
 // => "hi, konnor"
 ```
 
 Now what if we pass an object?
 
 ```js
-function greet ({greeting, name}) { return "${greeting}, {name}" } 
-await asPromise(greet, {greeting: "hi", name: "konnor"}) 
+function greet ({greeting, name}) { return "${greeting}, {name}" }
+await asPromise(greet, {greeting: "hi", name: "konnor"})
 // => "hi, konnor"
 ```
 

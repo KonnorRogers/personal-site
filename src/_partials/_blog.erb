@@ -1,9 +1,7 @@
-<% if paginator %>
-  <% paginator.resources.each do |post| %>
-    <article>
-      <a href="<%= post.relative_url %>"><h2><%= post.data.title %></h2></a>
+<% paginator.resources.each do |post| %>
+  <article>
+    <a href="<%= post.relative_url %>"><h2><%= post.data.title %></h2></a>
 
-      <p><%= post.data.description %></p>
-    </article>
-  <% end %>
+    <p><%= post.data.description %></p>
+  </article>
 <% end %>

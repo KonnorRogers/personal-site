@@ -1,6 +1,6 @@
 ---
 title: Frontend Bundler Braindump
-categories: javascript, webdev, bundlers, webpack
+categories: [javascript, webdev, bundlers, webpack]
 date: 2021-10-06 17:33:18 UTC
 description: |
   What is this?      The following is a collection of terminology and definitions of various...
@@ -240,7 +240,7 @@ file I import thats greater than 20kb will automatically be turned into a chunk.
 
 The second form of chunking called "critical path code splitting" means:
 
-"only import the most important files for rendering first, and then import the other 'chunks' after the initial critical bundle has loaded". 
+"only import the most important files for rendering first, and then import the other 'chunks' after the initial critical bundle has loaded".
 
 This helps achieve faster initial loading for people browsing your website.
 

@@ -1,6 +1,6 @@
 ---
 title: Adding additional actions to Trix
-categories: trix, rails, webdev, javascript
+categories: [trix, rails, webdev, javascript]
 date: 2022-04-07 14:37:03 UTC
 description: |
   It's not documented how to add additional "actions" to Trix.  Current actions can be found...
@@ -25,17 +25,17 @@ It appears an action is an object:
 
 So `test` is like "hey should we perform the action?"
 
-and `perform` is what gets called if `test === true`. Seems reasonable. 
+and `perform` is what gets called if `test === true`. Seems reasonable.
 
-Now to the hard part, I couldn't find any docs to add an additional Trix action. 
+Now to the hard part, I couldn't find any docs to add an additional Trix action.
 
 But, in sleuthing through the console I found this:
 
 ```js
 document.querySelector("trix-editor").editorController.actions
 
-/* 
-Object { 
+/*
+Object {
   attachFiles: Object { test: test(), perform: perform() }
   decreaseNestingLevel: Object { test: test(), perform: perform() }
   increaseNestingLevel: Object { test: test(), perform: perform() }

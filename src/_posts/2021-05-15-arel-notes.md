@@ -1,12 +1,12 @@
 ---
 title: Arel Notes
-categories: arel, ruby, rails, sql
+categories: [arel, ruby, rails, sql]
 date: 2021-05-15 21:09:08 UTC
 description: |
   Notes from RailsConf 2014   Link to talk: https://www.youtube.com/watch?v=ShPAxNcLm3o...
 ---
 
-# Notes from RailsConf 2014 
+# Notes from RailsConf 2014
 
 Link to talk: https://www.youtube.com/watch?v=ShPAxNcLm3o
 
@@ -36,7 +36,7 @@ Post[:id] # using Arel Helpers.
 ## What are Terminal methods
 
 ```rb
-Post.select(:id).count.to_sql 
+Post.select(:id).count.to_sql
 # => NoMethodError: undefined method `to_sql' for 107:Integer
 ```
 
@@ -100,7 +100,7 @@ Post.where("title != 'Arel is Cool'").to_sql
 # => SELECT 'posts'.* from 'posts'
 #    WHERE (title != 'Arel is Cool')
 
-Post.where(Post[:title].not_eq("Arel is Cool")).to_sql 
+Post.where(Post[:title].not_eq("Arel is Cool")).to_sql
 # Using Arel
 # => SELECT 'posts'.* from 'posts'
 #    WHERE 'posts'.'title' != 'Arel is Cool'
@@ -143,7 +143,7 @@ Post.where(
 ).to_sql
 # => SELECT 'posts'.* FROM 'posts'
 #    WHERE (
-#    'posts'.'title' = 'Arel is Cool' 
+#    'posts'.'title' = 'Arel is Cool'
 #     AND
 #     ('posts'.'id' = 22 OR 'posts'.'id' = 23)
 #    )
@@ -154,12 +154,12 @@ Post.where(
   Post[:title].eq("Arel is Cool")
   .and(
     Post[:id].in(22, 23)
-  ) 
+  )
 )
 
 # => SELECT 'posts'.* FROM 'posts'
 #    WHERE (
-#     'posts'.'title' = 'Arel is Cool' 
+#     'posts'.'title' = 'Arel is Cool'
 #     AND
 #     'posts'.'id' IN (22, 23)
 #    )
@@ -265,7 +265,7 @@ Author.joins(
 #### Setup
 
 Given the following setup:
- 
+
 ```rb
 class Course < ApplicationRecord
   has_and_belongs_to_many :teachers
@@ -291,7 +291,7 @@ This means there are 3 tables:
 Course.arel_table # => courses
 Teacher.arel_table # => teachers
 
-# ??? No model for courses_teacher join table. 
+# ??? No model for courses_teacher join table.
 ```
 
 To create a join_table you would do:
@@ -355,7 +355,7 @@ class QueryBuilder
   end
 
   protected
-  
+
   # instantiates a new class and allow chaining.
   def reflect(query)
     self.class.new(query)
@@ -391,7 +391,7 @@ class PostQueryBuilder < QueryBuilder
   def since_yesterday
     reflect(
       query.where(
-        post[:created_at].gteq(1.day.ago) 
+        post[:created_at].gteq(1.day.ago)
       )
     )
   end

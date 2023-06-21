@@ -1,6 +1,6 @@
 ---
 title: Maintain scroll position in Turbo without data-turbo-permanent
-categories: turbo, rails, webdev, javascript
+categories: [turbo, rails, webdev, javascript]
 date: 2023-06-07 20:44:01 UTC
 description: |
   Alright, this will be short and sweet for future me.  Maintaining scroll position is notoriously...
@@ -36,7 +36,7 @@ function preserveScroll () {
 function restoreScroll (event) {
   document.querySelectorAll("[data-preserve-scroll]").forEach((element) => {
     element.scrollTop = scrollPositions[element.id];
-  }) 
+  })
 
   if (!event.detail.newBody) return
   // event.detail.newBody is the body element to be swapped in.

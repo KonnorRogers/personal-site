@@ -10,8 +10,8 @@ permalink: pretty
 
 collection:
   posts:
+    permalink: /posts/:year/:slug
     output: true
-    permalink: pretty
 
 pagination:
   enabled: true
@@ -23,7 +23,6 @@ defaults:
       image: true
 
   - scope:
-      collection: posts
+      path: "_posts"
     values:
       layout: post
-      permalink: /posts/:year/:month/:day/:slug

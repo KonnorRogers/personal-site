@@ -1,6 +1,6 @@
 ---
 title: Pulling down somebody's fork with Git.
-categories: git, bash, aliases, functions
+categories: [git, bash, aliases, functions]
 date: 2021-07-03 17:54:40 UTC
 description: |
   Purpose   To provide an easy to use way to pull down somebodys fork on your project.       ...
@@ -24,7 +24,7 @@ git fetch theirusername
 git checkout -b mynamefortheirbranch theirusername/theirbranch
 ```
 
-Wow....thats annoying. The fact I have to specify their name 3 times is a hassle. So what I like to do for obscure annoying commands is turn them into a Bash function. 
+Wow....thats annoying. The fact I have to specify their name 3 times is a hassle. So what I like to do for obscure annoying commands is turn them into a Bash function.
 
 
 ## Writing the function
@@ -37,7 +37,7 @@ The next step is to write how I want the function to work. I imagine I want to d
 git-fork-pull reponame theirname theirbranch mybranch
 ```
 
-Seems pretty straightforward to me. 4 positional arguments. I usually like keyword arguments, but theyre a little more tedious in Bash since they require an option parser like this https://unix.stackexchange.com/questions/129391/passing-named-arguments-to-shell-scripts . 
+Seems pretty straightforward to me. 4 positional arguments. I usually like keyword arguments, but theyre a little more tedious in Bash since they require an option parser like this https://unix.stackexchange.com/questions/129391/passing-named-arguments-to-shell-scripts .
 
 Besides, this is only going to be used by me so im fine with it.
 

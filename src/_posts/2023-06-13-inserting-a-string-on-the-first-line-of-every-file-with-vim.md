@@ -1,12 +1,12 @@
 ---
 title: Inserting a string on the first line of every file with Vim
-categories: vim, programming
+categories: [vim, programming]
 date: 2023-06-13 19:15:30 UTC
 description: |
   Alright here it goes, I needed to add a header to all files. There are roughly ~72 files and I didn't...
 ---
 
-Alright here it goes, I needed to add a header to all files. There are roughly ~72 files and I didn't want to do it by hand. The header in question was for test files in [Shoelace](https://shoelace.style). 
+Alright here it goes, I needed to add a header to all files. There are roughly ~72 files and I didn't want to do it by hand. The header in question was for test files in [Shoelace](https://shoelace.style).
 
 I stumbled across this StackOverflow link:
 
