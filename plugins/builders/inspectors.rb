@@ -12,7 +12,9 @@ class Builders::Inspectors < SiteBuilder
   def syntax_highlight(document)
     document.css("div.highlighter-rouge").each do |el|
       text = el.inner_text
-      lang = el["class"].scan(/\s?language-.*\s/).last.strip.split("-")[1]
+      lang = el["class"].scan(/\s?language-.*\s/).last
+
+      lang = lang.strip.split("-")[1] if lang
 
       lang = Syntax.full_language(lang)
       id = SecureRandom.uuid

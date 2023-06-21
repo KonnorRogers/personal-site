@@ -151,7 +151,7 @@ end
 In any one of our views we can do call the following code to display a Shoelace flash:
 
 ```erb
-<%= show_alert(type: "success", message: "You have successfully logged in!", icon: ::Flashable::ICONS[:success] %>
+<%%= show_alert(type: "success", message: "You have successfully logged in!", icon: ::Flashable::ICONS[:success] %>
 ```
 
 And heres what it will look like:
@@ -171,14 +171,14 @@ Go to `app/views/layouts/application.html.erb` and we'll add the flash handler c
   </head>
   <body>
     <div>
-      <% flash.each do |type, hash| %>
+      <%% flash.each do |type, hash| %>
         <div style="margin: 1rem 0;"></div>
-        <%= show_alert(type: type, message: hash[:message], icon: hash[:icon]) %>
-      <% end %>
+        <%%= show_alert(type: type, message: hash[:message], icon: hash[:icon]) %>
+      <%% end %>
     </div>
 
     <main>
-      <%= yield %>
+      <%%= yield %>
     </main>
   </body>
 </html>

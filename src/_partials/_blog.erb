@@ -1,9 +1,9 @@
-<div>
-  <ul>
-    <% collections.posts.resources.each do |post| %>
-      <li>
-        <a href="<%= post.relative_url %>"><%= post.data.title %></a>
-      </li>
-    <% end %>
-  </ul>
-</div>
+<% if paginator %>
+  <% paginator.resources.each do |post| %>
+    <article>
+      <a href="<%= post.relative_url %>"><h2><%= post.data.title %></h2></a>
+
+      <p><%= post.data.description %></p>
+    </article>
+  <% end %>
+<% end %>

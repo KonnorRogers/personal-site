@@ -1,5 +1,5 @@
 ---
-title: ActionText: Safe listing attributes and tags
+title: "ActionText: Safe listing attributes and tags"
 categories: actiontext, rails, ruby, webdev
 date: 2022-10-10 01:12:52 UTC
 description: |
@@ -31,7 +31,7 @@ ActionText::ContentHelper.allowed_tags += ["table", "tr", "td", "th", "thead", "
 
 # Add link attributes
 ActionText::ContentHelper.allowed_attributes += ["rel", "target"]
-``` 
+```
 
 You can also see an example from @excid3 's latest ActionText episode:
 

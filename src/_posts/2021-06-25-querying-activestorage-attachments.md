@@ -3,7 +3,7 @@ title: Querying ActiveStorage Attachments
 categories: activestorage, rails, ruby, sql
 date: 2021-06-25 02:52:18 UTC
 description: |
-  The problem   You want to find all the ActiveRecord models that either do / do not have a...
+  You want to find all the ActiveRecord models that either do / do not have a..."
 ---
 
 ## The problem

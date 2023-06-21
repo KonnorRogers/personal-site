@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog
+title: Blog Posts
 exclude_from_search: true
 ---
 

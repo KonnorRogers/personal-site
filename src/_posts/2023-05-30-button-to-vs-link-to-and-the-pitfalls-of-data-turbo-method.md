@@ -3,7 +3,7 @@ title: button_to vs link_to and the pitfalls of data-turbo-method
 categories: turbo, hotwire, rails, htmx
 date: 2023-05-30 18:49:01 UTC
 description: |
-  If you're familiar with Turbo, or even HTMX  You'll see this pattern come up frequently.    &lt;a...
+  If you're familiar with Turbo, or even HTMX  You'll see this pattern come up frequently...
 ---
 
 If you're familiar with Turbo, or even [HTMX](https://htmx.org/)
@@ -107,9 +107,9 @@ Or if you want to get fancy you can have the form and the button in two differen
 If you're using Rails form helpers, the hidden input is handled for you:
 
 ```erb
-<%= form_with model: current_user do |form| %>
-  <%= form.submit "Logout" %>
-<% end %>
+<%%= form_with model: current_user do |form| %>
+  <%%= form.submit "Logout" %>
+<%% end %>
 ```
 
 Look mom! No JavaScript!

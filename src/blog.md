@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Blog
+title: Blog Posts
 ---
 
 <%= render "blog" %>
+

@@ -1,15 +1,15 @@
 ---
-title: Rebuilding ActiveStorage: First Impressions
+title: "Rebuilding ActiveStorage: First Impressions"
 categories: javascript, rails, activestorage, webdev
 date: 2021-11-01 03:02:57 UTC
 description: |
-  Why?        ActiveStorage's JS library is just fine...why rebuild it?  You're not wrong. It...
+  Why? ActiveStorage's JS library is just fine...why rebuild it?  You're not wrong. It...
 ---
 
 <h2 id="why">
-  <a href="#why"> 
-    Why? 
-  </a> 
+  <a href="#why">
+    Why?
+  </a>
 </h2>
 
 ActiveStorage's JS library is just fine...why rebuild it?
@@ -18,17 +18,17 @@ You're not wrong. It works.
 
 I enjoy rebuilding things, it also really helps me understand how these libraries work under the hood and helps me troubleshoot with others.
 
-<h2 id="initial-impressions"> 
-  <a href="#initial-impressions"> 
-    Initial Impressions 
-  </a> 
+<h2 id="initial-impressions">
+  <a href="#initial-impressions">
+    Initial Impressions
+  </a>
 </h2>
 
-<h3 id="shared-code"> 
-  <a href="#shared-code"> 
+<h3 id="shared-code">
+  <a href="#shared-code">
     Shared Code
-  </a> 
-</h3> 
+  </a>
+</h3>
 
 ActiveStorage's JS package seems to reuse a lot
 of Rails-UJS functions but gets none of the benefits of
@@ -59,10 +59,10 @@ This could be adopted into mrujs and shared.
   - mrujs:
     [getMetaContent](https://github.com/ParamagicDev/mrujs/blob/345ec84f8bdb74ac1961e95a9772f7e6411ff836/src/utils/misc.ts#L39-L43)
 
-<h3 id="old-methods"> 
-  <a href="#old-methods"> 
-    Old ways of doing things 
-  </a> 
+<h3 id="old-methods">
+  <a href="#old-methods">
+    Old ways of doing things
+  </a>
 </h3>
 
 This line stuck out to me, rather than making an AJAX
@@ -80,9 +80,9 @@ Safari.
 
 [Turbo submit polyfill](https://github.com/hotwired/turbo/blob/main/src/polyfills/submit-event.ts)
 
-<h3 id="hashing"> 
-  <a href="#hashing"> 
-    MD5 Hashing 
+<h3 id="hashing">
+  <a href="#hashing">
+    MD5 Hashing
   </a>
 </h3>
 
@@ -99,9 +99,9 @@ roughly half the library.
 [Where SparkMD5 is used](https://github.com/rails/rails/blob/099289b6360ac82d1e0fa0a5592ac10cfc05e6e0/activestorage/app/javascript/activestorage/file_checksum.js#L20)
 
 <h3 id="xhr-requests">
-  <a href="#xhr-requests"> 
+  <a href="#xhr-requests">
    XmlHttpRequests
-  </a> 
+  </a>
 </h3>
 
 [XmlHttpRequest example](https://github.com/rails/rails/blob/main/activestorage/app/javascript/activestorage/blob_record.js#L14-L19)

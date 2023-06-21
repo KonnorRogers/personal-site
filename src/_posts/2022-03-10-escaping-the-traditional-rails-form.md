@@ -23,16 +23,16 @@ For example, lets save I have a form with both a `delete` button and a `save` bu
 Or if you're using Rails, you may do something like this:
 
 ```erb
-<%= form_with model: Comment.new do |form| %>
-  <%= form.label :content %>
+<%%= form_with model: Comment.new do |form| %>
+  <%%= form.label :content %>
   <br>
-  <%= form.textarea :content %>
- 
+  <%%= form.textarea :content %>
+
   <br>
 
-  <%= form.submit "Save" %>
-  <%= form.submit "Delete" %>
-</form>
+  <%%= form.submit "Save" %>
+  <%%= form.submit "Delete" %>
+<%% end %>
 ```
 
 Now you might be thinking these 2 are equal. But they're not. Under the hood `form.submit` creates an `<input>` tag and sets the `value` to `"save"` so it looks like this:
@@ -43,7 +43,7 @@ Now you might be thinking these 2 are equal. But they're not. Under the hood `fo
 <input type="submit" value="Delete">
 ```
 
-Now this is _ok_, but the problem is `<input>` doesn't accept nested HTML tags. So you would need a button if you wanted to show an icon or something similar. 
+Now this is _ok_, but the problem is `<input>` doesn't accept nested HTML tags. So you would need a button if you wanted to show an icon or something similar.
 
 The other problem we're presented with is if we want to go to a different route or use a different method, we may be tempted to use `button_to`, but this generates a full form wrapper and forms cannot be nested inside of other forms.
 
@@ -56,16 +56,16 @@ https://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method
 Moving on, lets see what it looks like at full speed:
 
 ```erb
-<%= form_with model: @comment do |form| %>
-  <%= form.label :content %>
+<%%= form_with model: @comment do |form| %>
+  <%%= form.label :content %>
   <br>
-  <%= form.textarea :content %>
- 
+  <%%= form.textarea :content %>
+
   <br>
 
-  <%= form.button "Save", type: :submit %>
-  <%= form.button "Delete", type: :submit %>
-</form>
+  <%%= form.button "Save", type: :submit %>
+  <%%= form.button "Delete", type: :submit %>
+<%% end %>
 ```
 
 And that's it! You now have a submit button. By default, Rails generates a `<button type="default">` which technically isn't an allowable type, so to be safe, I just pass in the real type. (Perhaps a PR for this should be made, but thats for another day.)
@@ -73,10 +73,10 @@ And that's it! You now have a submit button. By default, Rails generates a `<but
 `f.button` has the added benefit of accepting a block unlike a `f.submit` so you could do something like this to show a "save icon" next to the save text.
 
 ```erb
-<%= f.button type: :submit do %>
-  <i class="fa-thin fa-floppy-disk"></i> 
+<%%= f.button type: :submit do %>
+  <i class="fa-thin fa-floppy-disk"></i>
   Save
-<% end %>
+<%% end %>
 ```
 
 Good luck doing that with an `<input>`!
@@ -88,9 +88,9 @@ Now if you've been following along this far, you may have noticed that theres no
 An easy way around this is to provide a `name` and `value` attribute to your buttons so they get submitted with the form and you can then on your backend do a `params[]` check to see what was submitted.
 
 ```erb
-<%= form.button "Save", type: :submit, name: "commit_type", value: "save" %>
+<%%= form.button "Save", type: :submit, name: "commit_type", value: "save" %>
 
-<%= form.button "Delete", type: :submit, name: "commit_type", value: "destroy" %>
+<%%= form.button "Delete", type: :submit, name: "commit_type", value: "destroy" %>
 ```
 
 Now, in your Rails controller you could do:
@@ -108,7 +108,7 @@ end
 Now this is _okay_ but may not be the best way to handle a `destroy` action since you should have a dedicated route for that. Instead, we can change the `formaction` on the button to point to go to our delete path.
 
 ```erb
-<%= form.button "Delete", type: :submit, formmethod: :delete %> 
+<%%= form.button "Delete", type: :submit, formmethod: :delete %>
 ```
 
 This will now override the `method` set on the form and make it a `DELETE` request!
@@ -116,7 +116,7 @@ This will now override the `method` set on the form and make it a `DELETE` reque
 Now let's take it one step further, maybe you need to send the delete request to a different path. You can do so by passing in a `formaction` to the button like so:
 
 ```erb
-<%= form.button "Delete", type: :submit, formmethod: :delete, action: "/super-secret-url" %>
+<%%= form.button "Delete", type: :submit, formmethod: :delete, action: "/super-secret-url" %>
 ```
 
 Alright, maybe you don't have `/super-secret-url` but you get the point.
@@ -128,7 +128,7 @@ For example, let's say I have a `Logout` button in my header than needs to submi
 Most Rails devs are familiar with the old Rails-UJS way of using a link, but this isn't really a link like this:
 
 ```erb
-<%= link_to "Log out", "/logout", data: { method: "delete" } %>
+<%%= link_to "Log out", "/logout", data: { method: "delete" } %>
 ```
 
 This _works_ but you now have a link functioning as a button inside of a form and it is not as clear to screen readers what this link actually does since links are technically only supposed to be `GET` requests.
@@ -151,7 +151,7 @@ That's right! You can mix and match `formmethod`, `formaction`, and `form`!
 
 `form` expects the `id` of the form you would like the button to submit with! This means you can have a button submit to a form from anywhere in your page without having it inside of the form! Pretty nifty! Buttons are pretty cool!
 
-To read more about buttons, MDN outlines all the cool properties and attributes. 
+To read more about buttons, MDN outlines all the cool properties and attributes.
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attributes
 
@@ -166,11 +166,11 @@ Anyways, hope this was helpful and stop nesting links in forms especially if you
 If you are limited by the formmethod issue, it is recommended to construct a `<form>` using the Rails helpers with the proper `method` like this:
 
 ```erb
-<%= form_with id: "delete-model", model: @model, method: :delete, class: "hidden" %>
+<%%= form_with id: "delete-model", model: @model, method: :delete, class: "hidden" %>
 
-<%= form_with model: @model, method: :put do |form| %>
-  <%= form.button "Delete", type: :submit, form: "delete-model" %>
-<% end %>
+<%%= form_with model: @model, method: :put do |form| %>
+  <%%= form.button "Delete", type: :submit, form: "delete-model" %>
+<%% end %>
 ```
 
 The `form` attribute will override the form that the button is currently nested in and avoids the limitations of the `formmethod`. Anyways, happy hunting and I hope this was a useful guide to all the fun ways to use buttons with forms and how to escape the generic nesting a button in a form and unlocks some new UI / UX potential for you!

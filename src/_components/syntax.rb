@@ -10,6 +10,8 @@ class Syntax < Bridgetown::Component
   }
 
   def self.full_language(language)
+    return "" if language.nil?
+
     LANGUAGES[language.to_sym] || language.titleize
   end
 

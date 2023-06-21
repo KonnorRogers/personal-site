@@ -1,5 +1,5 @@
 ---
-title: ActionText: All the ways to render an ActionText Attachment
+title: "ActionText: All the ways to render an ActionText Attachment"
 categories: actiontext, rails, ruby, webdev
 date: 2022-10-20 23:11:46 UTC
 description: |
@@ -23,10 +23,10 @@ Let's talk about what each does:
 Under the hood Rails calls `value.to_trix_html` when you render within your Trix editor using the `rich_text_area` form helper.
 
 ```erb
-<%= form_with model: @post do |f| %>
+<%%= form_with model: @post do |f| %>
   <!-- calls @post.body.to_trix_html -->
-  <% f.rich_text_area :body %> 
-<% end %>
+  <%% f.rich_text_area :body %>
+<%% end %>
 ```
 
 https://github.com/rails/rails/blob/0c97d1db023de4df6d2df8829e5ee311ff0d0e28/actiontext/app/helpers/action_text/tag_helper.rb#L36
@@ -43,7 +43,7 @@ This allows you to create 2 experiences, one for the editor, and one for the fin
 
 ## to_partial_path
 
-`to_partial_path` is a standard rendering path for models. This is used as a shortcut for `to_attachable_partial_path` and `to_trix_content_attachment_partial_path`. 
+`to_partial_path` is a standard rendering path for models. This is used as a shortcut for `to_attachable_partial_path` and `to_trix_content_attachment_partial_path`.
 
 For more on `to_partial_path` it's worth checking out this Thoughtbot article on rendering.
 
@@ -57,7 +57,7 @@ Here's what it may look like all together in an actual attachable model:
 class User < ApplicationRecord
   include ActionText::Attachable
 
-  # app/views/users/_mention.html.erb 
+  # app/views/users/_mention.html.erb
   # rendered in final rendering
   def to_attachment_partial_path
     "users/mention"
@@ -70,7 +70,7 @@ class User < ApplicationRecord
   end
 
   # app/views/users/_user.html.erb
-  # rendered when calling <%= render User.first %>
+  # rendered when calling <%%= render User.first %>
   def to_partial_path
     "users/user"
   end
@@ -86,11 +86,11 @@ class Youtube
   include GlobalID::Identification
   include ActionText::Attachable
 
-  # to be eligible to create an "sgid" we need to implement an 
+  # to be eligible to create an "sgid" we need to implement an
   #   "id" attribute.
   attribute :id
 
-  # app/views/youtubes/_embed.html.erb 
+  # app/views/youtubes/_embed.html.erb
   # rendered in final rendering
   def to_attachment_partial_path
     "youtubes/embed"
@@ -103,7 +103,7 @@ class Youtube
   end
 
   # app/views/youtubes/_youtube.html.erb
-  # rendered when calling <%= render Youtube.first %>
+  # rendered when calling <%%= render Youtube.first %>
   def to_partial_path
     "youtubes/youtube"
   end

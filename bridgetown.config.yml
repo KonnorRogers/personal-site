@@ -8,9 +8,10 @@ development:
 template_engine: erb
 permalink: pretty
 
-collections:
+collection:
   posts:
     output: true
+    permalink: pretty
 
 pagination:
   enabled: true
@@ -22,9 +23,7 @@ defaults:
       image: true
 
   - scope:
-      path: "_posts"
+      collection: posts
     values:
-      layout: page
-      paginate:
-        collection: posts
-
+      layout: post
+      permalink: /posts/:year/:month/:day/:slug

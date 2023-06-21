@@ -1,5 +1,5 @@
 ---
-title: ActionText: Modify the rendering of ActiveStorage attachments
+title: "ActionText: Modify the rendering of ActiveStorage attachments"
 categories: actiontext, rails, ruby, webdev
 date: 2022-10-04 21:39:36 UTC
 description: |
@@ -13,18 +13,18 @@ The ActiveStorage generator should create a file that looks like this:
 `app/views/active_storage/blobs/_blob.html.erb`
 
 ```erb
-<figure class="attachment attachment--<%= blob.representable? ? "preview" : "file" %> attachment--<%= blob.filename.extension %>">
-  <% if blob.representable? %>
-    <%= image_tag blob.representation(resize_to_limit: local_assigns[:in_gallery] ? [ 800, 600 ] : [ 1024, 768 ]) %>
-  <% end %>
+<figure class="attachment attachment--<%%= blob.representable? ? "preview" : "file" %> attachment--<%%= blob.filename.extension %>">
+  <%% if blob.representable? %>
+    <%%= image_tag blob.representation(resize_to_limit: local_assigns[:in_gallery] ? [ 800, 600 ] : [ 1024, 768 ]) %>
+  <%% end %>
 
   <figcaption class="attachment__caption">
-    <% if caption = blob.try(:caption) %>
-      <%= caption %>
-    <% else %>
-      <span class="attachment__name"><%= blob.filename %></span>
-      <span class="attachment__size"><%= number_to_human_size blob.byte_size %></span>
-    <% end %>
+    <%% if caption = blob.try(:caption) %>
+      <%%= caption %>
+    <%% else %>
+      <span class="attachment__name"><%%= blob.filename %></span>
+      <span class="attachment__size"><%%= number_to_human_size blob.byte_size %></span>
+    <%% end %>
   </figcaption>
 </figure>
 ```
