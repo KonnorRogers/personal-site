@@ -2,7 +2,7 @@
   <% paginator.resources.each_with_index do |post, idx| %>
     <% id = "post-#{idx}" %>
     <a class="blog-link" href="<%= post.relative_url %>" style="display: block; width: 100%;">
-      <sl-card style='width: 100%;'>
+      <sl-card class="blog-link__card" style='width: 100%;'>
         <div class="blog-link__header" id="<%= id %>" slot="header" style="padding: 8px; font-size: 1.25em;">
           <%= post.data.title %>
         </div>
