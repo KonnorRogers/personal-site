@@ -230,6 +230,7 @@ kbd {
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--sl-color-primary-500);
+  text-underline-offset: 0.3em;
 }
 
 .side-nav__menu {
