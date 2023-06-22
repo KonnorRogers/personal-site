@@ -7,6 +7,7 @@ import "@shoelace-style/shoelace/dist/components/alert/alert.js";
 // import "@shoelace-style/shoelace/dist/components/breadcrumb/breadcrumb.js";
 // import "@shoelace-style/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
+import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/divider/divider.js";
 import "@shoelace-style/shoelace/dist/components/drawer/drawer.js";
 import "@shoelace-style/shoelace/dist/components/dropdown/dropdown.js";

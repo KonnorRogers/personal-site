@@ -1,7 +1,14 @@
-<% paginator.resources.each do |post| %>
-  <article>
-    <a href="<%= post.relative_url %>"><h2><%= post.data.title %></h2></a>
+<div class="blog-links" style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px;">
+  <% paginator.resources.each_with_index do |post, idx| %>
+    <% id = "post-#{idx}" %>
+    <a class="blog-link" href="<%= post.relative_url %>" style="display: block; width: 100%;">
+      <sl-card style='width: 100%;'>
+        <div class="blog-link__header" id="<%= id %>" slot="header" style="padding: 8px; font-size: 1.25em;">
+          <%= post.data.title %>
+        </div>
 
-    <p><%= post.data.description %></p>
-  </article>
-<% end %>
+        <div class="blog-link__body" style='padding: 8px;'><%= post.data.description %></div>
+      </sl-card>
+    </a>
+  <% end %>
+</div>

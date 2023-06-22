@@ -46,3 +46,8 @@ contact_info:
     text: "https://twitter.com/RogersKonnor"
     href: "https://twitter.com/RogersKonnor"
     external: true
+  - title: Mastodon
+    icon: "mastodon"
+    text: "https://ruby.social/@konnorrogers"
+    href: "https://ruby.social/@konnorrogers"
+    external: true
