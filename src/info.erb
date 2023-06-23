@@ -4,7 +4,7 @@ title: Info
 ---
 
 <% site.metadata.contact_info.each do |item| %>
-  <section style="margin-top: 1.25rem;">
+  <section class="contact-section">
     <h2 id="<%= item[:title].downcase %>" class="contact__title">
       <a class="contact__link" href='#<%= item[:title].downcase %>'><%= item[:title] %></a>
     </h2>

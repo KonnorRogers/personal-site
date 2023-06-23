@@ -25,7 +25,7 @@
 }
 
 .syntax-block__badge {
-  font-size: var(--sl-button-font-size-large);
+  font-size: 0.85rem;
   color: var(--sl-color-neutral-700);
 }
 
@@ -38,7 +38,7 @@ pre.highlight {
 .highlighter-rouge,
 .highlight {
   border-radius: var(--sl-border-radius-large);
-  font-size: 1.1em;
+  font-size: 1rem;
   line-height: 1.4;
 }
 

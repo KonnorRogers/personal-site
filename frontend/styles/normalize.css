@@ -84,11 +84,11 @@ h3,h4 {
 }
 
 h1 {
-  font-size: var(--sl-font-size-2x-large);
+  font-size: var(--sl-font-size-x-large);
 }
 
 h2 {
-  font-size: var(--sl-font-size-x-large);
+  font-size: var(--sl-font-size-large);
   margin-top: var(--sl-spacing-xx-large);
   margin-bottom: var(--sl-spacing-small);
 }
@@ -108,8 +108,8 @@ p {
 }
 
 p, li {
-  line-height: 1.6;
-  font-size: 1.1rem;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 ul {

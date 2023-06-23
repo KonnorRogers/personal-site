@@ -1,13 +1,19 @@
+<% require "date" %>
 <div class="blog-links" style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px;">
   <% paginator.resources.each_with_index do |post, idx| %>
     <% id = "post-#{idx}" %>
     <a class="blog-link" href="<%= post.relative_url %>" style="display: block; width: 100%;">
       <sl-card class="blog-link__card" style='width: 100%;'>
-        <div class="blog-link__header" id="<%= id %>" slot="header" style="padding: 8px; font-size: 1.25em;">
-          <%= post.data.title %>
-        </div>
+        <div style="display: grid; gap: 8px; ">
+          <small class="blog-link__date">
+            <%= Date.parse(post.data.date.to_s).strftime("%Y-%m-%d") %>
+          </small>
+          <div class="blog-link__header" id="<%= id %>" style="font-size: 1.25em; padding-bottom: 16px;">
+            <%= post.data.title %>
+          </div>
 
-        <div class="blog-link__body" style='padding: 8px;'><%= post.data.description %></div>
+          <div class="blog-link__body"><%= post.data.description %></div>
+        </div>
       </sl-card>
     </a>
   <% end %>

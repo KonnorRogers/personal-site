@@ -4,7 +4,7 @@ layout: default
 
 <main class="documentation-content">
   <% title_id = resource.data.title.downcase.split(" ").join("-").gsub(/[\?!]/, "") %>
-  <h1 id="<%= title_id %>">
+  <h1 id="page-header__<%= title_id %>">
     <a href="<%= "##{title_id}" %>">
       <%= resource.data.title.titleize %>
     </a>
