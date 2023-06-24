@@ -30,7 +30,7 @@
 }
 
 pre.highlight {
-  padding: var(--sl-spacing-large);
+  padding: 0.85em 1em;
   margin: 0;
   overflow-x: auto;
 }

@@ -737,3 +737,16 @@ bridgetown-ninja-keys.dark {
 #page-header__who-am-i {
   text-align: center;
 }
+
+/** Link */
+.link__flex {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  max-width: max-content;
+}
+
+.link--large {
+  font-size: 1.25rem;
+}

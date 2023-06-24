@@ -10,18 +10,17 @@ title: Info
     </h2>
     <p style="margin-top: 1rem;">
       <a
-        style="display: flex; gap: 8px; align-items: center; font-size: 1.25rem; cursor: pointer; max-width: max-content;"
+        class="link__flex link--large"
+        style=""
         href='<%= item[:href] %>'
       >
-        <sl-icon style="font-size: 1.75rem;" name="<%= item[:icon] %>">
+        <sl-icon style="font-size: 1.2em;" name="<%= item[:icon] %>">
         </sl-icon>
 
         <%= item[:text] %>
 
         <% if item[:external] %>
-          <sl-icon name="box-arrow-up-right">
-            <sl-visually-hidden>Opens in new window</sl-visually-hidden>
-          </sl-icon>
+          <%= render ExternalLinkIcon.new %>
         <% end %>
       </a>
     </p>
