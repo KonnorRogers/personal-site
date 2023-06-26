@@ -1079,6 +1079,7 @@ __metadata:
     bridgetown-quick-search: 2.0.0
     esbuild: ^0.18.4
     glob: ^10.2.7
+    konnors-ninja-keys: ^1.8.1
     postcss: ^8.4.24
     postcss-flexbugs-fixes: ^5.0.2
     postcss-import: ^15.1.0
@@ -1088,18 +1089,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"konnors-ninja-keys@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "konnors-ninja-keys@npm:1.8.1"
+"konnors-ninja-keys@portal:/Users/konnor/projects/oss/konnors-ninja-keys::locator=konnors-blog%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "konnors-ninja-keys@portal:/Users/konnor/projects/oss/konnors-ninja-keys::locator=konnors-blog%40workspace%3A."
   dependencies:
     "@material/mwc-icon": ^0.25.3
     "@open-wc/scoped-elements": ^2.1.5
     hotkeys-js: 3.10.2
     lit: ^2.7.4
     web-component-define: ^2.0.10
-  checksum: a850b079db31b0488d8a7592c095708c40082a12876e10a4d66cfb865c67def657778a96ec214941c0688f53ef0d49a737cba683241c85c3f7cc04435b71275c
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "lilconfig@npm:^2.0.5":
   version: 2.1.0

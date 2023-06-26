@@ -54,7 +54,7 @@ kr-layout {
 }
 
 kr-layout::part(body) {
-  max-width: var(--body-max-width);
+  max-width: 100vw;
   justify-content: center;
   margin: 0 auto;
 }
@@ -322,7 +322,7 @@ kbd {
 
 .hero--mobile {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -725,6 +725,7 @@ bridgetown-ninja-keys.dark {
 }
 
 .main-list {
+  padding: 0;
   list-style: none;
   display: grid;
   gap: 8px;
@@ -741,12 +742,61 @@ bridgetown-ninja-keys.dark {
 /** Link */
 .link__flex {
   display: inline-flex;
-  gap: 8px;
+  gap: 0.5em;
   align-items: center;
   cursor: pointer;
   max-width: max-content;
 }
 
+.link--small {
+  font-size: 0.85rem;
+}
+
 .link--large {
   font-size: 1.25rem;
+}
+
+.hero {
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.hero__caption {
+  font-size: 0.85rem;
+  margin-top: 6px;
+  border-inline-start: 4px solid var(--divider-color);
+  padding-inline-start: 8px;
+}
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {
+  height: auto;
+}
+
+[style*="--aspect-ratio"] {
+  position: relative;
+}
+[style*="--aspect-ratio"]::before {
+  content: "";
+  display: block;
+  padding-bottom: calc(100% / (var(--aspect-ratio)));
+}
+[style*="--aspect-ratio"] > :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+.icon {
+}
+
+.icon__inline {
+  margin-inline-start: 0.25em;
+  margin-inline-end: 0.25em;
+}
+
+.link--external {
 }

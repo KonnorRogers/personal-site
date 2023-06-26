@@ -4,6 +4,7 @@ categories: [vim, programming]
 date: 2023-06-13 19:15:30 UTC
 description: |
   Alright here it goes, I needed to add a header to all files. There are roughly ~72 files and I didn't...
+collection: posts
 ---
 
 Alright here it goes, I needed to add a header to all files. There are roughly ~72 files and I didn't want to do it by hand. The header in question was for test files in [Shoelace](https://shoelace.style).

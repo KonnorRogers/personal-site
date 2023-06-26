@@ -1,0 +1,3 @@
+values:
+  layout: post
+  permalink: "/posts/:year/:slug/"

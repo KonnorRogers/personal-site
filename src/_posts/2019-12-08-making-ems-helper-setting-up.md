@@ -1,8 +1,8 @@
 ---
 title: Making EMS Helper - Setting up
 date: "2019-12-08T22:40:37"
-description: Detailing the initial setup of EMS Helper with Rails 6, Webpack,
-  TailwindCSS, Docker, and Docker-Compose
+description: |
+  Detailing the initial setup of EMS Helper with Rails 6, Webpack, TailwindCSS, Docker, and Docker-Compose
 ---
 
 ## [Github Repo](https://github.com/ParamagicDev/ems_helper/tree/cd623419d8c885cac66c1d3e6fa0f8507d35b686)
@@ -93,9 +93,9 @@ To fix this, navigate to `./config/database.yml`
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: <%= ENV['PG_HOST'] %>
-  username: <%= ENV['PG_USER'] %>
-  password: <%= ENV['PG_PASSWORD'] %>
+  host: <%%= ENV['PG_HOST'] %>
+  username: <%%= ENV['PG_USER'] %>
+  password: <%%= ENV['PG_PASSWORD'] %>
   pool: 5
 
 development:
@@ -193,11 +193,11 @@ require("stylesheets/tailwind.scss")
 Add a stylesheet pack tag inside the head of the view
 
 ```erb
-<%# app/views/layouts/application.html.erb %>
+<%%# app/views/layouts/application.html.erb %>
 
 <head>
 # ...
-<%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 # ...
 </head>
 ```
@@ -230,15 +230,15 @@ end
    class to an html element.
 
 ```erb
-<%# app/views/static_pages/index.html.erb %>
+<%%# app/views/static_pages/index.html.erb %>
 
-<%# ... %>
+<%%# ... %>
 <body>
   <div class="text-red-500">
     Hello there!
   </div>
 </body>
-<%# ... %>
+<%%# ... %>
 ```
 
 <br />

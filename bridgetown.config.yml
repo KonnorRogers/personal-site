@@ -6,11 +6,14 @@ development:
   url: "localhost:4000"
 
 template_engine: erb
-permalink: pretty
+
+permalink: "/posts/:year/:slug/"
 
 collection:
+  pages:
+    output: true
+    permalink: pretty
   posts:
-    permalink: /posts/:year/:slug
     output: true
 
 pagination:
@@ -23,6 +26,6 @@ defaults:
       image: true
 
   - scope:
-      path: "_posts"
+      scope: "_posts"
     values:
       layout: post

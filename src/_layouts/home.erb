@@ -3,11 +3,7 @@ layout: default
 ---
 
 <main style="margin: 0 auto; --main-width: 100ch;">
-  <div class="hero--mobile">
-    <%= render "logo" %>
-  </div>
-
-  <h1 class="slogan">
+  <h1 class="slogan" style="margin-top: 1rem;">
     <%= site.metadata.slogan %>
   </h1>
 
@@ -15,7 +11,50 @@ layout: default
     <%= site.metadata.description %>
   </p>
 
-  <div style="margin-top: 4rem;"></div>
+  <figure class="hero" style="max-width: 600px;">
+    <div style="--aspect-ratio: 16/9">
+      <img src="/images/home-hero.jpg" width="" height="" style="filter: hue-rotate(310deg);">
+    </div>
+    <figcaption class="hero__caption">
+      <cite>
+        <a
+          href="https://wallpapers.com/wallpapers/aesthetic-pixel-art-garden-at-night-0ax4fopcqzot21lj.html"
+          class="link--small"
+          rel="nofollow"
+          target="_blank"
+        >
+          Aesthetic Pixel Art Garden At Night Wallpaper
+          <%= render ExternalLinkIcon.new %>
+        </a>
+        <a></a>
+      </cite>
+
+      from
+
+      <cite>
+        <a
+          href="https://wallpapers.com/"
+          class="link__flex link--small"
+          rel="nofollow"
+          target="_blank"
+        >
+          wallpapers.com
+          <%= render ExternalLinkIcon.new %>
+        </a>
+      </cite>
+
+      with a hue-rotation applied and licensed under
+
+      <a
+        href="https://creativecommons.org/licenses/by/2.0/"
+        class="link__flex link--small"
+        rel="nofollow"
+        target="_blank"
+      >
+        Creative Commons 2.0
+      </a>
+    </figcaption>
+  </figure>
 
   <ul class="main-list">
     <% site.metadata.nav_links.reject { |i| i[:text] == "Home" }.each do |item| %>

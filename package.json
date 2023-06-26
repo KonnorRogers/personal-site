@@ -24,6 +24,10 @@
     "@hotwired/turbo": "^7.3.0",
     "@konnorr/bridgetown-quick-search": "^3.2.2",
     "@shoelace-style/shoelace": "^2.4.0",
-    "bridgetown-quick-search": "2.0.0"
+    "bridgetown-quick-search": "2.0.0",
+    "konnors-ninja-keys": "^1.8.1"
+  },
+  "resolutions": {
+    "konnors-ninja-keys": "portal:/Users/konnor/projects/oss/konnors-ninja-keys"
   }
 }

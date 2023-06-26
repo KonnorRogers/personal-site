@@ -144,9 +144,10 @@ a > * > code[class*="language-"] {
   text-underline-offset: 0.25em;
   color: var(--link-color);
   border-radius: 0;
-  display: inline;
+  display: inline-block;
   padding: 0.05em 0;
   line-height: 1.2;
+  transition: all 0.2s;
 }
 
 [tabindex="-1"] {

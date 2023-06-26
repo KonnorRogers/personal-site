@@ -67,6 +67,8 @@ const staticData = [
   createData() {
     this.results = this.showResultsForQuery(this._search)
 
+    console.log(this.results)
+
     this.results.forEach((result) => {
       result.icon = `<sl-icon name="link-45deg"></sl-icon>`
     })
