@@ -10,9 +10,6 @@ template_engine: erb
 permalink: "/posts/:year/:slug/"
 
 collection:
-  pages:
-    output: true
-    permalink: pretty
   posts:
     output: true
 
@@ -26,6 +23,6 @@ defaults:
       image: true
 
   - scope:
-      scope: "_posts"
+      path: "_posts"
     values:
       layout: post

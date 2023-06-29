@@ -147,7 +147,7 @@ a > * > code[class*="language-"] {
   display: inline-block;
   padding: 0.05em 0;
   line-height: 1.2;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 [tabindex="-1"] {

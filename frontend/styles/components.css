@@ -29,7 +29,7 @@ body {
 /* Janky hack for iOS mobile */
 .fixed-body {
   position: fixed;
-  height: 100%;
+  height: var(--viewport-height, 100%);
   width: 100%;
   /* Allow the main content to be scrolled,
   so we can adjust the scroll position with JS. */
@@ -227,7 +227,7 @@ kbd {
 .side-nav__link,
 .nav-link {
   font-weight: bold;
-  color: var(--sl-color-neutral-700);
+  color: var(--sl-color-neutral-800);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--sl-color-primary-500);
@@ -787,16 +787,4 @@ bridgetown-ninja-keys.dark {
   top: 0;
   left: 0;
   height: 100%;
-}
-
-
-.icon {
-}
-
-.icon__inline {
-  margin-inline-start: 0.25em;
-  margin-inline-end: 0.25em;
-}
-
-.link--external {
 }

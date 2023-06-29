@@ -32,6 +32,6 @@ gem "bridgetown", "~> 1.2.0"
 # (you can optionally limit this to the "development" group)
 gem "puma", "~> 5.6"
 
-gem "bridgetown-quick-search", "~> 2.0"
+gem "bridgetown-quick-search", "~> 2.0", :group => :bridgetown_plugins
 
 gem "nokogiri", "~> 1.15"

@@ -9,25 +9,25 @@
     "deploy": "NODE_ENV='production' yarn esbuild && NODE_ENV='production' BRIDGETOWN_ENV='production' bin/bridgetown build"
   },
   "devDependencies": {
-    "esbuild": "^0.18.4",
-    "glob": "^10.2.7",
+    "esbuild": "^0.18.10",
+    "glob": "^10.3.1",
     "postcss": "^8.4.24",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^15.1.0",
     "postcss-load-config": "^4.0.1",
-    "postcss-preset-env": "^8.5.0",
+    "postcss-preset-env": "^8.5.1",
     "read-cache": "^1.0.0"
   },
   "dependencies": {
     "@github/clipboard-copy-element": "^1.2.1",
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo": "^7.3.0",
-    "@konnorr/bridgetown-quick-search": "^3.2.2",
-    "@shoelace-style/shoelace": "^2.4.0",
+    "@konnorr/bridgetown-quick-search": "^3.3.0",
+    "@shoelace-style/shoelace": "^2.5.2",
     "bridgetown-quick-search": "2.0.0",
-    "konnors-ninja-keys": "^1.8.1"
+    "konnors-ninja-keys": "^1.9.0"
   },
   "resolutions": {
-    "konnors-ninja-keys": "portal:/Users/konnor/projects/oss/konnors-ninja-keys"
+    "@konnorr/bridgetown-quick-search": "portal:/Users/konnor/projects/oss/bridgetown-quick-search"
   }
 }

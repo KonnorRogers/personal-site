@@ -21,7 +21,7 @@ import "@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden
 import * as Turbo from "@hotwired/turbo"
 import '@github/clipboard-copy-element'
 import "./turbo_transitions.js"
-import { BridgetownNinjaKeys } from "@konnorr/bridgetown-quick-search/frontend/javascript/ninja-keys.js"
+import { BridgetownNinjaKeys } from "@konnorr/bridgetown-quick-search/ninja-keys.js"
 import "./layout.js"
 
 /** @type {import("konnors-ninja-keys").INinjaAction[]} */
@@ -65,9 +65,7 @@ const staticData = [
   }
 
   createData() {
-    this.results = this.showResultsForQuery(this._search)
-
-    console.log(this.results)
+    this.results = this.showResultsForQuery(this._search).reverse()
 
     this.results.forEach((result) => {
       result.icon = `<sl-icon name="link-45deg"></sl-icon>`
@@ -77,6 +75,23 @@ const staticData = [
       ...this.staticData,
       ...this.results,
     ]
+  }
+
+  transformResult (result) {
+    let { id, title, categories, url, content, collection } = result
+
+    if (url.endsWith(".json")) {
+      return
+    }
+
+    return {
+      id,
+      title,
+      section: collection.name,
+      href: url,
+      // content
+    }
+
   }
 
   open () {
@@ -141,3 +156,20 @@ Object.entries(controllers).forEach(([filename, controller]) => {
     Stimulus.register(identifier, controller.default)
   }
 })
+
+let pendingUpdate = false;
+
+function viewportHandler(event) {
+  if (pendingUpdate) return;
+  pendingUpdate = true;
+
+  requestAnimationFrame(() => {
+    pendingUpdate = false;
+    const viewport = event.target;
+    document.documentElement.style.setProperty("--viewport-height", viewport.height + "px")
+  });
+}
+
+window.visualViewport.addEventListener("focusin", viewportHandler)
+window.visualViewport.addEventListener("resize", viewportHandler);
+window.visualViewport.addEventListener("scroll", viewportHandler);

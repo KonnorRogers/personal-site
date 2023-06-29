@@ -7,13 +7,13 @@ layout: default
     <%= site.metadata.slogan %>
   </h1>
 
-  <p class="slogan">
+  <p class="slogan" style="font-size: 1.35rem;">
     <%= site.metadata.description %>
   </p>
 
   <figure class="hero" style="max-width: 600px;">
     <div style="--aspect-ratio: 16/9">
-      <img src="/images/home-hero.jpg" width="" height="" style="filter: hue-rotate(310deg);">
+      <img src="/images/home-hero.jpg" width="" height="" style="filter: hue-rotate(310deg); border-radius: 32px;">
     </div>
     <figcaption class="hero__caption">
       <cite>
@@ -52,6 +52,7 @@ layout: default
         target="_blank"
       >
         Creative Commons 2.0
+        <%= render ExternalLinkIcon.new %>
       </a>
     </figcaption>
   </figure>
