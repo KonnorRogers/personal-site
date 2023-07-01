@@ -26,8 +26,5 @@
     "@shoelace-style/shoelace": "^2.5.2",
     "bridgetown-quick-search": "2.0.0",
     "konnors-ninja-keys": "^1.9.0"
-  },
-  "resolutions": {
-    "@konnorr/bridgetown-quick-search": "portal:/Users/konnor/projects/oss/bridgetown-quick-search"
   }
 }

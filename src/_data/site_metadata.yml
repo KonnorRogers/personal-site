@@ -8,9 +8,9 @@ title: Konnor's Site
 logo: "Konnor's Site"
 slogan: Hi there!
 email: konnor5456@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "github_url:"
   I'm Konnor! Welcome to my digital garden!
-github_url: https://github.com/konnorrogers/rhino-editor
+github_url: https://github.com/konnorrogers/personal-site
 default_branch: main
 doc_location: docs/src
 nav_links:
@@ -22,8 +22,8 @@ nav_links:
     text: "Info"
   - href: "/blog"
     text: "Blog"
-  - href: "/projects"
-    text: "Projects"
+  # - href: "/projects"
+  #   text: "Projects"
 
 contact_info:
   - title: Email

@@ -105,7 +105,30 @@ class KrLayout extends LitElement {
       white-space: nowrap !important;
       padding: 0 !important;
     }
+
+    .skip-links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(var(--header-height, 48px) - 2px);
+      width: 100vw;
+      z-index: 4;
+      background-color: white;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      place-items: center;
+      text-align: center;
+    }
   `
+
+  static properties = {
+    main_id: { attribute: "main-id", reflect: true }
+  }
+
+  constructor () {
+    super()
+    this.main_id = "main"
+  }
 
   connectedCallback () {
     super.connectedCallback?.()
@@ -134,7 +157,7 @@ class KrLayout extends LitElement {
     return html`
       <sl-visually-hidden class="skip-links" part="skip-links">
         <slot name="skip-links">
-          <a href=${`${this.main_id}`} part="skip-link">
+          <a href=${`#${this.main_id}`} part="skip-link">
             ${this.skipToMain || "Skip to main"}
           </a>
         </slot>

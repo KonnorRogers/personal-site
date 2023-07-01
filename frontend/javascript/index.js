@@ -20,7 +20,6 @@ import "@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden
 
 import * as Turbo from "@hotwired/turbo"
 import '@github/clipboard-copy-element'
-import "./turbo_transitions.js"
 import { BridgetownNinjaKeys } from "@konnorr/bridgetown-quick-search/ninja-keys.js"
 import "./layout.js"
 
@@ -133,7 +132,6 @@ setBasePath("/shoelace-assets")
 // to your HTML head if you turn on transitions. Use data-turbo-transition="false"
 // on your <main> element for pages where you don't want any transition animation.
 //
-// import "./turbo_transitions.js"
 
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"

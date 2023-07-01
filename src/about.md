@@ -4,7 +4,7 @@ title: Who am I?
 ---
 
 <article style='text-align: center; width: 100%; max-width: 600px; font-size: 1.25rem; margin: 0 auto;'>
-    Hi there! I'm Konnor! I am a web developer who builds things of all shapes and sizes using many different technologies. I mainly enjoy Ruby, Rails, and JavaScript.
+    Hi there! I'm Konnor! I am a web developer who builds things of all shapes and sizes using many different technologies including Ruby, Rails, JavaScript and just about any web technology you can think of!
 </article>
 
 <section style='text-align: center; width: 100%; max-width: 600px; font-size: 1.25rem; margin: 2rem auto 0;'>
@@ -25,6 +25,6 @@ title: Who am I?
 
   <br><br>
 
-  Previously, I worked at Microsoft helping develop an internal design system using
-  Web Components similar to Shoelace.
+  Previously, I worked at Microsoft developing an internal design system using
+  Web Components.
 </section>

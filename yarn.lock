@@ -580,15 +580,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@konnorr/bridgetown-quick-search@portal:/Users/konnor/projects/oss/bridgetown-quick-search::locator=konnors-blog%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "@konnorr/bridgetown-quick-search@portal:/Users/konnor/projects/oss/bridgetown-quick-search::locator=konnors-blog%40workspace%3A."
+"@konnorr/bridgetown-quick-search@npm:^3.3.0":
+  version: 3.4.0
+  resolution: "@konnorr/bridgetown-quick-search@npm:3.4.0"
   dependencies:
     konnors-ninja-keys: ^1.9.0
     lit: ^2.4.1
     lunr: ^2.3.8
+  checksum: e8ddeefc877dcba17ccb652b3ee8bbec60a3d1fb5ef4b80aed8f946b72cb8cde539cb3433681eff97c73f865986f5ba9ca5ebd71bc8bbac76465aebb381d077c
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "@lit-labs/react@npm:^1.1.1":
   version: 1.2.0
