@@ -5,8 +5,9 @@ class KrLayout extends LitElement {
     :host {
       display: block;
       box-sizing: border-box;
-      min-height: var(--height);
-      --height: calc(100vh - env(safe-area-inset-top, 0) - env(safe-area-inset-bottom, 0));
+      min-height: var(--height, 100%);
+      max-height: var(--height, 100%);
+      --height: 100%;
 
       --menu-width: auto;
       --main-width: 1fr;
@@ -35,6 +36,7 @@ class KrLayout extends LitElement {
       /** Header, Main, Footer **/
       grid-template-rows: minmax(0, auto) minmax(0, 1fr) minmax(0, auto);
       min-height: var(--height);
+      max-height: var(--height);
     }
 
     :host::part(header) {

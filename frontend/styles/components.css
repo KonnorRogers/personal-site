@@ -165,7 +165,6 @@ kbd {
 }
 
 .top-nav__github {
-  width: 2rem;
   height: auto;
 }
 
@@ -483,6 +482,10 @@ sl-alert::part(base) {
   transform: scale(0);
 }
 
+body:is(.index, .doc, .page, .post) kr-layout::part(main-content) {
+	background: var(--body-color);
+}
+
 kr-layout > [slot='aside'] {
   display: none;
 }
@@ -636,7 +639,7 @@ kr-layout > [slot='aside'] {
 }
 
 .blog-link:focus {
-  outline: transparent;
+  box-shadow: none;
 }
 
 .blog-link:focus .blog-link__card::part(base) {
