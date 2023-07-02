@@ -1,13 +1,3 @@
-.no-transitions:is(*, *:before, *:after) {
-  transition: none !important;
-}
-
-@media screen and (prefers-reduced-motion) {
-  *, *:before, *:after {
-    transition: none !important;
-  }
-}
-
 /* Janky hack for iOS mobile */
 .fixed-body {
   position: fixed;
@@ -28,6 +18,7 @@ kr-layout {
   --menu-width: auto;
   --main-width: 105ch;
   --aside-width: auto;
+  background-color: var(--body-color);
 }
 
 kr-layout::part(body) {
