@@ -1,3 +1,13 @@
+.no-transitions:is(*, *:before, *:after) {
+  transition: none !important;
+}
+
+@media screen and (prefers-reduced-motion) {
+  *, *:before, *:after {
+    transition: none !important;
+  }
+}
+
 /* Janky hack for iOS mobile */
 .fixed-body {
   position: fixed;
@@ -6,11 +16,6 @@
   /* Allow the main content to be scrolled,
   so we can adjust the scroll position with JS. */
   overflow: auto;
-}
-
-body {
-	background-color: var(--body-color);
-	color: var(--text-color);
 }
 
 body:is(.default, .home) kr-layout {
@@ -261,9 +266,12 @@ kbd {
   background-color: var(--input-bg-color);
   border: var(--input-border-width) var(--input-border-style) var(--input-border-color);
   border-radius: var(--input-border-radius);
-  transition: 150ms box-shadow ease-in-out;
   height: var(--sl-spacing-2x-large);
   color: var(--sl-color-neutral-700);
+}
+
+.input {
+  transition: 150ms box-shadow ease-in-out;
 }
 
 .input:focus,

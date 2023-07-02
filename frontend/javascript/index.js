@@ -4,8 +4,6 @@ import { Application } from "@hotwired/stimulus"
 // Shoelace
 import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js";
 import "@shoelace-style/shoelace/dist/components/alert/alert.js";
-// import "@shoelace-style/shoelace/dist/components/breadcrumb/breadcrumb.js";
-// import "@shoelace-style/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/divider/divider.js";
@@ -118,20 +116,7 @@ const staticData = [
   }
 }).define("bridgetown-ninja-keys")
 
-// Uncomment the line below to add transition animations when Turbo navigates.
-// We recommend adding <meta name="turbo-cache-control" content="no-preview" />
-// to your HTML head if you turn on transitions. Use data-turbo-transition="false"
-// on your <main> element for pages where you don't want any transition animation.
-//
-// import "./turbo_transitions.js"
-
 setBasePath("/shoelace-assets")
-
-// Uncomment the line below to add transition animations when Turbo navigates.
-// We recommend adding <meta name="turbo-cache-control" content="no-preview" />
-// to your HTML head if you turn on transitions. Use data-turbo-transition="false"
-// on your <main> element for pages where you don't want any transition animation.
-//
 
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"

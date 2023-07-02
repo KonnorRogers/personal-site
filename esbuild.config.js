@@ -31,6 +31,10 @@ const outputFolder = "output"
  * @typedef { import("esbuild").BuildOptions } BuildOptions
  * @type {BuildOptions}
  */
-const esbuildOptions = {}
+const esbuildOptions = {
+  format: "esm",
+  splitting: true,
+
+}
 
 build(outputFolder, esbuildOptions)
