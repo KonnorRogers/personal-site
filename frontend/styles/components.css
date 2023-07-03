@@ -18,6 +18,10 @@ kr-layout {
   --menu-width: auto;
   --main-width: 105ch;
   --aside-width: auto;
+}
+
+kr-layout,
+kr-layout::part(skip-links) {
   background-color: var(--body-color);
 }
 

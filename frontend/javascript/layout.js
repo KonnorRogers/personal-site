@@ -115,7 +115,6 @@ class KrLayout extends LitElement {
       height: calc(var(--header-height, 48px) - 2px);
       width: 100vw;
       z-index: 4;
-      background-color: inherit;
       display: grid;
       grid-template-columns: minmax(0, 1fr);
       place-items: center;
