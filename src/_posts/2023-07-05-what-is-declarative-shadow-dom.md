@@ -147,7 +147,7 @@ which the browser does not currently have.
 
 Here's a pseudo-template of what I would like to write:
 
-```nunjucks
+```html
 <template shadowrootmode="open">
   <button type={{ attributes.type }}>
     <slot></slot>
@@ -162,7 +162,7 @@ backend and frontend, or JavaScript to "hydrate" the component with the proper a
 I did an exploration of what shared templating with Liquid could look like and here is
 what that looked like allowing all of the parent attributes to be passed to the child:
 
-```liquid
+```html
 <template shadowrootmode="open">
   <style>
     button {
