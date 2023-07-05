@@ -53,7 +53,7 @@ class Builders::Inspectors < SiteBuilder
     document.css("main").css("h2[id],h3[id],h4[id],h5[id],h6[id]").each do |heading|
       text = heading.inner_text
 
-      unless heading.css("a")
+      unless heading.css("a")[0]
         heading.content = ""
         anchor = %(
           <a href='##{heading[:id]}'>#{text}</a>
