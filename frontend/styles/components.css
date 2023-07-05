@@ -339,6 +339,10 @@ kbd {
 	height: 100%;
 }
 
+main p {
+  font-size: 18px;
+}
+
 /** Pagination */
 sl-button:is(.previous-page, .next-page) {
   transition: transform 0.15s;

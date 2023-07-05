@@ -53,49 +53,46 @@ button:hover {
   cursor: pointer;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5,h6 {
   scroll-margin-top: calc(80px + 2em);
-}
-
-h1 {
-  padding: 0.25em var(--sl-spacing-large);
-}
-
-h2 {
-  padding: 0.25em var(--sl-spacing-medium);
-}
-
-h3,h4 {
-  padding: 0.25em var(--sl-spacing-x-small);
-  margin: var(--sl-spacing-xx-small) var(--sl-spacing-small);
+  margin: 0;
+  padding: 0;
+  margin-top: var(--sl-spacing-large);
+  margin-bottom: var(--sl-spacing-small);
 }
 
 h1 {
   font-size: var(--sl-font-size-x-large);
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: var(--sl-font-size-large);
-  margin-top: var(--sl-spacing-xx-large);
-  margin-bottom: var(--sl-spacing-small);
 }
 
-h3 {
+h3, h4 {
   font-size: var(--sl-font-size-large);
-  margin-top: var(--sl-spacing-x-large);
 }
 
-h4 {
-  margin-top: var(--sl-spacing-large);
-  font-size: var(--sl-font-size-large);
+h5, h6 {
+  font-size: 18px;
 }
+
 
 p {
-  margin: var(--sl-spacing-small) var(--sl-spacing-large);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0;
+  font-size: 1.1rem;
 }
 
 p, li {
   line-height: 1.5;
+}
+
+li {
   font-size: 1rem;
 }
 
@@ -133,6 +130,7 @@ kr-layout::part(skip-link) {
   border-radius: 2px;
   display: inline-block;
   padding: 0.25em;
+  margin: -0.25em;
   line-height: 1.2;
   transition: all 0.2s;
 }

@@ -26,5 +26,6 @@
     "@shoelace-style/shoelace": "^2.5.2",
     "bridgetown-quick-search": "2.0.0",
     "konnors-ninja-keys": "^1.9.0"
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }

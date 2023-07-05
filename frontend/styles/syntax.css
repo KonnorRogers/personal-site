@@ -1,6 +1,7 @@
 .syntax-block {
   position: relative;
-  margin: 1rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
 }
 
 .syntax-block {
