@@ -54,8 +54,9 @@ JavaScript inside of a ShadowRoot, let's look at how we could do it Declarative 
 </hello-world>
 ```
 
-That's right. All Declarative Shadow DOM does is add a special `<template>` attribute
-handled natively by the browser that can render shadow roots without JavaScript.
+That's right, all Declarative Shadow DOM does is add a special attribute to the `<template>` element,
+handled natively by the browser parsed, that can render shadow roots without JavaScript by
+using HTML markup.
 
 <%= render Alert.new(type: "primary") do %>
   Previously, the syntax was `<template shadowroot="open">` but the `shadowroot` attribute
@@ -139,7 +140,7 @@ Here is the canonical button component example:
 </my-button>
 ```
 
-## But what if I want to dynamically change something in the ShadowRoot?
+## But what if I want to dynamically change something in the ShadowRoot based on the host element?
 
 Alright, this is a tough challenge. Now you're looking at integrating a dynamic templating language
 which the browser does not currently have.

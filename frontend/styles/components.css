@@ -505,11 +505,6 @@ kr-layout > [slot='aside'] {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    --main-padding-x: 2rem;
-  }
-
-
   body:is(.index, .doc, .page, .post) kr-layout::part(body) {
     padding-top: 2rem;
   }
