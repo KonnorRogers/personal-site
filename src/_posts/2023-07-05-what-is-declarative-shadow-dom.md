@@ -9,7 +9,7 @@ description: A cursory glance at Declarative Shadow DOM (DSD) and why it matters
 [ShadowRoot](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot) without
 needing any JavaScript.
 
-## A Shadow What
+## A Shadow What?
 
 A ShadowRoot. Perhaps you've heard of a ShadowRoot referred to as a "Shadow DOM" in
 the context of web components.
