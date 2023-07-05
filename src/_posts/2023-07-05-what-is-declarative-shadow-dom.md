@@ -193,6 +193,39 @@ Right now there are 2 interwoven proposals.
 - [Template Instantiation](https://github.com/WICG/webcomponents/blob/gh-pages/proposals/Template-Instantiation.md) - Allow dynamic templating in shadow roots following a Mustache like syntax.
 - [Declarative Custom Elements](https://github.com/WICG/webcomponents/blob/gh-pages/proposals/Declarative-Custom-Elements-Strawman.md) - Allow for defining web components using declarative syntax and template instantiation
 
+## Browser Support
+
+At the time of this writing, browser support exists in latest versions of Safari, Chrome, and Edge.
+Firefox being the only notable browser that hasn't currently implemented DSD, but supposedly, it's coming.
+
+<https://caniuse.com/?search=declarative%20shadow%20dom>
+
+There are polyfills available, but they all require JavaScript. Luckily the polyfills are pretty minimal.
+
+Here's an example polyfill from the Chrome dev team:
+
+```js
+;(function attachShadowRoots(root) {
+  root.querySelectorAll("template[shadowrootmode]").forEach(template => {
+    const mode = template.getAttribute("shadowrootmode");
+    const shadowRoot = template.parentNode.attachShadow({ mode });
+    shadowRoot.appendChild(template.content);
+    template.remove();
+    attachShadowRoots(shadowRoot);
+  });
+})(document);
+```
+
+<https://developer.chrome.com/en/articles/declarative-shadow-dom/#polyfill>
+
+## Usage with Turbo
+
+Jared White found that DSD isn't fully supported by the [Turbo](https://turbo.hotwired.dev/) library
+and created a package for using DSD with Turbo.
+
+<https://github.com/whitefusionhq/turbo-shadow>
+
+
 ## In conclusion
 
 Declarative Shadow DOM gives us a way to write element ShadowRoots without needing JavaScript.
