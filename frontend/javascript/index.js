@@ -1,4 +1,5 @@
 import "../styles/index.css"
+import "./external_icon.js"
 
 import * as Turbo from "@hotwired/turbo"
 import "./layout.js"
