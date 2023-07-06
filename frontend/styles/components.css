@@ -674,7 +674,7 @@ kr-layout > [slot='aside'] {
 
 
 bridgetown-ninja-keys {
-  --ninja-width: clamp(200px, 96vw, 100ch);
+  --ninja-width: clamp(200px, 100vw, 100ch);
   --ninja-accent-color: var(--sl-color-primary-600);
 }
 
