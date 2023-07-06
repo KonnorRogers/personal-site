@@ -1,4 +1,12 @@
 <% require "date" %>
+
+<div style="margin-bottom: 1rem;">
+  <a href="/feed.xml" style="display: flex; align-items: center;">
+    <sl-icon name="rss"></sl-icon>
+    <span style="margin-inline-start: 0.5rem;">RSS Feed</span>
+  </a>
+</div>
+
 <div class="blog-links" style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px;">
   <% paginator.resources.each_with_index do |post, idx| %>
     <% id = "post-#{idx}" %>
