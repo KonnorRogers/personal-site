@@ -10,6 +10,8 @@ Bridgetown.configure do |config|
   # config.autoload_paths << "models"
   #
   init :"bridgetown-quick-search"
+  init :"bridgetown-feed"
+  init :"bridgetown-seo-tag"
 
   # You can use `init` to initialize various Bridgetown features or plugin gems.
   # For example, you can use the Dotenv gem to load environment variables from

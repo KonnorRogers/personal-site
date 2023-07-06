@@ -35,3 +35,7 @@ gem "puma", "~> 5.6"
 gem "bridgetown-quick-search", "~> 2.0", :group => :bridgetown_plugins
 
 gem "nokogiri", "~> 1.15"
+
+gem "bridgetown-feed", "~> 3.0"
+
+gem "bridgetown-seo-tag", "~> 6.0"
