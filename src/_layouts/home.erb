@@ -4,11 +4,11 @@ layout: default
 
 <main id="main" style="margin: 0 auto; --main-width: 100ch;">
   <h1 class="slogan" style="margin-top: 1rem;">
-    <%= site.metadata.slogan %>
+    <%= site.metadata.greeting %>
   </h1>
 
   <p class="slogan" style="font-size: 1.35rem;">
-    <%= site.metadata.description %>
+    <%= site.metadata.slogan %>
   </p>
 
   <figure class="hero">
@@ -33,22 +33,21 @@ layout: default
       <cite>
         <a
           href="https://wallpapers.com/"
-          class="link__flex link--small"
+          class="link--small"
           rel="nofollow noopener noreferrer"
           target="_blank"
         >
-          wallpapers.com
-          <%= render ExternalLinkIcon.new %>
-        </a>
+        wallpapers.com <%= render ExternalLinkIcon.new -%></a>
       </cite>
 
       with a hue-rotation applied and licensed under
 
       <a
         href="https://creativecommons.org/licenses/by/2.0/"
-        class="link__flex link--small"
+        class="link--small"
         rel="nofollow noopener noreferrer"
         target="_blank"
+        style="margin-inline-end: -0.5rem;"
       >
         Creative Commons 2.0
         <%= render ExternalLinkIcon.new %>
@@ -65,7 +64,6 @@ layout: default
       </li>
     <% end %>
   </ul>
-
 </main>
 
 

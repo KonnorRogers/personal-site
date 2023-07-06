@@ -26,3 +26,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
+
+  # - scope:
+  #     path: ""
+  #   values:
+  #     image: /assets/images/default-card.png

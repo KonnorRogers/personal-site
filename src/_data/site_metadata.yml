@@ -4,12 +4,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
+# Used by bridgetown_feed and bridgetown-seo-tag
+# https://github.com/bridgetownrb/bridgetown-feed
+# https://github.com/bridgetownrb/bridgetown-seo-tag
 title: Konnor's Site
-logo: "Konnor's Site"
-slogan: Hi there!
-email: konnor5456@gmail.com
+author: Konnor
+url: https://konnorrogers.com
+lang: en_US
 description: >- # this means to ignore newlines until "github_url:"
-  I'm Konnor! Welcome to my digital garden!
+  Konnor's digital garden where he also sometimes writes blog posts.
+tagline: >-
+  Konnor's digital garden where he also sometimes writes blog posts.
+
+
+# Used by me.
+logo: "Konnor's Site"
+greeting: "Hello there! I'm Konnor!"
+slogan: Welcome to my digital garden!
+email: konnor5456@gmail.com
 github_url: https://github.com/konnorrogers/personal-site
 default_branch: main
 doc_location: docs/src
