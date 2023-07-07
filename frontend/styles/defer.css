@@ -1,0 +1,8 @@
+/*
+ * Anything that can be deferred and not cause layout shift.
+ * IE: colors, fonts, syntax highlighting, etc.
+ */
+
+@import "./tokens/colors.css";
+@import "./_syntax.css";
+@import "./_fonts.css";

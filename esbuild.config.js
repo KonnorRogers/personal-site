@@ -34,7 +34,10 @@ const outputFolder = "output"
 const esbuildOptions = {
   format: "esm",
   splitting: true,
-
+  entryPoints: [
+    "./frontend/javascript/index.js",
+    "./frontend/javascript/defer.js"
+  ]
 }
 
 build(outputFolder, esbuildOptions)
