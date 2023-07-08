@@ -3,6 +3,8 @@
  * IE: colors, fonts, syntax highlighting, etc.
  */
 
-/* @import "./tokens/colors.css"; */
-/* @import "./_syntax.css"; */
-/* @import "./_fonts.css"; */
+@import "@shoelace-style/shoelace/dist/themes/light.css";
+@import "@shoelace-style/shoelace/dist/themes/dark.css";
+@import "./tokens/colors.css";
+@import "./_syntax.css";
+@import "./_fonts.css";

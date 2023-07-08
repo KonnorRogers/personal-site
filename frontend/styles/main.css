@@ -6,8 +6,3 @@
 @import "./_content.css";
 @import "./_layout.css";
 @import "./_normalize.css";
-
-/* These should be deferrable */
-@import "./tokens/colors.css";
-@import "./_syntax.css";
-@import "./_fonts.css";

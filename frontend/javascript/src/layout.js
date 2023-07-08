@@ -43,6 +43,7 @@ class KrLayout extends LitElement {
       position: sticky;
       background: white;
       z-index: 1;
+      min-height: var(--header-height);
     }
 
     :is(.header, .aside, .menu, .footer) ::slotted(*) {
