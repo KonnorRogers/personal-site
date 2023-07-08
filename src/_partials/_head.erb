@@ -1,22 +1,28 @@
 <meta charset="utf-8">
+<meta name="description" content="<%= metadata.description %>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <% resource_title = resource.data.title || site.metadata.title %>
 <title><%= resource_title %></title>
 
-<meta name="description" content="<%= metadata.description %>" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <link rel="modulepreload" href="<%= asset_path "javascript/index.js" %>">
-<script data-turbo-track="reload" src="<%= asset_path "javascript/index.js" %>" async type="module"></script>
-
-<!-- Deferred JS -->
 <link rel="modulepreload" href="<%= asset_path "javascript/defer.js" %>">
-<script data-turbo-track="reload" src="<%= asset_path "javascript/defer.js" %>" async type="module"></script>
-
+<link rel="preload" href="<%= asset_path "styles/defer.css" %>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/themes/light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/themes/dark.css">
 <!-- Critical CSS -->
 <link rel="stylesheet" data-turbo-track="reload" href="<%= asset_path "styles/main.css" %>" />
 
+<script data-turbo-track="reload" src="<%= asset_path "javascript/index.js" %>" async type="module"></script>
+
+<!-- Deferred JS -->
+<script data-turbo-track="reload" src="<%= asset_path "javascript/defer.js" %>" async type="module"></script>
+
 <!-- Deferred CSS -->
-<!-- <link rel="preload" href="<%= asset_path "styles/defer.css" %>" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-<!-- <noscript><link rel="stylesheet" href="<%= asset_path "styles/defer.css" %>"></noscript> -->
+<noscript><link rel="stylesheet" href="<%= asset_path "styles/defer.css" %>"></noscript>
+
+<!-- Shoelace -->
+<script async type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/shoelace-autoloader.js"></script>
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
