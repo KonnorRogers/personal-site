@@ -1,6 +1,6 @@
 :root,
-.sl-theme-light,
-.sl-theme-dark {
+html.sl-theme-light,
+html.sl-theme-dark {
   /* Layout related tokens (anything that affects layout shift) */
   --z-header: 2;
   --z-search: 3;
