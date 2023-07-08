@@ -36,64 +36,65 @@ const staticData = [
   },
 ]
 
-;(class extends BridgetownNinjaKeys {
-  constructor (...args) {
-    super(...args)
-    this.staticData = staticData
-  }
-
-  createData() {
-    this.results = this.showResultsForQuery(this._search).reverse()
-
-    this.results.forEach((result) => {
-      result.icon = `<sl-icon name="link-45deg"></sl-icon>`
-    })
-
-    return [
-      ...this.staticData,
-      ...this.results,
-    ]
-  }
-
-  transformResult (result) {
-    let { id, title, categories, url, content, collection } = result
-
-    if (url.endsWith(".json")) {
-      return
+;(window.requestIdleCallback || window.setTimeout)(() => {
+  ;(class extends BridgetownNinjaKeys {
+    constructor (...args) {
+      super(...args)
+      this.staticData = staticData
     }
 
-    return {
-      id,
-      title,
-      section: collection.name,
-      href: url,
-      // content
+    createData() {
+      this.results = this.showResultsForQuery(this._search).reverse()
+
+      this.results.forEach((result) => {
+        result.icon = `<sl-icon name="link-45deg"></sl-icon>`
+      })
+
+      return [
+        ...this.staticData,
+        ...this.results,
+      ]
     }
 
-  }
+    transformResult (result) {
+      let { id, title, categories, url, content, collection } = result
 
-  open () {
-    this.scrollTop = window.scrollY;
-    document.body.classList.add('fixed-body');
-    // Scroll the wrapper, rather than setting an offset
-    // via `top` or `transform`.
-    document.body.scroll(0, this.scrollTop);
+      if (url.endsWith(".json")) {
+        return
+      }
 
-    this.nonModals.forEach((el) => {
-      el.setAttribute("inert", "")
-    })
-    super.open()
-  }
+      return {
+        id,
+        title,
+        section: collection.name,
+        href: url,
+        // content
+      }
 
-  close () {
-    document.body.classList.remove('fixed-body');
-    window.scrollTo(0, this.scrollTop);
-    super.close()
-    this.nonModals.forEach((el) => el.removeAttribute("inert"))
-  }
+    }
 
-  get nonModals () {
-    return [...document.body.children].filter((el) => el.localName !== "bridgetown-ninja-keys")
-  }
-}).define("bridgetown-ninja-keys")
+    open () {
+      this.scrollTop = window.scrollY;
+      document.body.classList.add('fixed-body');
+      // Scroll the wrapper, rather than setting an offset
+      // via `top` or `transform`.
+      document.body.scroll(0, this.scrollTop);
 
+      this.nonModals.forEach((el) => {
+        el.setAttribute("inert", "")
+      })
+      super.open()
+    }
+
+    close () {
+      document.body.classList.remove('fixed-body');
+      window.scrollTo(0, this.scrollTop);
+      super.close()
+      this.nonModals.forEach((el) => el.removeAttribute("inert"))
+    }
+
+    get nonModals () {
+      return [...document.body.children].filter((el) => el.localName !== "bridgetown-ninja-keys")
+    }
+  }).define("bridgetown-ninja-keys")
+})
