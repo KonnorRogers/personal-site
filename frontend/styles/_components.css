@@ -45,10 +45,6 @@
   width: 100%;
 }
 
-.footer {
-  margin-top: auto;
-}
-
 .top-nav__search,
 .top-nav__go-home,
 .top-nav__categories,
@@ -224,7 +220,7 @@
 }
 
 .footer {
-  margin-top: 5px;
+  margin-top: auto;
   padding: var(--sl-spacing-large) var(--sl-spacing-2x-small);
   text-align: center;
   background-color: var(--sl-color-neutral-50);
