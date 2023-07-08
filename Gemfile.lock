@@ -129,6 +129,7 @@ DEPENDENCIES
   bridgetown-seo-tag (~> 6.0)
   nokogiri (~> 1.15)
   puma (~> 5.6)
+  rake
 
 BUNDLED WITH
    2.3.5
