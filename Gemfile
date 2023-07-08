@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-ruby "3.1.2"
 
 ####
 # Welcome to your project's Gemfile, used by Rubygems & Bundler.
@@ -34,7 +33,7 @@ gem "rake"
 # (you can optionally limit this to the "development" group)
 gem "puma", "~> 5.6"
 
-gem "bridgetown-quick-search", "~> 2.0", :group => :bridgetown_plugins
+gem "bridgetown-quick-search", "~> 2.0"
 
 gem "nokogiri", "~> 1.15"
 
