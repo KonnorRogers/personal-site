@@ -32,12 +32,12 @@ const outputFolder = "output"
 const Analyzer = () => {
   return {
     name: "Analyzer",
-    // async setup (build) {
+    async setup (build) {
       // build.onEnd(async (result) => {
       //   const analysis = await esbuild.analyzeMetafile(result.metafile, {})
       //   console.log(analysis)
       // })
-    // }
+    }
   }
 }
 
