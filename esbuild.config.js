@@ -1,4 +1,5 @@
 const build = require("./config/esbuild.defaults.js")
+const esbuild = require("esbuild")
 
 // Update this if you need to configure a destination folder other than `output`
 const outputFolder = "output"
@@ -27,6 +28,19 @@ const outputFolder = "output"
 // const esbuildOptions = { publicPath: "/my_subfolder/_bridgetown/static" }
 // ```
 
+/** @return {import("esbuild").Plugin} */
+const Analyzer = () => {
+  return {
+    name: "Analyzer",
+    // async setup (build) {
+      // build.onEnd(async (result) => {
+      //   const analysis = await esbuild.analyzeMetafile(result.metafile, {})
+      //   console.log(analysis)
+      // })
+    // }
+  }
+}
+
 /**
  * @typedef { import("esbuild").BuildOptions } BuildOptions
  * @type {BuildOptions}
@@ -34,10 +48,15 @@ const outputFolder = "output"
 const esbuildOptions = {
   format: "esm",
   splitting: true,
+  target: "es2020",
   entryPoints: [
     "./frontend/javascript/index.js",
     "./frontend/javascript/defer.js"
+  ],
+  plugins: [
+    Analyzer()
   ]
+
 }
 
 build(outputFolder, esbuildOptions)
