@@ -34,7 +34,6 @@ window.Stimulus = Application.start()
 
 Object.entries(controllers).forEach(([filename, controller]) => {
   if (filename.includes("_controller.") || filename.includes("-controller.")) {
-    console.log(filename)
     const identifier = filename
       .replace("./controllers", "")
       .replace("controllers/", "")
