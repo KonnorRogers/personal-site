@@ -28,7 +28,7 @@ import('@github/clipboard-copy-element')
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
 import controllers from "./controllers/**/*.{js,js.rb}"
 
-import("@hotwired/stimulus").then(() => {
+import("@hotwired/stimulus").then((module) => {
   const { Application } = module
   window.Stimulus = Application.start()
   Object.entries(controllers).forEach(([filename, controller]) => {
