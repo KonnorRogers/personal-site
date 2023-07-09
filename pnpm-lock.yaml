@@ -15,8 +15,8 @@ dependencies:
     specifier: ^7.3.0
     version: 7.3.0
   '@konnorr/bridgetown-quick-search':
-    specifier: ^3.6.0
-    version: 3.6.0
+    specifier: ^3.7.0
+    version: 3.7.0
   '@shoelace-style/shoelace':
     specifier: ^2.5.2
     version: 2.5.2
@@ -640,8 +640,8 @@ packages:
       wrap-ansi-cjs: /wrap-ansi@7.0.0
     dev: true
 
-  /@konnorr/bridgetown-quick-search@3.6.0:
-    resolution: {integrity: sha512-Wdp8MPx2B0Q591CUpYmpHrqJvitiVMbBWNcb1SZlvz7tD1R8J5FV/tey4bH0Iaiys8LyMpjMvuFPW1nC+7UHmg==}
+  /@konnorr/bridgetown-quick-search@3.7.0:
+    resolution: {integrity: sha512-JWXOhOM6eAtuKm1ZxAO3sZ+WpBCWZTO1Y/qeDIUraN/PkBQvNn+h8SWYhUuq6jqnH68IU7vjgRy3vOftvAOyQg==}
     dependencies:
       konnors-ninja-keys: 1.9.1
       lit: 2.7.6
