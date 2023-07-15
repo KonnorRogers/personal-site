@@ -18,6 +18,7 @@ class Commands < Thor
         date: #{date}
         description: |
           #{title}
+        published: false
         ---
       MD
       File.write(post_name, data)
