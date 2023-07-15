@@ -4,7 +4,7 @@ categories: []
 date: 2023-07-14
 description: |
   Stubbing the Custom Elements Registry In Web Test Runner
-published: false
+published: true
 ---
 
 So today I was working on a fun problem, testing custom element registrations in
