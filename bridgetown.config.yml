@@ -4,6 +4,7 @@ destination: output
 
 development:
   url: "localhost:4000"
+  unpublished: true
 
 template_engine: erb
 

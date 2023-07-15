@@ -5,7 +5,21 @@ class Builders::Inspectors < SiteBuilder
   def build
     inspect_html do |document|
       grab_headers(document)
+      mark_external(document)
       syntax_highlight(document)
+    end
+  end
+
+  def mark_external(document)
+    document.css("a[href^='http']").each do |anchor|
+      next unless anchor[:href]&.starts_with?("http") && !anchor[:href]&.include?(site.config.url)
+
+      anchor[:target] = "_blank"
+      anchor[:rel] = "nofollow noreferrer"
+
+      next unless anchor.css("external-icon")[0].nil?
+
+      anchor << " <external-icon></external-icon>"
     end
   end
 
