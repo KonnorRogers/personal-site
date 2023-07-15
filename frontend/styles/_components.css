@@ -3,7 +3,7 @@
   grid-template-columns: minmax(0, 1fr);
   padding: 0.5rem;
   padding-inline-end: 1.5rem;
-  font-size: 1.05rem;
+  font-size: 1.05em;
   justify-items: space-between;
   border-bottom: 1px solid var(--sl-color-neutral-200);
 	background-color: var(--body-color);
@@ -66,7 +66,7 @@
 }
 
 .top-nav__hamburger__button {
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 
 .top-nav__hamburger__button::part(base),
@@ -266,10 +266,6 @@
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-}
-
-main p {
-  font-size: 18px;
 }
 
 /** Pagination */
@@ -641,10 +637,6 @@ bridgetown-ninja-keys.dark {
   gap: 8px;
 }
 
-.contact-section:nth-of-type(n + 2) {
-  margin-top: 1.25rem;
-}
-
 #page-header__who-am-i {
   text-align: center;
 }
@@ -659,11 +651,11 @@ bridgetown-ninja-keys.dark {
 }
 
 .link--small {
-  font-size: 0.85rem;
+  font-size: 0.85em;
 }
 
 .link--large {
-  font-size: 1.25rem;
+  font-size: 1em;
 }
 
 .hero {
@@ -673,7 +665,7 @@ bridgetown-ninja-keys.dark {
 }
 
 .hero__caption {
-  font-size: 0.85rem;
+  font-size: 0.85em;
   margin-top: 6px;
   border-inline-start: 4px solid var(--divider-color);
   padding-inline-start: 8px;
@@ -728,7 +720,7 @@ bridgetown-ninja-keys.dark {
 }
 
 .syntax-block__badge {
-  font-size: 0.85rem;
+  font-size: 0.85em;
   color: var(--sl-color-neutral-700);
 }
 

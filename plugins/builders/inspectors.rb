@@ -15,9 +15,10 @@ class Builders::Inspectors < SiteBuilder
       next unless anchor[:href]&.starts_with?("http") && !anchor[:href]&.include?(site.config.url)
 
       anchor[:target] = "_blank"
-      anchor[:rel] = "nofollow noreferrer"
+      anchor[:rel] = "nofollow noopener noreferrer"
 
-      next unless anchor.css("external-icon")[0].nil?
+      next if anchor.css("external-icon")[0]
+      next if anchor[:"no-external-icon"]
 
       anchor << " <external-icon></external-icon>"
     end

@@ -16,10 +16,10 @@ title: Who am I?
 
   Currently, I work full-time on
   <a class="link__flex link--external" href="https://shoelace.style">
-    Shoelace <%= render ExternalLinkIcon.new %>
+    Shoelace
   </a> at
   <a class="link__flex link--external" href="https://fontawesome.com">
-    Font Awesome <%= render ExternalLinkIcon.new %>
+    Font Awesome
   </a>
 
 
