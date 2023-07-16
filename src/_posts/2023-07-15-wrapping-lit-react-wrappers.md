@@ -3,7 +3,8 @@ title: Wrapping Lit React Wrappers
 categories: []
 date: 2023-07-15
 description: |
-  Wrapping Lit React Wrappers
+  In this post we'll walk through how you can take a Web Component, wrap it with @lit-labs/react, and wrap
+  it again to provide your own lifecycle hooks.
 published: true
 ---
 
