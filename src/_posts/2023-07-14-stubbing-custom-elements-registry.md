@@ -3,7 +3,8 @@ title: Stubbing the Custom Elements Registry
 categories: []
 date: 2023-07-14
 description: |
-  Stubbing the Custom Elements Registry In Web Test Runner
+  In this post we'll walk through how we can stub the custom elements registry to do
+  things like enable multiple registration using things like Proxies and Sinon.
 published: true
 ---
 
