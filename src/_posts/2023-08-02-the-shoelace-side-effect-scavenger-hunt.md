@@ -23,7 +23,9 @@ take these files at face-value and don't traverse the file.
 Here's some extra reading.
 
 <https://twitter.com/daKmoR/status/1686482623999148032>
+
 <https://github.com/shoelace-style/shoelace/pull/1480>
+
 <https://github.com/shoelace-style/shoelace/pull/1479>
 
 Alright, so now that we determined using `sideEffects` is an easy hack, albeit difficult to maintain and
