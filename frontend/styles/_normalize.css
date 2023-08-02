@@ -186,3 +186,10 @@ a external-icon {
   font-size: 0.75em;
   margin-inline-start: -0.15em;
 }
+
+blockquote {
+  border-inline-start: 4px solid var(--divider-color);
+  margin-inline-start: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--sl-color-neutral-50);
+}
