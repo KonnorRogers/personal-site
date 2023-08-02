@@ -3,7 +3,8 @@ title: The Shoelace Side Effect Scavenger Hunt
 categories: []
 date: 2023-08-02
 description: |
-  The Shoelace Side Effect Scavenger Hunt
+  Come along and join me on my journey to debugging side effects and treeshaking in Shoelace
+  and figure out why everything is broken!
 published: true
 ---
 
