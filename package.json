@@ -20,12 +20,12 @@
   },
   "dependencies": {
     "@github/clipboard-copy-element": "^1.2.1",
-    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo": "^7.3.0",
-    "@konnorr/bridgetown-quick-search": "^3.7.0",
+    "@konnorr/bridgetown-quick-search": "^3.7.4",
     "@shoelace-style/shoelace": "^2.5.2",
     "bridgetown-quick-search": "2.0.0",
-    "konnors-ninja-keys": "^1.9.1",
-    "lit": "^2.7.6"
+    "konnors-ninja-keys": "^1.9.5",
+    "lit": "^2.8.0"
   }
 }
