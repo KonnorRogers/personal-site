@@ -95,12 +95,17 @@ class Thing {
 }
 ```
 
-I expected this to compile exactly as is. But in Shoelace, for some reason it was compiling to this:
+I expected this to compile exactly as is. But in Shoelace, it was setting the property directly on the class.
 
 ```ts
+// Expected
 class Thing {
     static { this.thing = "thing" }
 }
+
+// Actual
+class Thing {}
+Thing.thing = "thing"
 ```
 
 Which then is considered "not tree-shakeable" by Agadoo / Rollup. So what was causing this funkiness?
