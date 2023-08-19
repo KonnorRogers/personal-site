@@ -1,8 +1,9 @@
-@import "./tokens/layout.css";
-@import "./tokens/typography.css";
-@import "./overrides/shoelace.css";
+/* Tokens */
+@import "./tokens/_layout.css";
+@import "./tokens/_typography.css";
 
+@import "./_normalize.css";
 @import "./_components.css";
 @import "./_content.css";
 @import "./_layout.css";
-@import "./_normalize.css";
+@import "./_overrides.css";

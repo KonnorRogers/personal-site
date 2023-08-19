@@ -1,0 +1,46 @@
+:is(.index, .doc, .page, .post) kr-layout {
+  background-color: var(--sl-color-neutral-50);
+}
+
+.documentation-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+body:is(.index, .doc, .page, .post) kr-layout::part(main-content) {
+	background: var(--body-color);
+}
+
+kr-layout > [slot='aside'] {
+  display: none;
+}
+
+@media screen and (min-width: 1360px) {
+  kr-layout > [slot='aside'] {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body:is(.index, .doc, .page, .post) kr-layout::part(body) {
+    padding-top: 2rem;
+  }
+
+  .documentation-content {
+    border-radius: 32px;
+  }
+
+	body:is(.index, .doc, .page, .post) kr-layout::part(main) {
+	  background-color: transparent;
+	  margin-inline-end: 16px;
+	  margin-inline-start: 16px;
+
+	}
+
+	body:is(.index, .doc, .page, .post) kr-layout::part(main-content) {
+		box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%);
+		background: var(--body-color);
+		border-radius: 32px;
+	}
+}

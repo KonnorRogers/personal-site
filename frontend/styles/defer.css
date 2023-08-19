@@ -5,6 +5,6 @@
 
 @import "@shoelace-style/shoelace/dist/themes/light.css";
 @import "@shoelace-style/shoelace/dist/themes/dark.css";
-@import "./tokens/colors.css";
-@import "./_syntax.css";
-@import "./_fonts.css";
+@import "./tokens/_colors.css";
+@import "./defer/_syntax.css";
+@import "./defer/_fonts.css";
