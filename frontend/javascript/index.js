@@ -1,4 +1,4 @@
-import "../styles/index.css"
+import "index.css"
 
 import * as Turbo from "@hotwired/turbo"
 
