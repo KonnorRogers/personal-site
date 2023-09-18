@@ -19,7 +19,7 @@ Here's what I did.
 
 First, I added `rack-cors` to my Gemfile.
 
-```bash
+```shell
 bundle add rack-cors
 ```
 
