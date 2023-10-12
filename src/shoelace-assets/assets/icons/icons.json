@@ -548,8 +548,13 @@
   {
     "name": "alexa",
     "title": "Alexa",
-    "categories": null,
-    "tags": null
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social",
+      "assistant"
+    ]
   },
   {
     "name": "align-bottom",
@@ -1423,7 +1428,8 @@
       "Arrows"
     ],
     "tags": [
-      "arrow"
+      "arrow",
+      "resize"
     ]
   },
   {
@@ -1433,7 +1439,8 @@
       "Arrows"
     ],
     "tags": [
-      "arrow"
+      "arrow",
+      "resize"
     ]
   },
   {
@@ -3248,8 +3255,12 @@
   {
     "name": "boxes",
     "title": "Boxes",
-    "categories": null,
+    "categories": [
+      "Real World"
+    ],
     "tags": [
+      "cardboard",
+      "package",
       "cube"
     ]
   },
@@ -3424,7 +3435,8 @@
       "radio",
       "radio wave",
       "amplify",
-      "wavelength"
+      "wavelength",
+      "podcast"
     ]
   },
   {
@@ -6305,8 +6317,12 @@
   {
     "name": "chevron-expand",
     "title": "Chevron expand",
-    "categories": null,
-    "tags": null
+    "categories": [
+      "Chevrons"
+    ],
+    "tags": [
+      "chevron"
+    ]
   },
   {
     "name": "chevron-left",
@@ -9700,7 +9716,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "r18"
+    ]
   },
   {
     "name": "explicit",
@@ -9708,7 +9726,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "r18"
+    ]
   },
   {
     "name": "eye-fill",
@@ -10343,7 +10363,8 @@
     ],
     "tags": [
       "doc",
-      "document"
+      "document",
+      "page"
     ]
   },
   {
@@ -10876,7 +10897,8 @@
     ],
     "tags": [
       "doc",
-      "document"
+      "document",
+      "page"
     ]
   },
   {
@@ -10941,7 +10963,8 @@
     ],
     "tags": [
       "doc",
-      "document"
+      "document",
+      "page"
     ]
   },
   {
@@ -11476,7 +11499,8 @@
     ],
     "tags": [
       "doc",
-      "document"
+      "document",
+      "page"
     ]
   },
   {
@@ -11860,8 +11884,15 @@
   {
     "name": "filetype-ppt",
     "title": "Filetype ppt",
-    "categories": null,
-    "tags": null
+    "categories": [
+      "Files and folders"
+    ],
+    "tags": [
+      "file",
+      "file type",
+      "extension",
+      "powerpoint"
+    ]
   },
   {
     "name": "filetype-pptx",
@@ -11872,7 +11903,8 @@
     "tags": [
       "file",
       "file type",
-      "extension"
+      "extension",
+      "powerpoint"
     ]
   },
   {
@@ -12078,8 +12110,15 @@
   {
     "name": "filetype-xls",
     "title": "Filetype xls",
-    "categories": null,
-    "tags": null
+    "categories": [
+      "Files and folders"
+    ],
+    "tags": [
+      "file",
+      "file type",
+      "extension",
+      "spreadsheet"
+    ]
   },
   {
     "name": "filetype-xlsx",
@@ -12090,7 +12129,8 @@
     "tags": [
       "file",
       "file type",
-      "extension"
+      "extension",
+      "spreadsheet"
     ]
   },
   {
@@ -15379,7 +15419,8 @@
       "av",
       "sound",
       "input",
-      "microphone"
+      "microphone",
+      "podcast"
     ]
   },
   {
@@ -15424,7 +15465,8 @@
       "av",
       "sound",
       "input",
-      "microphone"
+      "microphone",
+      "podcast"
     ]
   },
   {
@@ -16030,14 +16072,22 @@
   {
     "name": "pass-fill",
     "title": "Pass fill",
-    "categories": null,
-    "tags": null
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "pass"
+    ]
   },
   {
     "name": "pass",
     "title": "Pass",
-    "categories": null,
-    "tags": null
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "pass"
+    ]
   },
   {
     "name": "patch-check-fill",
@@ -16091,7 +16141,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "subtract"
+    ]
   },
   {
     "name": "patch-minus",
@@ -16099,7 +16151,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "subtract"
+    ]
   },
   {
     "name": "patch-plus-fill",
@@ -16107,7 +16161,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "add"
+    ]
   },
   {
     "name": "patch-plus",
@@ -16115,7 +16171,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "add"
+    ]
   },
   {
     "name": "patch-question-fill",
@@ -16123,7 +16181,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "help"
+    ]
   },
   {
     "name": "patch-question",
@@ -16131,7 +16191,9 @@
     "categories": [
       "Badges"
     ],
-    "tags": null
+    "tags": [
+      "help"
+    ]
   },
   {
     "name": "pause-btn-fill",
@@ -16393,6 +16455,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "humans",
       "organization",
       "avatar",
@@ -16407,6 +16470,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "humans",
       "organization",
       "avatar",
@@ -16433,6 +16497,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16447,6 +16512,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16464,6 +16530,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16482,6 +16549,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16498,6 +16566,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16513,6 +16582,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16529,6 +16599,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "humans",
       "organization",
       "avatar",
@@ -16544,6 +16615,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16560,6 +16632,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16576,6 +16649,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16590,6 +16664,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16604,6 +16679,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16618,6 +16694,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16632,6 +16709,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16646,6 +16724,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16660,6 +16739,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16674,6 +16754,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16688,6 +16769,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16702,6 +16784,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16716,6 +16799,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16730,6 +16814,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16744,6 +16829,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16759,6 +16845,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16773,6 +16860,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16790,6 +16878,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16807,6 +16896,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16824,6 +16914,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16838,6 +16929,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16854,6 +16946,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16870,6 +16963,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16885,6 +16979,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16899,6 +16994,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -16914,6 +17010,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -17012,6 +17109,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -17028,6 +17126,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -17044,6 +17143,7 @@
       "People"
     ],
     "tags": [
+      "member",
       "human",
       "individual",
       "avatar",
@@ -18526,7 +18626,9 @@
     "categories": [
       "Transportation"
     ],
-    "tags": null
+    "tags": [
+      "riding"
+    ]
   },
   {
     "name": "screwdriver",
@@ -19674,7 +19776,9 @@
     "categories": [
       "Brand"
     ],
-    "tags": null
+    "tags": [
+      "social"
+    ]
   },
   {
     "name": "skip-backward-btn-fill",
@@ -21235,7 +21339,9 @@
     "categories": [
       "Brand"
     ],
-    "tags": null
+    "tags": [
+      "social"
+    ]
   },
   {
     "name": "terminal-dash",
@@ -21622,7 +21728,9 @@
     "categories": [
       "Brand"
     ],
-    "tags": null
+    "tags": [
+      "social"
+    ]
   },
   {
     "name": "toggle-off",
@@ -22468,7 +22576,10 @@
     "categories": [
       "Devices"
     ],
-    "tags": null
+    "tags": [
+      "port",
+      "plug"
+    ]
   },
   {
     "name": "usb-plug",
@@ -22476,7 +22587,10 @@
     "categories": [
       "Devices"
     ],
-    "tags": null
+    "tags": [
+      "port",
+      "plug"
+    ]
   },
   {
     "name": "usb-symbol",
@@ -22484,7 +22598,10 @@
     "categories": [
       "Devices"
     ],
-    "tags": null
+    "tags": [
+      "port",
+      "plug"
+    ]
   },
   {
     "name": "usb",
@@ -22492,7 +22609,10 @@
     "categories": [
       "Devices"
     ],
-    "tags": null
+    "tags": [
+      "port",
+      "plug"
+    ]
   },
   {
     "name": "valentine",
@@ -22577,7 +22697,9 @@
   {
     "name": "vinyl",
     "title": "Vinyl",
-    "categories": null,
+    "categories": [
+      "Media"
+    ],
     "tags": [
       "audio",
       "music",
@@ -22896,7 +23018,9 @@
     "categories": [
       "Brand"
     ],
-    "tags": null
+    "tags": [
+      "encyclopedia"
+    ]
   },
   {
     "name": "wind",
