@@ -26,8 +26,7 @@ code.highlighter-rouge {
   /** Layout */
   display: inline-block;
   font-size: 0.85em;
-  padding: 0.1em 0.4em;
-  margin: 4px 0;
+  padding: 0 0.4em;
   border-radius: 6px;
   white-space: break-spaces;
   vertical-align: middle;
@@ -36,4 +35,3 @@ code.highlighter-rouge {
   background-color: var(--code-background-color);
   color: var(--code-color);
 }
-
