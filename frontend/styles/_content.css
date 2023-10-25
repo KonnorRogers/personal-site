@@ -35,3 +35,7 @@ code.highlighter-rouge {
   background-color: var(--code-background-color);
   color: var(--code-color);
 }
+
+#page-header__who-am-i {
+  text-align: center;
+}
