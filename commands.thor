@@ -1,5 +1,7 @@
 require "fileutils"
 
+# Invocation
+# bundle exec thor commands:create_post "my-post-name"
 class Commands < Thor
   desc "create_post FILE", ""
   def create_post(*files)

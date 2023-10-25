@@ -5,6 +5,11 @@ class Syntax < Bridgetown::Component
     rb: "Ruby",
     js: "JavaScript",
     ts: "TypeScript",
+    css: "CSS",
+    postcss: "postcss",
+    scss: "SCSS",
+    sass: "SASS",
+    json: "JSON",
     sh: "Shell",
     html: "HTML"
   }
