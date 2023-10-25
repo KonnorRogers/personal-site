@@ -639,6 +639,28 @@
     ]
   },
   {
+    "name": "alphabet-uppercase",
+    "title": "Alphabet uppercase",
+    "categories": [
+      "Typography"
+    ],
+    "tags": [
+      "letters",
+      "abc"
+    ]
+  },
+  {
+    "name": "alphabet",
+    "title": "Alphabet",
+    "categories": [
+      "Typography"
+    ],
+    "tags": [
+      "letters",
+      "abc"
+    ]
+  },
+  {
     "name": "alt",
     "title": "Alt",
     "categories": [
@@ -648,6 +670,16 @@
       "key",
       "alt",
       "option"
+    ]
+  },
+  {
+    "name": "amazon",
+    "title": "Amazon",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "aws"
     ]
   },
   {
@@ -791,7 +823,7 @@
   },
   {
     "name": "arrow-bar-down",
-    "title": "Arrow bar bottom",
+    "title": "Arrow bar down",
     "categories": [
       "Arrows"
     ],
@@ -1444,6 +1476,17 @@
     ]
   },
   {
+    "name": "arrows-collapse-vertical",
+    "title": "Arrows collapse vertical",
+    "categories": [
+      "Arrows"
+    ],
+    "tags": [
+      "arrow",
+      "resize"
+    ]
+  },
+  {
     "name": "arrows-collapse",
     "title": "Arrows collapse",
     "categories": [
@@ -1451,6 +1494,17 @@
     ],
     "tags": [
       "arrow"
+    ]
+  },
+  {
+    "name": "arrows-expand-vertical",
+    "title": "Arrows expand vertical",
+    "categories": [
+      "Arrows"
+    ],
+    "tags": [
+      "arrow",
+      "resize"
     ]
   },
   {
@@ -1483,6 +1537,28 @@
       "arrow",
       "cursor",
       "move"
+    ]
+  },
+  {
+    "name": "arrows-vertical",
+    "title": "Arrows vertical",
+    "categories": [
+      "Arrows"
+    ],
+    "tags": [
+      "arrow",
+      "resize"
+    ]
+  },
+  {
+    "name": "arrows",
+    "title": "Arrows",
+    "categories": [
+      "Arrows"
+    ],
+    "tags": [
+      "arrow",
+      "resize"
     ]
   },
   {
@@ -1564,6 +1640,118 @@
     "tags": [
       "backward",
       "layer"
+    ]
+  },
+  {
+    "name": "backpack-fill",
+    "title": "Backpack fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "backpack",
+    "title": "Backpack",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "backpack2-fill",
+    "title": "Backpack2 fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "backpack2",
+    "title": "Backpack2",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "backpack3-fill",
+    "title": "Backpack3 fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "backpack3",
+    "title": "Backpack3",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "backpack4-fill",
+    "title": "Backpack4 fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "backpack4",
+    "title": "Backpack4",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
     ]
   },
   {
@@ -2104,6 +2292,28 @@
     ]
   },
   {
+    "name": "ban-fill",
+    "title": "Ban fill",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "no",
+      "not allowed"
+    ]
+  },
+  {
+    "name": "ban",
+    "title": "Ban",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "no",
+      "not allowed"
+    ]
+  },
+  {
     "name": "bandaid-fill",
     "title": "Bandaid fill",
     "categories": [
@@ -2437,6 +2647,17 @@
       "bike",
       "riding",
       "bicycling"
+    ]
+  },
+  {
+    "name": "bing",
+    "title": "Bing",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "search",
+      "microsoft"
     ]
   },
   {
@@ -3426,6 +3647,19 @@
     ]
   },
   {
+    "name": "brilliance",
+    "title": "Brilliance",
+    "categories": [
+      "Graphics"
+    ],
+    "tags": [
+      "photo",
+      "editing",
+      "image",
+      "picture"
+    ]
+  },
+  {
     "name": "broadcast-pin",
     "title": "Broadcast pin",
     "categories": [
@@ -3968,6 +4202,54 @@
     ],
     "tags": [
       "copyright"
+    ]
+  },
+  {
+    "name": "cake-fill",
+    "title": "Cake fill",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "birthday",
+      "celebrate",
+      "dessert"
+    ]
+  },
+  {
+    "name": "cake",
+    "title": "Cake",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "birthday",
+      "celebrate",
+      "dessert"
+    ]
+  },
+  {
+    "name": "cake2-fill",
+    "title": "Cake2 fill",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "birthday",
+      "celebrate",
+      "dessert"
+    ]
+  },
+  {
+    "name": "cake2",
+    "title": "Cake2",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "birthday",
+      "celebrate",
+      "dessert"
     ]
   },
   {
@@ -4909,7 +5191,8 @@
       "auto",
       "sedan",
       "drive",
-      "driving"
+      "driving",
+      "vehicle"
     ]
   },
   {
@@ -4924,7 +5207,8 @@
       "auto",
       "sedan",
       "drive",
-      "driving"
+      "driving",
+      "vehicle"
     ]
   },
   {
@@ -5503,7 +5787,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5516,7 +5801,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5528,7 +5814,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5543,7 +5830,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5558,7 +5846,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5571,7 +5860,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5584,7 +5874,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5596,7 +5887,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5611,7 +5903,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5626,7 +5919,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5639,7 +5933,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5652,7 +5947,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5664,7 +5960,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5676,7 +5973,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5688,7 +5986,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5701,7 +6000,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5714,7 +6014,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5727,7 +6028,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5740,7 +6042,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5752,7 +6055,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5767,7 +6071,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5782,7 +6087,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5795,7 +6101,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5808,7 +6115,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5820,7 +6128,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5832,7 +6141,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5844,7 +6154,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5857,7 +6168,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5870,7 +6182,8 @@
       "chat bubble",
       "text",
       "message",
-      "typing"
+      "typing",
+      "comment"
     ]
   },
   {
@@ -5882,7 +6195,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5897,7 +6211,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5912,7 +6227,8 @@
       "text",
       "message",
       "valentine",
-      "romance"
+      "romance",
+      "comment"
     ]
   },
   {
@@ -5925,7 +6241,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5938,7 +6255,8 @@
       "chat bubble",
       "text",
       "message",
-      "quote"
+      "quote",
+      "comment"
     ]
   },
   {
@@ -5950,7 +6268,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5962,7 +6281,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5974,7 +6294,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5986,7 +6307,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -5998,7 +6320,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -6010,7 +6333,8 @@
     "tags": [
       "chat bubble",
       "text",
-      "message"
+      "message",
+      "comment"
     ]
   },
   {
@@ -7524,6 +7848,29 @@
     ]
   },
   {
+    "name": "cookie",
+    "title": "Cookie",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "dessert"
+    ]
+  },
+  {
+    "name": "copy",
+    "title": "Copy",
+    "categories": [
+      "UI and keyboard"
+    ],
+    "tags": [
+      "paste",
+      "clone",
+      "cut",
+      "duplicate"
+    ]
+  },
+  {
     "name": "cpu-fill",
     "title": "Cpu fill",
     "categories": [
@@ -7627,6 +7974,32 @@
     ],
     "tags": [
       "crop"
+    ]
+  },
+  {
+    "name": "crosshair",
+    "title": "Crosshair",
+    "categories": [
+      "Geo"
+    ],
+    "tags": [
+      "geography",
+      "map",
+      "pin",
+      "location"
+    ]
+  },
+  {
+    "name": "crosshair2",
+    "title": "Crosshair2",
+    "categories": [
+      "Geo"
+    ],
+    "tags": [
+      "geography",
+      "map",
+      "pin",
+      "location"
     ]
   },
   {
@@ -8675,6 +9048,34 @@
     ]
   },
   {
+    "name": "duffle-fill",
+    "title": "Duffle fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "duffle",
+    "title": "Duffle",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
     "name": "ear-fill",
     "title": "Ear fill",
     "categories": [
@@ -8865,6 +9266,28 @@
     ]
   },
   {
+    "name": "emoji-astonished-fill",
+    "title": "Emoji astonished fill",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon",
+      "surprised"
+    ]
+  },
+  {
+    "name": "emoji-astonished",
+    "title": "Emoji astonished",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon",
+      "surprised"
+    ]
+  },
+  {
     "name": "emoji-dizzy-fill",
     "title": "Emoji dizzy fill",
     "categories": [
@@ -8928,6 +9351,46 @@
     "tags": [
       "emoticon",
       "sad"
+    ]
+  },
+  {
+    "name": "emoji-grimace-fill",
+    "title": "Emoji grimace fill",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
+    ]
+  },
+  {
+    "name": "emoji-grimace",
+    "title": "Emoji grimace",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
+    ]
+  },
+  {
+    "name": "emoji-grin-fill",
+    "title": "Emoji grin fill",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
+    ]
+  },
+  {
+    "name": "emoji-grin",
+    "title": "Emoji grin",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
     ]
   },
   {
@@ -9089,6 +9552,46 @@
     ]
   },
   {
+    "name": "emoji-surprise-fill",
+    "title": "Emoji surprise fill",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
+    ]
+  },
+  {
+    "name": "emoji-surprise",
+    "title": "Emoji surprise",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
+    ]
+  },
+  {
+    "name": "emoji-tear-fill",
+    "title": "Emoji tear fill",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
+    ]
+  },
+  {
+    "name": "emoji-tear",
+    "title": "Emoji tear",
+    "categories": [
+      "Emoji"
+    ],
+    "tags": [
+      "emoticon"
+    ]
+  },
+  {
     "name": "emoji-wink-fill",
     "title": "Emoji wink fill",
     "categories": [
@@ -9106,6 +9609,58 @@
     ],
     "tags": [
       "emoticon"
+    ]
+  },
+  {
+    "name": "envelope-arrow-down-fill",
+    "title": "Envelope arrow down fill",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "email",
+      "message",
+      "mail",
+      "letter"
+    ]
+  },
+  {
+    "name": "envelope-arrow-down",
+    "title": "Envelope arrow down",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "email",
+      "message",
+      "mail",
+      "letter"
+    ]
+  },
+  {
+    "name": "envelope-arrow-up-fill",
+    "title": "Envelope arrow up fill",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "email",
+      "message",
+      "mail",
+      "letter"
+    ]
+  },
+  {
+    "name": "envelope-arrow-up",
+    "title": "Envelope arrow up",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "email",
+      "message",
+      "mail",
+      "letter"
     ]
   },
   {
@@ -9524,7 +10079,9 @@
       "auto",
       "sedan",
       "drive",
-      "driving"
+      "driving",
+      "electric vehicle",
+      "charging"
     ]
   },
   {
@@ -9540,7 +10097,9 @@
       "auto",
       "sedan",
       "drive",
-      "driving"
+      "driving",
+      "electric vehicle",
+      "charging"
     ]
   },
   {
@@ -9731,6 +10290,19 @@
     ]
   },
   {
+    "name": "exposure",
+    "title": "Exposure",
+    "categories": [
+      "Graphics"
+    ],
+    "tags": [
+      "photo",
+      "editing",
+      "image",
+      "picture"
+    ]
+  },
+  {
     "name": "eye-fill",
     "title": "Eye fill",
     "categories": [
@@ -9895,6 +10467,30 @@
       "audio",
       "video",
       "av"
+    ]
+  },
+  {
+    "name": "feather",
+    "title": "Feather",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "bird",
+      "flight",
+      "light"
+    ]
+  },
+  {
+    "name": "feather2",
+    "title": "Feather2",
+    "categories": [
+      "Real World"
+    ],
+    "tags": [
+      "bird",
+      "flight",
+      "light"
     ]
   },
   {
@@ -12297,6 +12893,54 @@
     ]
   },
   {
+    "name": "floppy-fill",
+    "title": "Floppy fill",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "save",
+      "storage",
+      "disk"
+    ]
+  },
+  {
+    "name": "floppy",
+    "title": "Floppy",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "save",
+      "storage",
+      "disk"
+    ]
+  },
+  {
+    "name": "floppy2-fill",
+    "title": "Floppy2 fill",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "save",
+      "storage",
+      "disk"
+    ]
+  },
+  {
+    "name": "floppy2",
+    "title": "Floppy2",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "save",
+      "storage",
+      "disk"
+    ]
+  },
+  {
     "name": "flower1",
     "title": "Flower1",
     "categories": [
@@ -12676,6 +13320,17 @@
     ]
   },
   {
+    "name": "gender-neuter",
+    "title": "Gender neuter",
+    "categories": [
+      "People"
+    ],
+    "tags": [
+      "gender",
+      "identity"
+    ]
+  },
+  {
     "name": "gender-trans",
     "title": "Gender trans",
     "categories": [
@@ -12781,7 +13436,21 @@
     ],
     "tags": [
       "social",
-      "microsoft"
+      "microsoft",
+      "vcs",
+      "git"
+    ]
+  },
+  {
+    "name": "gitlab",
+    "title": "Gitlab",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social",
+      "vcs",
+      "git"
     ]
   },
   {
@@ -13598,6 +14267,32 @@
     "tags": [
       "shape",
       "polygon"
+    ]
+  },
+  {
+    "name": "highlighter",
+    "title": "Highlighter",
+    "categories": [
+      "Tools"
+    ],
+    "tags": [
+      "text",
+      "study",
+      "highlight",
+      "marker"
+    ]
+  },
+  {
+    "name": "highlights",
+    "title": "Highlights",
+    "categories": [
+      "Graphics"
+    ],
+    "tags": [
+      "photo",
+      "editing",
+      "image",
+      "picture"
     ]
   },
   {
@@ -15081,6 +15776,34 @@
     ]
   },
   {
+    "name": "luggage-fill",
+    "title": "Luggage fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "name": "luggage",
+    "title": "Luggage",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on",
+      "student",
+      "education"
+    ]
+  },
+  {
     "name": "lungs-fill",
     "title": "Lungs fill",
     "categories": [
@@ -15135,8 +15858,34 @@
     ]
   },
   {
+    "name": "mailbox-flag",
+    "title": "Mailbox flag",
+    "categories": [
+      "Real world"
+    ],
+    "tags": [
+      "post",
+      "postal",
+      "postbox",
+      "letterbox"
+    ]
+  },
+  {
     "name": "mailbox",
     "title": "Mailbox",
+    "categories": [
+      "Real world"
+    ],
+    "tags": [
+      "post",
+      "postal",
+      "postbox",
+      "letterbox"
+    ]
+  },
+  {
+    "name": "mailbox2-flag",
+    "title": "Mailbox2 flag",
     "categories": [
       "Real world"
     ],
@@ -15208,6 +15957,18 @@
       "md",
       "content",
       "writing"
+    ]
+  },
+  {
+    "name": "marker-tip",
+    "title": "Marker tip",
+    "categories": [
+      "Tools"
+    ],
+    "tags": [
+      "text",
+      "study",
+      "highlight"
     ]
   },
   {
@@ -15840,6 +16601,19 @@
     ]
   },
   {
+    "name": "noise-reduction",
+    "title": "Noise reduction",
+    "categories": [
+      "Graphics"
+    ],
+    "tags": [
+      "photo",
+      "editing",
+      "image",
+      "picture"
+    ]
+  },
+  {
     "name": "nut-fill",
     "title": "Nut fill",
     "categories": [
@@ -15876,6 +16650,32 @@
     ]
   },
   {
+    "name": "nvme-fill",
+    "title": "Nvme fill",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "ssd",
+      "hard drive",
+      "hard disk",
+      "storage"
+    ]
+  },
+  {
+    "name": "nvme",
+    "title": "Nvme",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "ssd",
+      "hard drive",
+      "hard disk",
+      "storage"
+    ]
+  },
+  {
     "name": "octagon-fill",
     "title": "Octagon fill",
     "categories": [
@@ -15906,6 +16706,16 @@
     "tags": [
       "shape",
       "polygon"
+    ]
+  },
+  {
+    "name": "opencollective",
+    "title": "Opencollective",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social"
     ]
   },
   {
@@ -16087,6 +16897,28 @@
     ],
     "tags": [
       "pass"
+    ]
+  },
+  {
+    "name": "passport-fill",
+    "title": "Passport fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "visa",
+      "foreign"
+    ]
+  },
+  {
+    "name": "passport",
+    "title": "Passport",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "visa",
+      "foreign"
     ]
   },
   {
@@ -16326,6 +17158,32 @@
     ]
   },
   {
+    "name": "pci-card-network",
+    "title": "PCI card network",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "card",
+      "expansion",
+      "ethernet",
+      "wifi",
+      "internet"
+    ]
+  },
+  {
+    "name": "pci-card-sound",
+    "title": "PCI card sound",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "card",
+      "expansion",
+      "audio"
+    ]
+  },
+  {
     "name": "pci-card",
     "title": "PCI card",
     "categories": [
@@ -16503,6 +17361,18 @@
       "avatar",
       "user",
       "account"
+    ]
+  },
+  {
+    "name": "person-arms-up",
+    "title": "Person arms up",
+    "categories": [
+      "People"
+    ],
+    "tags": [
+      "human",
+      "man",
+      "woman"
     ]
   },
   {
@@ -16957,6 +17827,20 @@
     ]
   },
   {
+    "name": "person-raised-hand",
+    "title": "Person raised hand",
+    "categories": [
+      "People"
+    ],
+    "tags": [
+      "human",
+      "man",
+      "woman",
+      "question",
+      "help"
+    ]
+  },
+  {
     "name": "person-rolodex",
     "title": "Person rolodex",
     "categories": [
@@ -17001,6 +17885,30 @@
       "user",
       "account",
       "profile"
+    ]
+  },
+  {
+    "name": "person-standing-dress",
+    "title": "Person standing dress",
+    "categories": [
+      "People"
+    ],
+    "tags": [
+      "human",
+      "man",
+      "woman"
+    ]
+  },
+  {
+    "name": "person-standing",
+    "title": "Person standing",
+    "categories": [
+      "People"
+    ],
+    "tags": [
+      "human",
+      "man",
+      "woman"
     ]
   },
   {
@@ -17086,6 +17994,33 @@
       "avatar",
       "user",
       "wfh"
+    ]
+  },
+  {
+    "name": "person-walking",
+    "title": "Person walking",
+    "categories": [
+      "People"
+    ],
+    "tags": [
+      "human",
+      "man",
+      "woman"
+    ]
+  },
+  {
+    "name": "person-wheelchair",
+    "title": "Person wheelchair",
+    "categories": [
+      "People"
+    ],
+    "tags": [
+      "human",
+      "man",
+      "woman",
+      "accessibility",
+      "a11y",
+      "handicap"
     ]
   },
   {
@@ -18000,6 +18935,19 @@
     ]
   },
   {
+    "name": "radar",
+    "title": "Radar",
+    "categories": [
+      "Geo"
+    ],
+    "tags": [
+      "geography",
+      "map",
+      "pin",
+      "location"
+    ]
+  },
+  {
     "name": "radioactive",
     "title": "Radioactive",
     "categories": [
@@ -18722,6 +19670,58 @@
     ]
   },
   {
+    "name": "send-arrow-down-fill",
+    "title": "Send arrow down fill",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "message",
+      "sending",
+      "sent",
+      "paper-plane"
+    ]
+  },
+  {
+    "name": "send-arrow-down",
+    "title": "Send arrow down",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "message",
+      "sending",
+      "sent",
+      "paper-plane"
+    ]
+  },
+  {
+    "name": "send-arrow-up-fill",
+    "title": "Send arrow up fill",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "message",
+      "sending",
+      "sent",
+      "paper-plane"
+    ]
+  },
+  {
+    "name": "send-arrow-up",
+    "title": "Send arrow up",
+    "categories": [
+      "Communications"
+    ],
+    "tags": [
+      "message",
+      "sending",
+      "sent",
+      "paper-plane"
+    ]
+  },
+  {
     "name": "send-check-fill",
     "title": "Send check fill",
     "categories": [
@@ -18730,7 +19730,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18742,7 +19743,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18754,7 +19756,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18766,7 +19769,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18778,7 +19782,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18790,7 +19795,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18802,7 +19808,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18814,7 +19821,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18826,7 +19834,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18838,7 +19847,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18850,7 +19860,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18862,7 +19873,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18874,7 +19886,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18886,7 +19899,8 @@
     "tags": [
       "message",
       "sending",
-      "sent"
+      "sent",
+      "paper-plane"
     ]
   },
   {
@@ -18898,6 +19912,19 @@
     "tags": [
       "server",
       "network"
+    ]
+  },
+  {
+    "name": "shadows",
+    "title": "Shadows",
+    "categories": [
+      "Graphics"
+    ],
+    "tags": [
+      "photo",
+      "editing",
+      "image",
+      "picture"
     ]
   },
   {
@@ -19760,6 +20787,28 @@
     ]
   },
   {
+    "name": "sim-slash-fill",
+    "title": "Sim slash fill",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "mobile",
+      "carrier"
+    ]
+  },
+  {
+    "name": "sim-slash",
+    "title": "Sim slash",
+    "categories": [
+      "Devices"
+    ],
+    "tags": [
+      "mobile",
+      "carrier"
+    ]
+  },
+  {
     "name": "sim",
     "title": "Sim",
     "categories": [
@@ -20417,6 +21466,18 @@
     ]
   },
   {
+    "name": "sourceforge",
+    "title": "Sourceforge",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social",
+      "vcs",
+      "git"
+    ]
+  },
+  {
     "name": "speaker-fill",
     "title": "Speaker fill",
     "categories": [
@@ -20447,7 +21508,8 @@
     "tags": [
       "speed",
       "tachometer",
-      "dashboard"
+      "dashboard",
+      "gauge"
     ]
   },
   {
@@ -20459,7 +21521,8 @@
     "tags": [
       "speed",
       "tachometer",
-      "dashboard"
+      "dashboard",
+      "gauge"
     ]
   },
   {
@@ -20795,6 +21858,17 @@
     ]
   },
   {
+    "name": "substack",
+    "title": "Substack",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social",
+      "blog"
+    ]
+  },
+  {
     "name": "subtract",
     "title": "Subtract",
     "categories": [
@@ -20917,6 +21991,78 @@
       "suit",
       "deck",
       "gambling"
+    ]
+  },
+  {
+    "name": "suitcase-fill",
+    "title": "Suitcase fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on"
+    ]
+  },
+  {
+    "name": "suitcase-lg-fill",
+    "title": "Suitcase lg fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on"
+    ]
+  },
+  {
+    "name": "suitcase-lg",
+    "title": "Suitcase lg",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on"
+    ]
+  },
+  {
+    "name": "suitcase",
+    "title": "Suitcase",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on"
+    ]
+  },
+  {
+    "name": "suitcase2-fill",
+    "title": "Suitcase2 fill",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on"
+    ]
+  },
+  {
+    "name": "suitcase2",
+    "title": "Suitcase2",
+    "categories": [
+      "Travel"
+    ],
+    "tags": [
+      "luggage",
+      "bags",
+      "carry-on"
     ]
   },
   {
@@ -21607,6 +22753,32 @@
     ]
   },
   {
+    "name": "threads-fill",
+    "title": "Threads fill",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social",
+      "chat",
+      "instagram",
+      "meta"
+    ]
+  },
+  {
+    "name": "threads",
+    "title": "Threads",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social",
+      "chat",
+      "instagram",
+      "meta"
+    ]
+  },
+  {
     "name": "three-dots-vertical",
     "title": "Three dots vertical",
     "categories": [
@@ -21911,6 +23083,19 @@
     ]
   },
   {
+    "name": "transparency",
+    "title": "Transparency",
+    "categories": [
+      "Graphics"
+    ],
+    "tags": [
+      "photo",
+      "editing",
+      "image",
+      "picture"
+    ]
+  },
+  {
     "name": "trash-fill",
     "title": "Trash fill",
     "categories": [
@@ -22095,7 +23280,8 @@
       "shipment",
       "transport",
       "deliver",
-      "delivery"
+      "delivery",
+      "vehicle"
     ]
   },
   {
@@ -22138,7 +23324,8 @@
       "shipment",
       "transport",
       "deliver",
-      "delivery"
+      "delivery",
+      "vehicle"
     ]
   },
   {
@@ -22183,6 +23370,17 @@
     ],
     "tags": [
       "social"
+    ]
+  },
+  {
+    "name": "twitter-x",
+    "title": "Twitter X",
+    "categories": [
+      "Brand"
+    ],
+    "tags": [
+      "social",
+      "chat"
     ]
   },
   {
@@ -22234,6 +23432,42 @@
   {
     "name": "type-h3",
     "title": "Type H3",
+    "categories": [
+      "Typography"
+    ],
+    "tags": [
+      "text",
+      "type",
+      "heading"
+    ]
+  },
+  {
+    "name": "type-h4",
+    "title": "Type h4",
+    "categories": [
+      "Typography"
+    ],
+    "tags": [
+      "text",
+      "type",
+      "heading"
+    ]
+  },
+  {
+    "name": "type-h5",
+    "title": "Type h5",
+    "categories": [
+      "Typography"
+    ],
+    "tags": [
+      "text",
+      "type",
+      "heading"
+    ]
+  },
+  {
+    "name": "type-h6",
+    "title": "Type h6",
     "categories": [
       "Typography"
     ],
@@ -22670,6 +23904,19 @@
     "tags": [
       "view",
       "rearrange"
+    ]
+  },
+  {
+    "name": "vignette",
+    "title": "Vignette",
+    "categories": [
+      "Graphics"
+    ],
+    "tags": [
+      "photo",
+      "editing",
+      "image",
+      "picture"
     ]
   },
   {

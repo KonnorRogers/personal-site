@@ -56,3 +56,4 @@ export default class ThemeSwitcher extends Controller {
   }
 
 }
+
