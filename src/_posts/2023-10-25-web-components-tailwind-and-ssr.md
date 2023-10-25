@@ -15,7 +15,7 @@ to be educational. If you're looking for a slam piece, I don't think you're in t
 This blog post is intended more to be a high level overview, and won't get into the nitty gritty
 implementation details.
 
-This was post was inspired by [Live with Adam Wathan at Rails World 2023 of Remote Ruby](https://www.remoteruby.com/2260490/13814488-live-with-adam-wathan-at-rails-world-2023) where Adam and the Remote Ruby crew talk about styling Web Component styling and Web Component SSR.
+This was post was inspired by [Live with Adam Wathan at Rails World 2023 of Remote Ruby](https://www.remoteruby.com/2260490/13814488-live-with-adam-wathan-at-rails-world-2023) where Adam and the Remote Ruby crew talk about styling Web Components with Tailwind and Web Component SSR.
 
 ## Full Disclosure
 
