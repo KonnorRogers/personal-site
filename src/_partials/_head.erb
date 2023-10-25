@@ -63,7 +63,7 @@
   function applyTheme(newTheme) {
     this.setTheme(newTheme)
 
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       ;[...document.querySelectorAll("[data-controller='theme-switcher'] sl-menu-item")].forEach((el) => {
         el.toggleAttribute("checked", el.getAttribute("value") === newTheme)
       })
@@ -72,7 +72,7 @@
 
     // Toggle the dark mode class without transitions
     document.documentElement.classList.add("noTransitions");
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       const darkMode = themeIsDark()
       document.documentElement.classList.toggle("sl-theme-light", !darkMode)
       document.documentElement.classList.toggle("sl-theme-dark", darkMode)
@@ -80,7 +80,7 @@
       if (ninjaKeys) {
         ninjaKeys.classList.toggle("dark", darkMode)
       }
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         document.documentElement.classList.remove("noTransitions");
       })
     });
