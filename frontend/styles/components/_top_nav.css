@@ -73,7 +73,7 @@
 }
 
 .top-nav__github {
-  padding-top: var(--sl-spacing-2x-small);
+  padding-top: var(--sl-spacing-x-small);
   margin-left: var(--sl-spacing-medium);
 }
 
