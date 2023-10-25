@@ -194,7 +194,7 @@ Browsers have recently shipped a proposal called "Declarative Shadow DOM" (Abbre
 <div>
   <template shadowrootmode="open">
     <div style="border: 4px dotted dodgerblue; padding: 16px;">
-      Look mom! I'm in a shadow root without JavaScript (Except older browsers and Firefox)!
+      Look mom! I'm in a shadow root! without JavaScript (Except older browsers and Firefox)!
     </div>
   </template>
 </div>
@@ -220,7 +220,7 @@ Browsers have recently shipped a proposal called "Declarative Shadow DOM" (Abbre
 <div>
   <template shadowrootmode="open">
     <div style="border: 4px dotted dodgerblue; padding: 16px;">
-      Look mom! I'm in a shadow root!
+      Look mom! I'm in a shadow root! without JavaScript (Except older browsers and Firefox)!
     </div>
   </template>
 </div>
