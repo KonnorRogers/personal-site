@@ -1,5 +1,6 @@
 .top-nav {
   display: flex;
+  align-items: center;
   max-width: var(--top-nav-max-width);
   justify-content: center;
   margin: 0 auto;
@@ -73,8 +74,8 @@
 }
 
 .top-nav__github {
-  padding-top: var(--sl-spacing-x-small);
   margin-left: var(--sl-spacing-medium);
+  padding-bottom: 0;
 }
 
 .top-nav__go-home,
