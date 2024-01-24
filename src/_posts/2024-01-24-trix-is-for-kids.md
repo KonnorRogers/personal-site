@@ -92,13 +92,27 @@ So you largely play a guessing game until what you're trying to achieve works an
 
 Custom Attachments are an escape hatch. To me, they're meant for perhaps more complex items like an `<iframe>` that you may want to be server validate URLs and make sure users are adding safelisted URLs, but custom attachments feel more like the only way to get around issues with the schema / parser not being nearly as extensible as it could be leading to hacky implementations of common features.
 
-For example, Lazaro Nixon shows how you can extend Trix in his [Trix Extensions](https://github.com/lazaronixon/trix-extensions) gem which as some cool features like changing the text color, multiple `<h*>` tags, etc. But even this highlights how clunky extending Trix can be.
+For example, Lazaro Nixon shows how you can extend Trix in his [Trix Extensions](https://github.com/lazaronixon/trix-extensions) gem which as some cool features like changing the text color, multiple `<h*>` tags, etc.
 
-For example, to insert an `<hr>` into the document, it has to make a full HTTP request to the
-server to return back a custom attachment, instead of just allowing you insert a `<hr>` directly in the client.
+But even this highlights how clunky extending Trix can be. Instead of directly adding a `<hr>` to the schema, we need
+to make a CustomAttachment and inject markup to make a standard HTML tag be accepted.
 
-<https://github.com/lazaronixon/trix-extensions/blob/595073038216eb39ed6fb5fb60151360bdc1d62e/app/javascript/richtext.js#L19>
-<https://github.com/lazaronixon/trix-extensions/blob/master/app/views/action_text/attachables/content_attachments/_horizontal_rule.html.erb>
+> EDIT: 01/24/2024
+>
+> Tony Messias pointed out this doesn't actually make an HTTP request. The attachment has the `content` hard coded for `<hr>`.
+
+<del>
+  For example, to insert an <code>&lt;hr&gt;</code> into the document, it has to make a full HTTP request to the
+  server to return back a custom attachment, instead of just allowing you insert a <code>&lt;hr&gt;</code> directly in the client.
+
+  <a href="https://github.com/lazaronixon/trix-extensions/blob/595073038216eb39ed6fb5fb60151360bdc1d62e/app/javascript/richtext.js#L19">
+    https://github.com/lazaronixon/trix-extensions/blob/595073038216eb39ed6fb5fb60151360bdc1d62e/app/javascript/richtext.js#L19
+  </a>
+  <br>
+  <a href="https://github.com/lazaronixon/trix-extensions/blob/master/app/views/action_text/attachables/content_attachments/_horizontal_rule.html.erb">
+    https://github.com/lazaronixon/trix-extensions/blob/master/app/views/action_text/attachables/content_attachments/_horizontal_rule.html.erb
+  </a>
+</del>
 
 ## The markup
 
