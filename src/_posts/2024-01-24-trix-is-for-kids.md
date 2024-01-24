@@ -128,10 +128,10 @@ I would love to see some future where Trix allows collaborative editing, but I d
 
 ## More challenges
 
-I'm sure there's a lot more I missed, feel free to send me links to issues or even just issues you faced on Twitter or Mastodon, and I'd be happy to add them to this post.
+I'm sure there's a lot more I missed, feel free to send me links to issues or even just issues you faced on Twitter, Mastodon, Discord, wherever, and I'd be happy to add them to this post. Or maybe you just want to yell at me and tell me I'm wrong. 🤷
 
 These are some of the frustrations I faced working with Trix and part of the reason I built [RhinoEditor](https://rhino-editor.vercel.app)
 
-This is not a shill for RhinoEditor, although this should probably make it into the docs somewhere. If you're happy with Trix, I'm not going to stop you. But customizing and using Trix has been at times painful for me personally and led to the creation of the library.
+This is not a shill for RhinoEditor, although this should probably make it into the docs somewhere. If you're happy with Trix, I'm not going to stop you. But customizing and using Trix has been at times painful for me personally and led to the creation of the RhinoEditor.
 
 Thanks for reading, and may your rich text editing be as peaceful as possible. ✌️
