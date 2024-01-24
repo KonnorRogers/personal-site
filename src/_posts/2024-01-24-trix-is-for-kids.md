@@ -101,10 +101,11 @@ to make a CustomAttachment and inject markup to make a standard HTML tag be acce
 >
 > Tony Messias pointed out this doesn't actually make an HTTP request. The attachment has the `content` hard coded for `<hr>`.
 
-<del>
+<s style="display: block;">
   For example, to insert an <code>&lt;hr&gt;</code> into the document, it has to make a full HTTP request to the
   server to return back a custom attachment, instead of just allowing you insert a <code>&lt;hr&gt;</code> directly in the client.
 
+  <br><br>
   <a href="https://github.com/lazaronixon/trix-extensions/blob/595073038216eb39ed6fb5fb60151360bdc1d62e/app/javascript/richtext.js#L19">
     https://github.com/lazaronixon/trix-extensions/blob/595073038216eb39ed6fb5fb60151360bdc1d62e/app/javascript/richtext.js#L19
   </a>
@@ -112,7 +113,7 @@ to make a CustomAttachment and inject markup to make a standard HTML tag be acce
   <a href="https://github.com/lazaronixon/trix-extensions/blob/master/app/views/action_text/attachables/content_attachments/_horizontal_rule.html.erb">
     https://github.com/lazaronixon/trix-extensions/blob/master/app/views/action_text/attachables/content_attachments/_horizontal_rule.html.erb
   </a>
-</del>
+</s>
 
 ## The markup
 
