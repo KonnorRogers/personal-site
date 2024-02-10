@@ -1,4 +1,5 @@
 require "securerandom"
+require "cgi"
 require_relative "../../src/_components/syntax.rb"
 
 class Builders::Inspectors < SiteBuilder
@@ -52,7 +53,7 @@ class Builders::Inspectors < SiteBuilder
             <sl-icon class='clipboard__icon--idle' name='clipboard'></sl-icon>
           </clipboard-copy>
 
-          <textarea id='#{id}' hidden>#{text}</textarea>
+          <textarea id='#{id}' hidden>#{CGI.escape_html(text)}</textarea>
         </div>
       HTML
 
