@@ -193,3 +193,12 @@ blockquote {
   padding: 0.75rem;
   background-color: var(--sl-color-neutral-50);
 }
+
+figcaption {
+  font-size: 0.85em;
+  margin-top: 6px;
+  border-inline-start: 4px solid var(--divider-color);
+  padding-inline-start: 8px;
+  font-style: italic;
+}
+
