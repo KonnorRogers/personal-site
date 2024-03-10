@@ -41,7 +41,7 @@ After downloading and extracting the `.dmg`, you should see the following screen
 
 Click the "Download" button in the bottom right corner to start downloading the Windows 11 ISO.
 
-<%= Alert.new(type: :info) do %>
+<%= render Alert.new(type: :info) do %>
   Sometimes the crystal fetch download doesn't go where you want. If you can't find the downloads, check this location:
 
   `~/Library/Containers/llc.turing.CrystalFetch/Data/Library/Caches/`
@@ -67,7 +67,7 @@ The next few pictures will outline the setup I chose. I left everything as the d
 
 ![Picture of hardware screen](/images/utm/hardware.png)
 
-![Picture of storage screen](/images/utm/storage-screen.png)
+![Picture of storage screen](/images/utm/storage.png)
 
 ![Picture of shared directory screen](/images/utm/shared-directory.png)
 
