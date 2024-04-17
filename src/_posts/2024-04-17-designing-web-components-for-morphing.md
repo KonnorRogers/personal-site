@@ -3,7 +3,7 @@ title: Designing Web Components For Morphing
 categories: []
 date: 2024-04-17
 description: |
-  Designing Web Components For Morphing
+  Designing Web Components For Morphing and techniques to deal with reflecting attributes
 published: true
 ---
 
@@ -19,7 +19,7 @@ I write the following HTML:
 
 When the component registers, it adds the following attributes: `variant` and `size`
 
-```
+```html
 <sl-button variant="default" size="medium">I'm a button</sl-button>
 ```
 
