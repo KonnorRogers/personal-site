@@ -240,3 +240,14 @@ As always, test with an actual screenreader, test with different screenreaders +
 
 That's all I got. Best of luck on your suggestions / slash commands! I hope you learned something, I know I did!
 
+## Additional notes
+
+### Editor note 1 04/23/2024
+
+When writing this I totally forgot about navigating options via `ctrl+option+arrowDown` and `ctrl+option+arrowUp` in VoiceOver which is an intended way of navigating combobox options in VoiceOver.
+
+Using `ctrl+option+arrow` keys on Github  causes it to shift focus back to the editor and off of the listbox not allowing you to select any suggestions.
+
+In TinyMCE, `ctrl+option+arrow` stays on current menuitem does not shift selection.
+
+Discord and Slack obviously do nothing since I can't get them working in VoiceOver.
