@@ -18,8 +18,8 @@ importers:
         specifier: ^7.3.0
         version: 7.3.0
       '@konnorr/bridgetown-quick-search':
-        specifier: ^3.9.1
-        version: 3.9.1
+        specifier: ^3.9.2
+        version: 3.9.2
       '@shoelace-style/shoelace':
         specifier: ^2.11.2
         version: 2.11.2(@types/react@18.3.3)
@@ -27,8 +27,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
       konnors-ninja-keys:
-        specifier: ^1.13.1
-        version: 1.13.1
+        specifier: ^1.13.2
+        version: 1.13.2
       lit:
         specifier: ^3.1.3
         version: 3.1.3
@@ -419,8 +419,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@konnorr/bridgetown-quick-search@3.9.1':
-    resolution: {integrity: sha512-gyRX4Ot/mKFhb+6b+sgXF/CbHoLiRfTLR/tYopOtBJv60Z2K1Go/5vDrf90QGrXuvLv0v/rKqgdpJvBQ7fziBA==}
+  '@konnorr/bridgetown-quick-search@3.9.2':
+    resolution: {integrity: sha512-ixdcwWzHX5usmLoRks2MRwEEnz8NZiBXy6q6U1HlxJlTd0ypdEbEbH+DKVYcTH9Y3Ry5Ajz/mQqVRv/qQLVfDg==}
 
   '@lit-labs/ssr-dom-shim@1.2.0':
     resolution: {integrity: sha512-yWJKmpGE6lUURKAaIltoPIE/wrbY3TEkqQt+X0m+7fQNnAv0keydnYvbiJFP1PnMhizmIWRWOG5KLhYyc/xl+g==}
@@ -612,8 +612,8 @@ packages:
     resolution: {integrity: sha512-MXbxovZ/Pm42f6cDIDkl3xpwv1AGwObKwfmjs2nQePiy85tP3fatofl3FC1aBsOtP/6fq5SbtgHwWcMsLP+bDw==}
     engines: {node: '>=14'}
 
-  konnors-ninja-keys@1.13.1:
-    resolution: {integrity: sha512-60vJk0GrbuJn2d8ECz4JMpFUZ1kdMcLpcwXYKu0t7UFipj+s1k8OVdleONrKyxgsd3iVaM6q7kXCsEZVUV6O1w==}
+  konnors-ninja-keys@1.13.2:
+    resolution: {integrity: sha512-v4nwtTNa/PJcGuGLwbTQ0mZ1C/KFqV9IxPUy3FKTxPBlrK2/Kc2/5HnwAgqPfhQyjz4ScozxeXQWx3IS9WR9YQ==}
 
   lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -1237,9 +1237,9 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@konnorr/bridgetown-quick-search@3.9.1':
+  '@konnorr/bridgetown-quick-search@3.9.2':
     dependencies:
-      konnors-ninja-keys: 1.13.1
+      konnors-ninja-keys: 1.13.2
       lit: 3.1.3
       lunr: 2.3.9
 
@@ -1450,7 +1450,7 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
-  konnors-ninja-keys@1.13.1:
+  konnors-ninja-keys@1.13.2:
     dependencies:
       '@material/mwc-icon': 0.25.3
       '@open-wc/scoped-elements': 3.0.5
