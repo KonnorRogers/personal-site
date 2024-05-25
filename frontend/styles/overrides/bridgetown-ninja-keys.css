@@ -24,15 +24,15 @@ bridgetown-ninja-keys::part(modal-content) {
   }
 }
 
+bridgetown-ninja-keys::part(ninja-action__highlight) {
+  color: white;
+}
+
 bridgetown-ninja-keys.dark {
   --ninja-modal-background: rgba(35, 35, 35, 1);
   --ninja-text-color: rgba(200,200,200);
 }
 
-bridgetown-ninja-keys::part(ninja-action__highlight) {
-  color: white;
-}
-
-bridgetown-ninja-keys::part(ninja-action__highlight) {
+bridgetown-ninja-keys.dark::part(ninja-action__highlight) {
   color: black;
 }
