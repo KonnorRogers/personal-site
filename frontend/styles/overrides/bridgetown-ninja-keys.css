@@ -32,3 +32,7 @@ bridgetown-ninja-keys.dark {
 bridgetown-ninja-keys::part(ninja-action__highlight) {
   color: white;
 }
+
+bridgetown-ninja-keys::part(ninja-action__highlight) {
+  color: black;
+}
