@@ -50,10 +50,7 @@ import "../styles/defer.css"
         result.icon = `<sl-icon name="link-45deg"></sl-icon>`
       })
 
-      return [
-        ...this.staticData,
-        ...this.results,
-      ]
+      return this.staticData.concat(this.results)
     }
 
     transformResult (result) {
@@ -68,9 +65,8 @@ import "../styles/defer.css"
         title,
         section: collection.name,
         href: url,
-        // content
+        content
       }
-
     }
 
     open () {
