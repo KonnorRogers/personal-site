@@ -53,20 +53,14 @@ import "../styles/defer.css"
       return this.staticData.concat(this.results)
     }
 
-    transformResult (result) {
-      let { id, title, categories, url, content, collection } = result
+   transformResult (result) {
+      const action = super.transformResult(result)
 
-      if (url.endsWith(".json")) {
-        return
-      }
+      if (!action) return
 
-      return {
-        id,
-        title,
-        section: collection.name,
-        href: url,
-        content
-      }
+      action.section = result.collection.name
+
+      return action
     }
 
     open () {
