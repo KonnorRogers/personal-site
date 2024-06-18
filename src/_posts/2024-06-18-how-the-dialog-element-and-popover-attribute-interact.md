@@ -31,8 +31,9 @@ We have the `<dialog>` element and the `popover` attribute. For a little history
 
 Skipping over a lot of details, the `<dialog>` element shipped with 2 main functions for showing it.
 
-- `dialogElement.show()` - Shows the dialog as "non-modal" meaning you can still interact with the content behind it. It is closable by clicking outside of it, via ESC key, button, or `dialog.close()`, and **DOES NOT** set other elements to `inert` or "focus trap".
-- `dialogElement.showModal()` - Shows the dialog as "modal", meaning it will set all other elements outside of the dialog to `inert`, "focus trap" for you, and is only closable via a `<button>`, calling `dialog.close()`, or hitting the <kbd>ESC</kbd> key.
+`dialogElement.show()` - Shows the dialog as "non-modal" meaning you can still interact with the content behind it. It is closable by clicking outside of it, via ESC key, button, or `dialog.close()`, and **DOES NOT** set other elements to `inert` or "focus trap". Dialogs shown this way **WILL NOT** appear in the top layer.
+
+`dialogElement.showModal()` - Shows the dialog as "modal", meaning it will set all other elements outside of the dialog to `inert`, "focus trap" for you, and is only closable via a `<button>`, calling `dialog.close()`, or hitting the <kbd>ESC</kbd> key. Dialogs shown this way **WILL** appear in the top layer.
 
 As for `popover`, according to MDN:
 
@@ -42,14 +43,20 @@ So, to sum it up a `<dialog popover>` is a "light-dismissable non-modal dialog".
 
 > "What the heck is a "light-dismissable non-modal dialog?!"
 
-Well, it means you can close the `<dialog>` element by clicking outside of it and can interact with content outside of the dialog.
+Well, it means you can close the `<dialog>` element by clicking outside of it and can interact with content outside of the dialog. In addition, by using the popover attribute, you get closure of other popovers, additional accessibility properties, and it will appear in the top layer. (Thank you Hidde <https://ruby.social/@hdv@front-end.social/112635922000818174>)
 
 Currently, there is no declarative equivalent for modal dialogs. But there is an issue open about it: <https://github.com/openui/open-ui/issues/736>
 
 ## TLDR:
 
-- `<dialog popover>` is equivalent to doing `dialog.show()`. A non-modal, light dismissable dialog.
-- `dialog.showModal()` (no declarative equivalent) is a "modal dialog" that can only be closed via a button, ESC key, or `dialog.close()`.
+- `<dialog popover>` is a superset to doing `dialog.show()`. A non-modal, light dismissable dialog appearing in the "top layer".
+- `dialog.showModal()` (no declarative equivalent) is a "modal dialog" that can only be closed via a button, ESC key, or `dialog.close()`. And will be shown in the "top layer"
+
+## Closing thoughts
+
+When talking about `popover`, we specifically were talking about `popover="auto"`. `popover="manual"` will not give you the light dismiss functionality or closure of other popovers.
+
+## Example
 
 Here's a fun little example of the differences between the two types of dialogs:
 
