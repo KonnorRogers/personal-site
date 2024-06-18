@@ -24,6 +24,8 @@ setBasePath("/shoelace-assets")
 // Clipboard copy
 import '@github/clipboard-copy-element'
 
+import "light-pen/exports/light-preview-register.js"
+
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
 import controllers from "./controllers/**/*.{js,js.rb}"
