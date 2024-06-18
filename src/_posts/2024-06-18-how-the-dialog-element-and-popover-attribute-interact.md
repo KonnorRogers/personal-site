@@ -13,7 +13,7 @@ This post is the result of [Cory LaViska](@claviska) nerd sniping me at 11pm on 
 
 ## Purpose
 
-A quick overview of the `<dialog>` element, the `popover` attribute interact and what happens when used together.
+A quick overview of how the `<dialog>` element and the `popover` attribute interact and what happens when used together.
 
 This post is largely just a reference for future me to remember how this stuff works.
 
