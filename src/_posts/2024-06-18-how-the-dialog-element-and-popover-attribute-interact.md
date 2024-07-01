@@ -31,7 +31,7 @@ We have the `<dialog>` element and the `popover` attribute. For a little history
 
 Skipping over a lot of details, the `<dialog>` element shipped with 2 main functions for showing it.
 
-`dialogElement.show()` - Shows the dialog as "non-modal" meaning you can still interact with the content behind it. It is closable by clicking outside of it, via ESC key, button, or `dialog.close()`, and **DOES NOT** set other elements to `inert` or "focus trap". Dialogs shown this way **WILL NOT** appear in the top layer.
+`dialogElement.show()` - Shows the dialog as "non-modal" meaning you can still interact with the content behind it. ~~It is closable by clicking outside of it~~ <ins>dialogElement.show() does not support light dismiss</ins>, via ESC key, button, or `dialog.close()`, and **DOES NOT** set other elements to `inert` or "focus trap". Dialogs shown this way **WILL NOT** appear in the top layer.
 
 `dialogElement.showModal()` - Shows the dialog as "modal", meaning it will set all other elements outside of the dialog to `inert`, "focus trap" for you, and is only closable via a `<button>`, calling `dialog.close()`, or hitting the <kbd>ESC</kbd> key. Dialogs shown this way **WILL** appear in the top layer.
 
@@ -49,7 +49,8 @@ Currently, there is no declarative equivalent for modal dialogs. But there is an
 
 ## TLDR:
 
-- `<dialog popover>` is a superset to doing `dialog.show()`. A non-modal, light dismissable dialog appearing in the "top layer".
+- `<dialog popover>` is a "superset" to doing `dialog.show()`. A non-modal, light dismissable dialog appearing in the "top layer".
+- `dialog.show()` is a non-modal dialog that **DOES NOT** appear in the top layer.
 - `dialog.showModal()` (no declarative equivalent) is a "modal dialog" that can only be closed via a button, ESC key, or `dialog.close()`. And will be shown in the "top layer"
 
 ## Closing thoughts
