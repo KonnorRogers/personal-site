@@ -1,5 +1,5 @@
 ---
-title: Running Lit Ssr In Web Awesome
+title: Running Lit SSR in Web Awesome
 categories: []
 date: 2024-07-24
 description: |
