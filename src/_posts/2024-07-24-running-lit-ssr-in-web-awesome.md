@@ -38,7 +38,7 @@ Lit SSRs the declarative shadow dom using modules `/dist`
 
 Notably, in Web Awesome we have 2 incompatible libraries with Lit SSR.
 
-One we own: `@shoelace-style/localize`. This has been updated to now check if its running on the server or client and will only register its MutationObserver if the MutationObserver class exists.
+One we own: `@shoelace-style/localize`. This has been updated to now check if its running on the server or client and will only register its MutationObserver if the MutationObserver class exists. If we don't do this, the server will error out because MutationObserver doesn't exist on the server. And because its being run as a `sideEffect`, you need to do some extra work to shim the MutationObserver before the side effect runs.
 
 One we don't own: `qr-creator`. We still haven't decided what to do about this one. Cory did a lot of testing around this and it worked with things like Emojis and other weird edge cases. So for now we exclude it from SSR.
 
@@ -143,7 +143,7 @@ Here's some of the errors:
 - `Uncaught (in promise) Error: unexpected longer than expected iterable`
 - `Error: Hydration value mismatch: Unexpected TemplateResult rendered to part`
 
-So what caused this errors?
+So what caused these errors?
 
 Lets look at the code that caused: `Uncaught (in promise) Error: unexpected longer than expected iterable`
 
@@ -159,22 +159,7 @@ export class Carousel extends LitElement {
     return html`
       <div part="pagination" role="tablist" class="carousel__pagination" aria-controls="scroll-container">
         ${map(range(pagesCount), index => {
-          const isActive = index === currentPage;
-          return html`
-            <button
-              part="pagination-item ${isActive ? 'pagination-item--active' : ''}"
-              class="${classMap({
-                'carousel__pagination-item': true,
-                'carousel__pagination-item--active': isActive
-              })}"
-              role="tab"
-              aria-selected="${isActive ? 'true' : 'false'}"
-              aria-label="${this.localize.term('goToSlide', index + 1, pagesCount)}"
-              tabindex=${isActive ? '0' : '-1'}
-              @click=${() => this.goToSlide(index * slidesPerMove)}
-              @keydown=${this.handleKeyDown}
-            ></button>
-          `;
+          return html``
         })}
       </div>
     `
@@ -182,9 +167,9 @@ export class Carousel extends LitElement {
 }
 ```
 
-So what causes the error?
+So what is causing the hydration error?
 
-Well, on first hydration theres a "mismatch".
+Well, when the Lit Element Hydration script runs, it expects the client to match the server. When it doesn't match the server HTML, it reports a  "hydration mismatch".
 
 In reality, there's 6 slides when the element attempts to "client render", but the server thought there was 0 slides, causing hydration to fail.
 
@@ -198,22 +183,7 @@ render () {
     isServer ? html`` : html`
         <div part="pagination" role="tablist" class="carousel__pagination" aria-controls="scroll-container">
           ${map(range(pagesCount), index => {
-            const isActive = index === currentPage;
-            return html`
-              <button
-                part="pagination-item ${isActive ? 'pagination-item--active' : ''}"
-                class="${classMap({
-                  'carousel__pagination-item': true,
-                  'carousel__pagination-item--active': isActive
-                })}"
-                role="tab"
-                aria-selected="${isActive ? 'true' : 'false'}"
-                aria-label="${this.localize.term('goToSlide', index + 1, pagesCount)}"
-                tabindex=${isActive ? '0' : '-1'}
-                @click=${() => this.goToSlide(index * slidesPerMove)}
-                @keydown=${this.handleKeyDown}
-              ></button>
-            `;
+            return html``
          })}
       </div>
   `
@@ -725,4 +695,12 @@ With all the pieces in place, now its time to through and actually update the wh
 
 With that, those were the big pieces of getting Lit SSR working in Web Awesome. There's some other technical bits omitted of unbundled dist files, hooking up with 11ty SSR, getting the lit-element-hydrate-support module loading at the right time, but all of that was pretty straight forward so I omitted them from here.
 
-I also set out to build a library for catching Lit hydration errors in the browser to get easy to read diffs, so we'll see where that goes! Anyways, this was my experience hope it was helpful!
+I also set out to build a library for catching Lit hydration errors in the browser to get easy to read diffs, so we'll see where that goes!
+
+## Things I felt missing from SSR
+
+Sometimes it would be really nice to read the DOM tree on the server. I'm sure there's a way to pull in an HTML parser and read the final HTML, but it feels out of scope for Lit rendering since it seems focused solely on rendering individual components, and not the page as a whole. This may be something for a custom renderer or something? I don't know. We have a number of components that rely on `querySelector` and would be nice to not need to set manual properties for users.
+
+Anyways, this was my experience hope it was helpful!
+
+
