@@ -448,11 +448,11 @@ render () {
 
 Depending on your SSR module, this may be one of those things you can pass along easily through `appData` / `context`.
 
-## `setAttribute` and `this.style` are not usable on the server.
+## `this.style` is not usable on the server.
 
-Access to `style` objects for modifying CSS and calling `setAttribute` will result in errors.
+Access to `style` object for modifying CSS  will result in errors.
 
-So you can't do like `this.style.color = "red"` or `this.setAttribute("data-thing")`
+So you can't do like `this.style.color = "red"`
 
 ## Testing
 
