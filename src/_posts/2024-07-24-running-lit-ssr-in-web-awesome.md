@@ -703,4 +703,36 @@ Sometimes it would be really nice to read the DOM tree on the server. I'm sure t
 
 Anyways, this was my experience hope it was helpful!
 
+## Additional updates
+
+### Turbo + DSD
+
+<https://github.com/hotwired/turbo/issues/1292>
+
+We use Turbo in Web Awesome. I couldn't figure out why our `<wa-animation>` wasn't working. Turns out, theres a bug in Turbo that causes DSD to linger when you navigate to a new page.
+
+So to fix this, I added the following "polyfill"
+
+```js
+function fixDSD (e) {
+  const newElement = e.detail.newBody || e.detail.newFrame || e.detail.newStream
+  if (!newElement) { return }
+
+  // https://developer.chrome.com/docs/css-ui/declarative-shadow-dom#polyfill
+  ;(function attachShadowRoots(root) {
+    root.querySelectorAll("template[shadowrootmode]").forEach(template => {
+      const mode = template.getAttribute("shadowrootmode");
+      const shadowRoot = template.parentNode.attachShadow({ mode });
+      shadowRoot.appendChild(template.content);
+      template.remove();
+      attachShadowRoots(shadowRoot);
+    });
+  })(newElement);
+}
+
+;["turbo:before-render", "turbo:before-stream-render", "turbo:before-frame-render"].forEach((eventName) => {
+  document.addEventListener(eventName, fixDSD)
+})
+```
+
 
