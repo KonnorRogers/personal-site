@@ -1,4 +1,7 @@
 import "index.css"
+import "role-components/exports/components/tab/tab-register.js"
+import "role-components/exports/components/tab-list/tab-list-register.js"
+import "role-components/exports/components/tab-panel/tab-panel-register.js"
 
 import * as Turbo from "@hotwired/turbo"
 
@@ -74,3 +77,35 @@ enhanceCodeBlocks()
 window.visualViewport.addEventListener("focusin", viewportHandler)
 window.visualViewport.addEventListener("resize", viewportHandler);
 window.visualViewport.addEventListener("scroll", viewportHandler);
+
+;(() => {
+  if (!window.scrollPositions) {
+    window.scrollPositions = {};
+  }
+
+  function preserveScroll() {
+    document.querySelectorAll("[data-preserve-scroll").forEach((element) => {
+      scrollPositions[element.id] = element.scrollTop;
+    });
+  }
+
+  function restoreScroll(event) {
+    if (event.detail && event.detail.newBody) {
+      event.detail.newBody
+        .querySelectorAll("[data-preserve-scroll]")
+        .forEach((element) => {
+          element.scrollTop = scrollPositions[element.id];
+        });
+    }
+
+    document.querySelectorAll("[data-preserve-scroll").forEach((element) => {
+      element.scrollTop = scrollPositions[element.id];
+    });
+  }
+
+  window.addEventListener("turbo:before-cache", preserveScroll);
+  window.addEventListener("turbo:before-render", restoreScroll);
+  window.addEventListener("turbo:render", restoreScroll);
+})();
+
+

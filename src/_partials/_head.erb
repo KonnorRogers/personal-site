@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="description" content="<%= metadata.description %>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="env" content="<%= Bridgetown.environment %>">
 <% resource_title = resource.data.title || site.metadata.title %>
 <title><%= resource_title %></title>
 
@@ -87,4 +88,27 @@
   }
 
   applyTheme(getTheme())
+</script>
+
+<%= live_reload_dev_js %>
+<script type="module">
+  const env = document.querySelector("meta[name='env']")?.content
+  if (env !== "development") { return }
+
+  try {
+    function storeScroll () {
+      const scrollTop = document.documentElement.scrollTop
+      sessionStorage.setItem("scroll-height", scrollTop.toString())
+    }
+
+    function restoreScroll () {
+        const scrollHeight = Number(sessionStorage.getItem("scroll-height")) || 0
+        document.documentElement.scrollTop = scrollHeight
+    }
+
+    window.addEventListener("beforeunload", storeScroll)
+    <%# window.addEventListener("unload", storeScroll) %>
+    window.addEventListener("pageshow", restoreScroll)
+    document.addEventListener("DOMContentLoaded", restoreScroll)
+  } catch (_e) {}
 </script>

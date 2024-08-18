@@ -35,6 +35,9 @@ importers:
       lit:
         specifier: ^3.1.3
         version: 3.1.3
+      role-components:
+        specifier: 3.0.0-beta.3
+        version: 3.0.0-beta.3
     devDependencies:
       esbuild:
         specifier: ^0.21.4
@@ -402,11 +405,20 @@ packages:
   '@floating-ui/core@1.5.0':
     resolution: {integrity: sha512-kK1h4m36DQ0UHGj5Ah4db7R0rHemTqqO0QLvUqi1/mUUp3LuAWbWxdxSIf/XsnH9VS6rRVPLJCncjRzUvyCLXg==}
 
+  '@floating-ui/core@1.6.7':
+    resolution: {integrity: sha512-yDzVT/Lm101nQ5TCVeK65LtdN7Tj4Qpr9RTXJ2vPFLqtLxwOrpoxAHAJI8J3yYWUc40J0BDBheaitK5SJmno2g==}
+
   '@floating-ui/dom@1.5.3':
     resolution: {integrity: sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==}
 
+  '@floating-ui/dom@1.6.10':
+    resolution: {integrity: sha512-fskgCFv8J8OamCmyun8MfjB1Olfn+uZKjOKZ0vhYF3gRmEUXcGOjxWL8bBr7i4kIuPZ2KD2S3EUIOxnjC8kl2A==}
+
   '@floating-ui/utils@0.1.6':
     resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==}
+
+  '@floating-ui/utils@0.2.7':
+    resolution: {integrity: sha512-X8R8Oj771YRl/w+c1HqAC1szL8zWQRwFvgDwT129k9ACdBoud/+/rX9V0qiMl6LWUdP9voC2nDVZYPMQQsb6eA==}
 
   '@github/clipboard-copy-element@1.3.0':
     resolution: {integrity: sha512-wyntkQkwoLbLo+Hqg2LIVMXDIzcvUb9bSDz+clX6nVJItwzh103rHxdXFRZD+DmxVbuEW5xSznYQXkz1jZT+xg==}
@@ -579,6 +591,9 @@ packages:
   foreground-child@3.1.1:
     resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
     engines: {node: '>=14'}
+
+  form-associated-helpers@0.0.10:
+    resolution: {integrity: sha512-ClR8Y8muq6EPsmUZsPf+iWUWvRpRzSRGm/ESb5pbhf1PsRSph5cWjpvBlHrNeaBwTGPC1R0kFjAb5kR96ZQe+Q==}
 
   form-associated-helpers@0.0.9:
     resolution: {integrity: sha512-jysvaOE1YEoFEDqcHdV43rk57Q37z4MDl/nYJGAt1iwIpIafH9viJLHfEvVNxoUuGiQ14AZYvPLP7pfi6BEKWQ==}
@@ -902,6 +917,9 @@ packages:
   resolve@1.22.2:
     resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==}
     hasBin: true
+
+  role-components@3.0.0-beta.3:
+    resolution: {integrity: sha512-t5PFsRsgF0FBvDqpsjklyqMJHgYeLSVyiap5zFJQ6/CAYjtZu7E5Y7Ia6aP2arZydM4C99738GLqOMPj03DtYA==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -1231,12 +1249,23 @@ snapshots:
     dependencies:
       '@floating-ui/utils': 0.1.6
 
+  '@floating-ui/core@1.6.7':
+    dependencies:
+      '@floating-ui/utils': 0.2.7
+
   '@floating-ui/dom@1.5.3':
     dependencies:
       '@floating-ui/core': 1.5.0
       '@floating-ui/utils': 0.1.6
 
+  '@floating-ui/dom@1.6.10':
+    dependencies:
+      '@floating-ui/core': 1.6.7
+      '@floating-ui/utils': 0.2.7
+
   '@floating-ui/utils@0.1.6': {}
+
+  '@floating-ui/utils@0.2.7': {}
 
   '@github/clipboard-copy-element@1.3.0': {}
 
@@ -1431,6 +1460,8 @@ snapshots:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.0.2
+
+  form-associated-helpers@0.0.10: {}
 
   form-associated-helpers@0.0.9: {}
 
@@ -1801,6 +1832,13 @@ snapshots:
       is-core-module: 2.12.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+
+  role-components@3.0.0-beta.3:
+    dependencies:
+      '@floating-ui/dom': 1.6.10
+      form-associated-helpers: 0.0.10
+      lit: 3.1.3
+      web-component-define: 2.0.11
 
   shebang-command@2.0.0:
     dependencies:
