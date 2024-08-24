@@ -51,12 +51,11 @@ const esbuildOptions = {
   target: "es2020",
   entryPoints: [
     "./frontend/javascript/index.js",
-    "./frontend/javascript/defer.js"
+    "./frontend/javascript/defer.js",
   ],
   plugins: [
     Analyzer()
   ]
-
 }
 
 build(outputFolder, esbuildOptions)

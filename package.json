@@ -24,7 +24,7 @@
     "@hotwired/turbo": "^7.3.0",
     "@konnorr/bridgetown-quick-search": "^3.10.3",
     "@shoelace-style/shoelace": "^2.11.2",
-    "bridgetown-quick-search": "2.0.0",
+    "bridgetown-quick-search": "3.0.3",
     "konnors-ninja-keys": "^1.13.2",
     "light-pen": "^3.1.1",
     "lit": "^3.1.3",

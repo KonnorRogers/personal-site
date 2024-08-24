@@ -10,9 +10,12 @@ template_engine: erb
 
 permalink: "/posts/:year/:slug/"
 
-collection:
+collections:
   posts:
     output: true
+  projects:
+    output: true
+    permalink: "/projects/:slug/"
 
 pagination:
   enabled: true
@@ -27,6 +30,11 @@ defaults:
       path: "_posts"
     values:
       layout: post
+
+  - scope:
+      path: "_projects"
+    values:
+      layout: project
 
   # - scope:
   #     path: ""

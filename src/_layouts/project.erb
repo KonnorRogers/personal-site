@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="sl-theme-light" lang="<%= site.locale %>">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="<%= resource.data.description || site.metadata.description %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="env" content="<%= Bridgetown.environment %>">
+    <% resource_title = resource.data.title || site.metadata.title %>
+    <title><%= resource_title %></title>
+
+    <!-- Dont cache these. -->
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ec4899">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <%= live_reload_dev_js %>
+    <script type="module">
+      (() => {
+      const env = document.querySelector("meta[name='env']")?.content
+      if (env !== "development") { return }
+
+      try {
+        function storeScroll () {
+          const scrollTop = document.documentElement.scrollTop
+          sessionStorage.setItem("scroll-height", scrollTop.toString())
+        }
+
+        function restoreScroll () {
+            const scrollHeight = Number(sessionStorage.getItem("scroll-height")) || 0
+            document.documentElement.scrollTop = scrollHeight
+        }
+
+        window.addEventListener("beforeunload", storeScroll)
+        <%# window.addEventListener("unload", storeScroll) %>
+        window.addEventListener("pageshow", restoreScroll)
+        document.addEventListener("DOMContentLoaded", restoreScroll)
+      } catch (_e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

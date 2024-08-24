@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+ruby "3.3.4"
+
 ####
 # Welcome to your project's Gemfile, used by Rubygems & Bundler.
 #
@@ -19,11 +21,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem "bridgetown", "~> 1.3"
+gem "bridgetown", "~> 2.0.0.beta2"
+# gem "bridgetown-routes", "~> 2.0.0.beta2"
 gem "rake"
 
 # Uncomment to add file-based dynamic routing to your project:
-# gem "bridgetown-routes", "~> 1.2.0"
 
 # Uncomment to use the Inspectors API to manipulate the output
 # of your HTML or XML resources:
@@ -32,11 +34,7 @@ gem "rake"
 # Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
 gem "puma", "~> 6.0"
-
-gem "bridgetown-quick-search", "~> 2.0"
-
+gem "bridgetown-quick-search", "~> 3.0"
 gem "nokogiri", "~> 1.15"
-
 gem "bridgetown-feed", "~> 3.0"
-
 gem "bridgetown-seo-tag", "~> 6.0"
