@@ -1,4 +1,4 @@
-import "index.css"
+import "../styles/index.css"
 import "role-components/exports/components/tab/tab-register.js"
 import "role-components/exports/components/tab-list/tab-list-register.js"
 import "role-components/exports/components/tab-panel/tab-panel-register.js"
@@ -40,8 +40,7 @@ window.Stimulus = Application.start()
 Object.entries(controllers).forEach(([filename, controller]) => {
   if (filename.includes("_controller.") || filename.includes("-controller.")) {
     const identifier = filename
-      .replace("./controllers", "")
-      .replace("controllers/", "")
+      .replace("./controllers/", "")
       .replace(/[_-]controller..*$/, "")
       .replace("_", "-")
       .replace("/", "--")

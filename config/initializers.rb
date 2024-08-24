@@ -12,6 +12,11 @@ Bridgetown.configure do |config|
   init :"bridgetown-quick-search"
   init :"bridgetown-feed"
   init :"bridgetown-seo-tag"
+  template_engine "erb"
+
+  pagination do
+    enabled true
+  end
 
   # You can use `init` to initialize various Bridgetown features or plugin gems.
   # For example, you can use the Dotenv gem to load environment variables from
