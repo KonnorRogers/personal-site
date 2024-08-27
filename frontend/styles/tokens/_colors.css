@@ -13,7 +13,7 @@ html.sl-theme-dark {
   --color-primary: var(--sl-color-primary-600);
   --text-color-primary: var(--sl-color-primary-700);
   --link-color: var(--sl-color-primary-700);
-  --link-color-focus: var(--sl-color-primary-500);
+  --link-color-focus: var(--sl-color-primary-600);
   --divider-color: var(--sl-color-neutral-300);
   --code-color: hsl(209, 27%, 26%);
   --code-background-color: hsl(210, 29%, 97%);
