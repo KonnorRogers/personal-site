@@ -10,7 +10,7 @@ pre.highlight {
 .highlighter-rouge,
 .highlight {
   border-radius: 8px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.4;
   font-family: var(--sl-font-mono);
 }

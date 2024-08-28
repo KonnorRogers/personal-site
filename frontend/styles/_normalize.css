@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   scrollbar-gutter: stable;
+  font-size: 100%;
   /* letter-spacing: 0.025em; */
 }
 
@@ -14,7 +15,6 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   font-family: var(--sl-font-sans);
-  font-size: 1.1rem;
 	background-color: var(--body-color);
 	color: var(--text-color);
 	display: grid;
@@ -64,39 +64,36 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: var(--sl-spacing-small);
 }
 
-main p {
-  font-size: 1.1rem;
-  line-height: 1.9;
-}
-
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.45em;
   margin: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.15rem;
+  font-size: 1.35em;
 }
 
 h3, h4 {
-  font-size: 1.1rem;
+  font-size: 1.25em;
 }
 
 h5, h6 {
-  font-size: 1.05rem;
+  font-size: 1.15em;
 }
 
 p {
+  font-size: 1.1em;
+  line-height: 1.9;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding: 0;
 }
 
-p, li {
+li {
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 ul {
