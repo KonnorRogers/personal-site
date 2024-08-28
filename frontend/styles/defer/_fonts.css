@@ -1,34 +1,8 @@
 /** Nothing here...yet */
-/* "iA Writer Mono S", "Courier New", monospace */
-
-/* @font-face { */
-/*   font-family: 'iA Writer Mono'; */
-/*   font-style: normal; */
-/*   font-display: swap; */
-/*   font-weight: 400; */
-/*   src: url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-400-normal.woff2') format('woff2'), url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-400-normal.woff') format('woff'); */
-/* } */
-/**/
-/* @font-face { */
-/*   font-family: 'iA Writer Mono'; */
-/*   font-style: italic; */
-/*   font-display: swap; */
-/*   font-weight: 400; */
-/*   src: url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-400-italic.woff2') format('woff2'), url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-400-italic.woff') format('woff'); */
-/* } */
-/**/
-/* @font-face { */
-/*   font-family: 'iA Writer Mono'; */
-/*   font-style: normal; */
-/*   font-display: swap; */
-/*   font-weight: 700; */
-/*   src: url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-700-normal.woff2') format('woff2'), url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-700-normal.woff') format('woff'); */
-/* } */
-/**/
-/* @font-face { */
-/*   font-family: 'iA Writer Mono'; */
-/*   font-style: italic; */
-/*   font-display: swap; */
-/*   font-weight: 700; */
-/*   src: url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-700-italic.woff2') format('woff2'), url('/assets/fonts/ia-writer-mono/webfonts/ia-writer-mono-latin-700-italic.woff') format('woff'); */
-/* } */
+@font-face {
+  font-family: "Departure Mono";
+  src: url("/assets/fonts/departure-mono/DepartureMono-Regular.woff2") format("woff2 supports variations"),
+       url("/assets/fonts/departure-mono/DepartureMono-Regular.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-display: fallback;
+}
