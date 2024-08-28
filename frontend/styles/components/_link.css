@@ -22,11 +22,12 @@
 .side-nav__link,
 .nav-link {
   font-weight: bold;
-  color: var(--sl-color-neutral-800);
+  font-family: "Departure Mono", var(--sl-font-mono);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--sl-color-primary-500);
   text-underline-offset: 0.3em;
+  color: var(--sl-color-neutral-800);
 }
 
 .link__flex {
