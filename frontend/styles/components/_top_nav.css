@@ -57,7 +57,7 @@
 
 .top-nav__links {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   flex: 0 1 auto;
 }

@@ -30,6 +30,17 @@
   color: var(--sl-color-neutral-800);
 }
 
+:is(
+.blog-link__header,
+.contact__link,
+.main-list__link,
+.side-nav__link,
+.nav-link:not(.nav-link--icon)
+):hover {
+  color: var(--sl-color-neutral-900);
+  background-color: var(--sl-color-primary-100);
+}
+
 .link__flex {
   display: inline-flex;
   gap: 0.25em;
