@@ -28,8 +28,7 @@ code.highlighter-rouge {
   font-size: 1rem;
   padding: 0 0.4em;
   border-radius: 6px;
-  white-space: break-spaces;
-  vertical-align: middle;
+  word-wrap: anywhere;
 
   /* Decoration */
   background-color: var(--code-background-color);
