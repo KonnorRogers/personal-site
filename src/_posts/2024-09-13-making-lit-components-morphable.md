@@ -90,7 +90,7 @@ class MorphableElement extends LitElement {
 
 The way this all works is anytime a property that reflects changes to `null` or `undefined`, then we will make that property the initial constructor value, and because it `reflects`, Lit will update the attribute for us.
 
-The name I really like for this concept is "Durable Attributes", a term I first heard from Caleb Porzio when he introduced Flux in his Laracon talk.
+The name I really like for this concept is "Durable Attributes", a term I first heard from Caleb Porzio when he introduced Flux in his 2024 Laracon talk.
 
 Here's a playground that uses a mixin:
 
@@ -98,4 +98,15 @@ Here's a playground that uses a mixin:
 
 And I added this to my [konnors-lit-helpers package](https://github.com/KonnorRogers/konnors-lit-helpers/) as well!
 
-Happy morphing! Hope this was informative!!
+## Final notes
+
+There is *some* runtime overhead to this approach of storing initial values in a `Map`. I don't know how measurable the impact is, and there is *some* runtime overhead by iterating over the properties in the `willUpdate` callback, but as a whole, I think its okay and I don't think its deal breaking either.
+
+## Other possibilities
+
+If the runtime proves to be too impactful, I may look at moving the `initialReflectedProperties` to a one time operation that gets cached on the constructor, but I really don't foresee the memory issues being that impactful.
+
+
+Anyways, happy morphing and I hope this was informative!!
+
+Also, before you ask, I will be working on getting this code into both [Shoelace](https://shoelace.style) and [Web Awesome](https://webawesome.com) so that you can morph to your heart's content. As long as I don't hit any show stopping bugs of course.
