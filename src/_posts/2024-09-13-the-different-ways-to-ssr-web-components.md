@@ -97,7 +97,7 @@ The major benefit of this is most users don't need to actively think about the S
 The other option is "per call site rendering" where instead of having to parse HTML, you have a "method" call to your server, process, whatever, that will render the fully expanded tag. No post render processing, just inline, what you call is what you get. I'm sure there's examples out there of libraries that actually do it, but im lazy and dont feel like searching. I'm a Rails dev at heart, so here's a "per call site SSR" pseudo code:
 
 ```erb
-<%= ssr_render "my-component" %>
+<%%= ssr_render "my-component" %>
 ```
 
 Which will output:
