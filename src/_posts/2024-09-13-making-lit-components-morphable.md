@@ -49,9 +49,6 @@ The Lit discord recommended trying the `attributeChangedCallback`. This worked!
 
 Here's what that code looks like:
 
-
-
-
 ```js
 class MorphableElement extends LitElement {
   #hasRecordedInitialProperties
@@ -74,7 +71,7 @@ class MorphableElement extends LitElement {
 
       this.#hasRecordedInitialProperties = true
     }
-      super.attributeChangedCallback(...args)
+    super.attributeChangedCallback(...args)
   }
 
   willUpdate(changedProperties) {
