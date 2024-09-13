@@ -32,12 +32,14 @@ import "light-pen/exports/light-code-register.js"
 
 import { loader as RubyLoader } from "prism-esm/components/prism-ruby.js"
 
-document.querySelectorAll("light-code").forEach((code) => {
-    const highlighter = code.highlighter
-    RubyLoader(highlighter)
-    const lang = code.getAttribute("language") || "plaintext"
-    code.removeAttribute("language")
-    code.setAttribute("language", lang)
+customElements.whenDefined("light-code").then(() => {
+  document.querySelectorAll("light-code").forEach((code) => {
+      const highlighter = code.highlighter
+      RubyLoader(highlighter)
+      const lang = code.getAttribute("language") || "plaintext"
+      code.removeAttribute("language")
+      code.setAttribute("language", lang)
+  })
 })
 
 // Import all JavaScript & CSS files from src/_components
