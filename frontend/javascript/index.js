@@ -32,16 +32,6 @@ import "light-pen/exports/light-code-register.js"
 
 import { loader as RubyLoader } from "prism-esm/components/prism-ruby.js"
 
-customElements.whenDefined("light-code").then(() => {
-  document.querySelectorAll("light-code").forEach((code) => {
-      const highlighter = code.highlighter
-      RubyLoader(highlighter)
-      const lang = code.getAttribute("language") || "plaintext"
-      code.removeAttribute("language")
-      code.setAttribute("language", lang)
-  })
-})
-
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
 import controllers from "./controllers/**/*.{js,js.rb}"
@@ -75,7 +65,21 @@ function viewportHandler(event) {
   });
 }
 
+function enhanceLightCode () {
+  customElements.whenDefined("light-code").then(() => {
+    document.querySelectorAll("light-code").forEach((code) => {
+        const highlighter = code.highlighter
+        RubyLoader(highlighter)
+        const lang = code.getAttribute("language") || "plaintext"
+        code.removeAttribute("language")
+        code.setAttribute("language", lang)
+    })
+  })
+}
+
+
 function enhanceCodeBlocks () {
+  enhanceLightCode()
   document.querySelectorAll(":is(.language-bash, .language-shell, .language-zsh, .language-sh, .language-console).highlighter-rouge pre.highlight > code").forEach((el) => {
     el.innerHTML = el.innerHTML.split("\n").map((str) => {
       return str.replace(/^(\w)/, "<span class='highlight-command-line-start'>$</span>$1")
@@ -85,6 +89,7 @@ function enhanceCodeBlocks () {
 
 document.addEventListener("turbo:load", enhanceCodeBlocks)
 enhanceCodeBlocks()
+enhanceLightCode()
 
 window.visualViewport.addEventListener("focusin", viewportHandler)
 window.visualViewport.addEventListener("resize", viewportHandler);
