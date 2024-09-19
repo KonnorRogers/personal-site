@@ -203,3 +203,8 @@ figcaption {
   font-style: italic;
 }
 
+summary {
+  padding: 0.4em 0.6em;
+  background: var(--sl-color-neutral-100);
+  cursor: pointer;
+}
