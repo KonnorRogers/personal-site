@@ -3,7 +3,7 @@ import "role-components/exports/components/tab/tab-register.js"
 import "role-components/exports/components/tab-list/tab-list-register.js"
 import "role-components/exports/components/tab-panel/tab-panel-register.js"
 
-import * as Turbo from "@hotwired/turbo"
+// import * as Turbo from "@hotwired/turbo"
 
 import "./src/external_icon.js"
 import "./src/layout.js"
