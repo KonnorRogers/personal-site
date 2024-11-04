@@ -27,8 +27,8 @@ setBasePath("/shoelace-assets")
 // Clipboard copy
 import '@github/clipboard-copy-element'
 
-import "light-pen/exports/light-preview-register.js"
-import "light-pen/exports/light-code-register.js"
+import "light-pen/exports/components/light-preview/light-preview-register.js"
+import "light-pen/exports/components/light-code/light-code-register.js"
 
 import { loader as RubyLoader } from "prism-esm/components/prism-ruby.js"
 
