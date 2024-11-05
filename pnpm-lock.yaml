@@ -30,8 +30,8 @@ importers:
         specifier: ^1.13.2
         version: 1.13.2
       light-pen:
-        specifier: ^4.1.1
-        version: 4.1.1
+        specifier: ^4.2.0
+        version: 4.2.0
       lit:
         specifier: ^3.1.3
         version: 3.1.3
@@ -1120,8 +1120,8 @@ packages:
   konnors-ninja-keys@1.13.3:
     resolution: {integrity: sha512-shXpffH5P1zb79GB6o7Q5A2HOpBuV0P2PQkdG4uNjDSj1NhHdIWlWx5/sspWU6xvqo+VT5Bu3Vg0/pFdhiH52Q==}
 
-  light-pen@4.1.1:
-    resolution: {integrity: sha512-rxtWFBlETXQpEWnJtakYbtFxxRx934LFVP1gNBDtlqnymftyeD3ggeltWv3mHFLrc+3vrqtH1nT07uCeDMXjsQ==}
+  light-pen@4.2.0:
+    resolution: {integrity: sha512-0ZaEyr8wLEYEt49EtkkOsseEIJ0JYP8zbzgBdKa6bVgpfnKm5wIrCEDOMFunhmm9sNE5xCs7TMXU3RLqsEQQkA==}
 
   lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -2820,7 +2820,7 @@ snapshots:
       lit: 2.8.0
       web-component-define: 2.0.11
 
-  light-pen@4.1.1:
+  light-pen@4.2.0:
     dependencies:
       '@open-wc/semantic-dom-diff': 0.20.1
       diff: 5.2.0
