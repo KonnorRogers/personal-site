@@ -17,7 +17,7 @@ light-code > [slot="code"] {
 
 }
 
-light-code[wrap="hard"] > [slot="code"] {
+light-code[wrap="soft"] > [slot="code"] {
   /* this creates "soft" line-wrapping. */
   word-break: break-word;
   white-space: pre-wrap;
