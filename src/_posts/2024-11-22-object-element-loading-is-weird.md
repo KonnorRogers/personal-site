@@ -101,7 +101,7 @@ Now I _kind of_ expected this, but I was curious more than anything.
 
 I tried it, and for some reason it still did not guarantee the file actually loaded. `<object>` did however work with throttled connections.
 
-## &lt;embed&gt; , &lt;iframe&gt; anything?
+## `&lt;embed&gt;` , `&lt;iframe&gt;` , anything?
 
 I also tried using the `<embed>` and `<iframe>` elements.
 
