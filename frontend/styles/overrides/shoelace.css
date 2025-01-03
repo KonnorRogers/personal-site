@@ -2,3 +2,23 @@
   display: none;
 }
 
+sl-alert[variant="warning"]::part(base) {
+  background-color: var(--sl-color-warning-50);
+  color: var(--sl-color-warning-900);
+}
+
+sl-alert[variant="primary"]::part(base) {
+  background-color: var(--sl-color-primary-50);
+  color: var(--sl-color-primary-900);
+}
+
+sl-alert[variant="info"]::part(base) {
+  background-color: var(--sl-color-neutral-50);
+  color: var(--sl-color-neutral-900);
+}
+
+sl-alert[variant="danger"]::part(base) {
+  background-color: var(--sl-color-danger-50);
+  color: var(--sl-color-danger-900);
+}
+
