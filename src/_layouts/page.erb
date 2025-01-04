@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 <main id="main" class="documentation-content">
   <% title_id = resource.data.title.downcase.split(" ").join("-").gsub(/[\?!]/, "") %>
   <h1 id="page-header__<%= title_id %>">
@@ -11,6 +12,9 @@ layout: default
   </h1>
 
   <%= yield %>
+
 </main>
+
+
 
 

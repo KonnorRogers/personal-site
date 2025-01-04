@@ -43,7 +43,6 @@ class KrLayout extends LitElement {
       position: sticky;
       background: white;
       z-index: 1;
-      min-height: var(--header-height);
     }
 
     :is(.header, .aside, .menu, .footer) ::slotted(*) {
@@ -135,10 +134,15 @@ class KrLayout extends LitElement {
     super.connectedCallback?.()
 
     this.resizeObserver = new ResizeObserver((entries) => {
+      function toNearest (nearest, num) {
+        return nearest * Math.ceil(num / nearest)
+      }
       for (const entry of entries) {
-        if (entry.contentBoxSize) {
-          const contentBoxSize = entry.borderBoxSize[0];
-          this.style.setProperty("--header-height", `${contentBoxSize.blockSize}px`)
+        if (entry.borderBoxSize) {
+          let blockSize = entry.borderBoxSize.reduce((accum, borderBox) => accum + borderBox.blockSize, 0)
+          blockSize = toNearest(0.25, blockSize)
+          console.log(blockSize)
+          this.style.setProperty("--header-height", `${blockSize}px`)
         }
       }
     });

@@ -20,6 +20,10 @@ kr-layout > [slot='aside'] {
   kr-layout > [slot='aside'] {
     display: block;
   }
+
+  kr-layout .mobile-table-of-contents {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {

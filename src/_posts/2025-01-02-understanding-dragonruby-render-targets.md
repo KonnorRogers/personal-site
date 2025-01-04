@@ -1,7 +1,7 @@
 ---
 title: Understanding DragonRuby Render Targets
 categories: []
-date: 2025-01-02
+date: 2025-01-03
 description: |
   Understanding DragonRuby Render Targets. Why they're important, what they do, what they are, and how they work.
 published: true
@@ -31,37 +31,7 @@ Now, this doesn't do anything by itself. If you're familiar with "pointers" from
 
 Like so:
 
-<light-code language="ruby">
-  <script type="text/plain" slot="code">
-def tick(args)
-  # Create the render target only on the first tick. Its then cached and used indefinitely.
-  if Kernel.tick_count <= 0
-    args.outputs[:black_box].w = 100
-    args.outputs[:black_box].h = 100
-    args.outputs[:black_box].background_color = [0,0,0,64] # r: 0, b: 0, g: 0, a: 64 (alpha)
-  end
-
-  # Grab a reference to the `:black_box` so we can get its dimensions.
-  render_target = args.outputs[:black_box]
-
-  # Turn the cached render target into a "sprite"
-  render_target_sprite = {
-    x: 100,
-    y: 100,
-    w: render_target.w,
-    h: render_target.h,
-    path: :black_box # This says "use the render target"
-  }
-
-  # Render the render target
-  args.outputs.sprites << render_target_sprite
-end
-  </script>
-</light-code>
-
-In particular, the magic happens on line 15 where we pass the `:black_box` symbol as a `path` for the sprite.
-
-<light-code language="ruby" highlight-lines="{15}">
+<light-code language="ruby" highlight-lines="{15}" class="sl-theme-light" style="--syntax-highlight-bg: var(--sl-color-green-200);">
   <script type="text/plain" slot="code">
 def tick(args)
   # Create the render target only on the first tick. Its then cached and used indefinitely.
@@ -86,7 +56,9 @@ end
   </script>
 </light-code>
 
-Now we can go further and do things such as creating multiple sprites using the render target, scale the sprite, angle the sprite, and perform all sorts of transforms. So here is what happens when I take the previous black box and change the "alpha" to `64` and start overlaying them with different transforms.
+In particular, the magic happens on line 15 where we pass the `:black_box` symbol as a `path` for the sprite.
+
+Now we can go further and do things such as creating multiple sprites using the render target, scale the sprite, angle the sprite, and perform all sorts of transforms. So here is what happens when I start overlaying them with different transforms.
 
 <light-code language="ruby">
   <script type="text/plain" slot="code">
@@ -147,7 +119,7 @@ This means render targets have special behavior where as typical DragonRuby rend
 
 Every call to `args.outputs[:render_target]` creates a new render target instance for the current `tick` (frame), thus clearing out any cached render targets from previous ticks / frames. You can see this in action below.
 
-<light-code language="ruby" highlight-lines="{10}">
+<light-code language="ruby" highlight-lines="{10}" class="sl-theme-light" style="--syntax-highlight-bg: var(--sl-color-green-200);">
   <script type="text/plain" slot="code">
 def tick(args)
   # Create the render target only on the first tick. Its then cached and used indefinitely.
@@ -174,18 +146,20 @@ From Amir:
 
 So be careful!
 
-Other things that will "clear the cache"
+## Other things that will "clear the cache"
 
 > The `args.outputs` structure renders to the screen. You can render to a texture/virtual canvas using args.outputs[SYMBOL]. What ever primitives are sent to the virtual canvas are cached and reused (the cache is invalidated whenever you render to virtual canvas).
-
-<https://docs.dragonruby.org/#/api/outputs?id=render-targets-operator>
+>
+> <https://docs.dragonruby.org/#/api/outputs?id=render-targets-operator>
 
 So in other words, anytime you do `args.outputs[:render_target].sprites << {}` you will clear the cache and DragonRuby will re-render the render target. Same for any labels, borders, primitives, etc.
 
 ## Go forth and (ab)use render targets!
 
-Render targets have many, many use cases. Too many to cover here, and way too much to write. Instead, check out the [Advanced Rendering](https://docs.dragonruby.org/#/samples/advanced-rendering) section of DragonRuby. Its basically a love letter to how powerful render targets can be.
+Render targets have many, many use cases. Too many to cover here, and way too much to write. But a short list is roughly: lighting, blending, scaling, cameras, caching, animations.
 
-There are even performance improvements that can happen when moving a large number of primitives at once by using a render target. This is how the Camera example works for example. It uses `:scene` symbol as the render target.
+For a full rundown of how versatile render target are, check out the [Advanced Rendering](https://docs.dragonruby.org/#/samples/advanced-rendering) section of DragonRuby. Its basically a love letter to how powerful render targets can be. Almost everything there uses render targets to some degree.
+
+As an extra bonus, there are even performance improvements that can happen when using and moving a large number of primitives at once by using a render target. This is how the Camera example works for example. It uses `:scene` symbol as the render target and allows you to move many sprites at once without tanking performance.
 
 Anyways, this is quick post about the beauty of render targets and the cool tricks they enable and problems they help solve.
