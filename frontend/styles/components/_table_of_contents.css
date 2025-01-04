@@ -30,8 +30,14 @@
 }
 
 .table-of-contents__list li {
+  text-align: start;
   border-inline-start: 4px solid var(--sl-color-neutral-400);
   padding-inline-start: 1rem;
+}
+
+.table-of-contents .side-nav__item:has(a:hover) {
+  color: var(--sl-color-neutral-900);
+  background-color: var(--sl-color-primary-100);
 }
 
 .table-of-contents__list li {

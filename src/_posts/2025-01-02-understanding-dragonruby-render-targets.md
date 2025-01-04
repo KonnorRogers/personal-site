@@ -1,7 +1,7 @@
 ---
 title: Understanding DragonRuby Render Targets
 categories: []
-date: 2025-01-02
+date: 2025-01-03
 description: |
   Understanding DragonRuby Render Targets. Why they're important, what they do, what they are, and how they work.
 published: true
@@ -86,7 +86,7 @@ end
   </script>
 </light-code>
 
-Now we can go further and do things such as creating multiple sprites using the render target, scale the sprite, angle the sprite, and perform all sorts of transforms. So here is what happens when I take the previous black box and change the "alpha" to `64` and start overlaying them with different transforms.
+Now we can go further and do things such as creating multiple sprites using the render target, scale the sprite, angle the sprite, and perform all sorts of transforms. So here is what happens when I start overlaying them with different transforms.
 
 <light-code language="ruby">
   <script type="text/plain" slot="code">

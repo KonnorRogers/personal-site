@@ -27,7 +27,7 @@ export default class ScrollSpyController extends Controller {
   }
 
   get links () {
-    return [...document.querySelectorAll('#table-of-contents li a')];
+    return [...document.querySelectorAll('.table-of-contents li a')];
   }
 
   handleIntersect = (entries) => {
@@ -50,7 +50,7 @@ export default class ScrollSpyController extends Controller {
       const target = this.linkMap.get(link);
 
       if (target && this.visibleSet.has(target)) {
-        links.forEach(el => el.parentElement.classList.toggle('is-active', el === link));
+        links.forEach(el => el.parentElement.classList.toggle('is-active', el.href === link.href));
         return true;
       }
 
