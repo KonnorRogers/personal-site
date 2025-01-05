@@ -219,6 +219,9 @@ end
   </script>
 </light-code>
 
+![All boxes stacked](/images/dragonruby-palettes/all-boxes-stacked.png)
+{:style="margin: 0 auto;"}
+
 And there we have it! Using our palette, we wrote some boxes and even added a way to lighten / darken our sprites by overlaying another sprite with a different alpha channel!
 
 The beauty of the palette is you can always override for one offs where needed.
