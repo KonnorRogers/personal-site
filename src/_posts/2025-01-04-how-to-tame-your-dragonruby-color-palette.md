@@ -1,5 +1,5 @@
 ---
-title: Make Color Palettes Manageable In DragonRuby
+title: How To Tame Your DragonRuby Color Palette
 categories: []
 date: 2025-01-04
 description: |
@@ -273,6 +273,65 @@ SEMANTIC_NUMBER_PALETTE = {
 }
   </script>
 </light-code>
+
+We could even do other things like make a palette class and define different themes.
+
+
+<light-code language="ruby">
+  <script slot="code" type="text/plain">
+class Palette
+  attr_accessor :theme
+
+  # We use Ruby "constants" so that these themes are only generated once on initial startup, as opposed to generating a new hash every time we ask for the theme.
+  LIGHT_THEME = {
+    blue: { r: 14, g: 165, b: 233, a: 255 }
+  }
+
+  DARK_THEME = {
+    blue: { r: 17, g: 158, b: 226, a: 255 }
+  }
+
+  def initialize(theme: :light)
+    @theme = theme
+  end
+
+  def colors
+    return DARK_THEME if @theme == :dark
+
+    LIGHT_THEME
+  end
+end
+
+def tick(args)
+  if !args.state.palette
+    args.state.palette = Palette.new
+  end
+
+  palette = args.state.palette
+
+  # Implement something to switch to dark mode.
+  if switch_to_dark_mode
+    palette.theme = :dark
+  end
+
+  # Implement something to switch to light mode.
+  if switch_to_light_mode
+    palette.theme = :light
+  end
+
+  blue_box = {
+    x: 0,
+    y: 0,
+    w: 50,
+    h: 50,
+    **palette.colors.blue
+  }
+
+  args.outputs.sprites << blue_box
+end
+  </script>
+</light-code>
+
 
 The world is your oyster! I thought of this pattern while I was tired of constantly doing `{r:, g:, b:, a:}` everywhere and yearned for a better way to define color tokens.
 
