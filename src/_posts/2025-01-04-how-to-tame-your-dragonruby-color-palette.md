@@ -418,4 +418,9 @@ Also of note:
 
 So be mindful when using hex codes, probably dont want to do this on every tick. But one time on startup initialization shouldn't be a problem.
 
+EDIT: Thanks to TheCire from Discord for pointing out the "Color" module for predefined colors and converters!
+
+<https://github.com/xenobrain/rubycolors/blob/main/color.rb>
+
 That is all folks! Thanks for reading! Time to get back to making games...
+
