@@ -23,3 +23,8 @@ light-code[wrap="soft"] > [slot="code"] {
   white-space: pre-wrap;
 }
 
+
+light-code::part(line-inserted) {
+  /** contrast sucks otherwise. */
+  color: var(--syntax-fg);
+}
