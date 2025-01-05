@@ -344,7 +344,7 @@ Sometimes you have color palettes defined in hex codes. Thanks to Levi from the 
 And for posterity, here is the code in case the discord link wants to be silly.
 
 <light-code language="ruby">
-  <script type="text/plain">
+  <script slot="code" type="text/plain">
 class ::Hash
   class << self
     def color_from(str_int, order = 432)
