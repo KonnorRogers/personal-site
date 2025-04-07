@@ -127,12 +127,8 @@ team_membership_foreign_keys AS (
 	  JOIN teams_with_insertion_ids t ON u."insertionId" = t."insertionId"
 )
 
--- Use this to check if you dont wanna insert yet.
--- SELECT "userId", "teamId" from team_membership_foreign_keys
-
 INSERT INTO team_memberships ("userId", "teamId", "role", "state")
 SELECT "userId", "teamId", 'owner', 'accepted' from team_membership_foreign_keys
---                           ^ these are single quotes because they're "static" or "literals" that will be applied to every membership
 ```
 
 There's a few tricks in the above like "table aliasing" to make table names more manageable, but the big thing is the 2nd query which maps over the users and teams queries respectively and adds an "insertionId" (we could call this anything, maybe insertionIndex makes more sense?).
