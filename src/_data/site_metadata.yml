@@ -45,7 +45,7 @@ contact_info:
     external: true
   - title: Blog
     icon: "book"
-    text: "https://konnorroger.com/blog"
+    text: "https://konnorrogers.com/blog"
     href: "/blog"
     external: false
   - title: GitHub
