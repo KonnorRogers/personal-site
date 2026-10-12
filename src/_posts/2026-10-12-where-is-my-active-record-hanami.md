@@ -1,5 +1,5 @@
 ---
-title: Where is my ActiveRecord?
+title: Dude, where's my ActiveRecord?
 categories: []
 date: 2026-10-12
 description: |
