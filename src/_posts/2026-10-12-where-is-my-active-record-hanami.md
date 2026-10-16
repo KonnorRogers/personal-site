@@ -15,7 +15,7 @@ Ironically, it took a while for these to click for me. In fact, I'm currently wo
 
 The biggest shock when starting with Hanami was the distinct lack of ActiveRecord. After all, this was all I really knew.
 
-Maybe a part 2 of this post will come...(one day?) to explain why Hanami side-stepped the ActiveRecord pattern and opted for decoupling into Repos, Relations, and Structs...but thats a much lengthier post.
+Maybe a part 2 of this post will come...(one day?) to explain why Hanami side-stepped the ActiveRecord pattern and opted for decoupling into Repos, Relations, Changesets, and Structs...but thats a much lengthier post.
 
 We're just going to be looking at the first example on the Hanami site.
 
@@ -58,7 +58,7 @@ There is quite a bit here, so lets back up a little bit.
 
 ## Structs
 
-Let's start with Structs. Structs are essentially your "ActiveModel". They are the "Ruby object" layer. They are different from Rails ActiveModel in that they are immutable. ActiveModel in Rails leans fully into mutations and the concept of "dirty models" for tracking changes. Structs however are a "snapshot" of the data. In fact, the closest similarity is probably the new(ish?) [Data Class](https://shakacode.com/blog/ruby-3-2-adds-a-new-data-class/). And just like ActiveModel, Structs are not always need to be tied to a database object. There is not much else to talk about with structs. You can define methods on them for derived data and other "business logic", but they're largely what one would consider a PORO ("Plain old Ruby object").
+Let's start with Structs. Structs are essentially your "ActiveModel". They are the "Ruby object" layer. They are different from Rails ActiveModel in that they are immutable. ActiveModel in Rails leans fully into mutations and the concept of "dirty models" for tracking changes. Structs however are a "snapshot" of the data. In fact, the closest similarity is probably the new(ish?) [Data Class](https://shakacode.com/blog/ruby-3-2-adds-a-new-data-class/). And just like ActiveModel, Structs are not always need to be tied to a database object. There is not much else to talk about with structs. You can define methods on them for derived data and other "business logic", but they're largely what one would consider a PORO ("Plain old Ruby object"). All Structs know are the data they are defined with, and the methods defined on the Struct itself.
 
 ## Relations
 
@@ -73,6 +73,10 @@ Post Load (0.2ms)  SELECT "posts".* FROM "posts" /* loading for inspect */ LIMIT
 ```
 
 So Rails does have Relations, they're just hidden from you. Hanami, and more specifically "ROM", put Relations as a first class citizen. Relations are like "query builders". A Relation always returns another Relation. Perhaps a good analogy of Relations is they are a lot like `Enumerable`, they're chainable methods intended to build off of each other until you hit a "final" spot in which the `Enumerable` or `Relation` has to be executed.
+
+In fact, Sequel, the core building block of ROM, describes `datasets` as "Enumerable"
+
+<https://sequel.jeremyevans.net/rdoc/files/doc/cheat_sheet_rdoc.html#label-Datasets+are+Enumerable>
 
 For example, say we have the following `Relation`
 
@@ -96,28 +100,42 @@ class Article < ApplicationRecord
 end
 ```
 
-The core idea of ROM Relations is that they are a "query building layer". They always return another relation.
+The core idea of ROM Relations is that they are a "query building layer". Essentially, Relations are what are actually talking to your database. Your Relations are using [Sequel](https://sequel.jeremyevans.net/) under the hood for all the query building (similar to how Rails uses ARel under the hood for its query building).
 
-So we now have Structs defined, which are the "ActiveModel" layer. We have Relations defined, which is the "query building" layer for all your "scopes" / "filtering" in Rails. Stuff like `Article.all`, `Article.first`, `Article.where(foo: "bar")`, etc.
+So we now have Structs defined, which are the "ActiveModel" layer. We have Relations defined, which is the "query building" layer for all your "scopes" / "filtering" and data retrieval from the database.
 
-The one piece we're missing is "persistence". How do we actually "talk" to our database? We'll talk about that next when we look at "Repositories".
+One final note, you may have heard "Changesets" mentioned, we won't talk too much about them as they're largely an implementation detail, but all you really need to know is that instead of the ActiveModel / ActiveRecord pattern of tracking "dirty" changes by directly mutating itself and storing changes in a private field, Changesets are a more transparent way for the Relation to know what properties need to change.
+
 
 ## Repositories
 
-I saved Repositories for last as they are the "glue" layer.
+So if Structs are ActiveModel, and Relations are ActiveRecord, where do Repositories fit in?
 
-They are what actually saves and loads things from your database (or other storage of your choice, it doesn't always need to be a database, but to keep things simple, we'll focus on SQL-based database).
+Well...they kind of don't. There's no great 1:1 comparison.
 
-A Repository at its core "executes" relations for querying, and "executes" changesets (which we haven't talked about) for mutations on your database.
+Repositories are like your "predefined queries". Anything which you know you will be doing often.
 
-A Repository is essentially the query part of ActiveRecord. If you think of Relations as the "query building", think of Repositories as the "query executor", its the thing that actually sends your SQL to the database, gets the data back, and turns it into a `Struct`.
+Repositories let you decide how much or how little of Relations you want to expose. They are essentially your "public contract". Yes it sounds weird because they're internal to your app, but the idea is that if you need data from your database, you use a Repository to get it.
 
-In fact, if we *really* want to build the analogy, Repositories are your "ActiveRecord" class. Relations are the internal AREL query building that you never see. Structs are the "models" or "instantiated objects" you work with. This analogy does fall apart a *little bit* because of how Rails overloads model instances.
+The idea of Repositories is that they are the "glue" between Structs and Relations. You execute a Relation and return a Struct, array of Structs, or `nil`.
 
-For example, in ActiveRecord to persist a change, you can do `Article.first.update({ title: "foo" }).save`, however, in Hanami, you'll need to define
+For example:
 
+```rb
+# app/repos/article_repo.rb
+class ArticleRepo < MyApp::Repo
+  def update(id, attributes)
+    articles.by_pk(id).changeset(:update, attributes).commit # => returns nil
+  end
 
+  def find(id)
+    articles.published.by_pk(id).one! # => returns a Struct. If no record found, throws an error.
+  end
 
+  def latest
+    articles.published.limit(10).to_a # => returns an array of Structs
+  end
+end
+```
 
-
-
+So thats it! Now you're an expert! (...maybe?)
