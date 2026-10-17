@@ -1,21 +1,17 @@
 ---
 title: Untangling the data layer of Hanami
 categories: []
-date: 2026-10-12
+date: 2026-10-17
 description: |
-  A conceptual overview of how Hanami handles database access, persistence, and objects.
+  A conceptual overview of how Hanami handles database access, persistence, and domain object mapping.
 published: true
 ---
 
-Coming from Rails, Hanami can be a massive shock. Immediately when starting Hanami you get introduced to Repositories, Relations, Changesets, and Structs, oh my!
+Coming from Rails, Hanami can be a massive shock. Immediately when starting Hanami, you get introduced to Repositories, Relations, Changesets, and Structs, oh my!
 
-Rails is my biggest point of reference and will be used throughout to compare and contrast, and is also why Hanami presenting these structures is so foregin to me.
+Rails is my biggest point of reference and will be used throughout to compare and contrast, and is also why Hanami presenting these structures is so foregin to me. What do you mean there is no `ActiveRecord`?
 
-Ironically, it took a while for these to click for me.
-
-When starting with Hanami, there is a distinct lack of ActiveRecord.
-
-We won't detail "why" too much, other than that rather than having everything related to "mutations", "persistence", "data mapping", and "queries" in a singular `class`, Hanami splits these into Repositories, Relations, Structs, and Changesets so as not to overload a single object and to provide clear splits of responsibility.
+We won't detail the "why" too much of why Hanami did not use the [ActiveRecord pattern](https://www.martinfowler.com/eaaCatalog/activeRecord.html), other than that rather than having everything related to "mutations", "persistence", "data mapping", and "queries" in a singular `class` like ActiveRecord, Hanami splits these concepts into Repositories, Relations, Structs, and Changesets so as not to overload a single object and to provide clear splits of responsibility.
 
 To start off, let's look at the first example on the Hanami site.
 
@@ -195,3 +191,11 @@ To put a bow on everything, let's recap the basics of the 4 building blocks of d
 - Relations. The API that is used to communicate with your database (or any other data storage layer you may have)
 - Repositories. The layer where you write methods to be used elsewhere in your application. This is your "contract" for retrieving data from a relation and mapping it to a Struct.
 - Changesets. Changesets are how "writes" happen. Whether that is `:create`, `:delete`, or `:update`, and in the case of `:update`, only sends the fields that are different from what is in the database. If there are no changes, it sends nothing.
+
+## Additional Links
+
+- Ryan Bigg has a great blog post on Hanami for Rails devs here: <https://ryanbigg.com/2025/10/hanami-for-rails-developers-1-models>
+- Hanami (obviously) <https://hanakai.org/learn/hanami/v3.0/getting-started>
+- ROM <https://hanakai.org/learn/rom/v5.0/getting-started>
+- Sequel <https://sequel.jeremyevans.net/>
+
